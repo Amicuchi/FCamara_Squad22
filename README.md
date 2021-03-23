@@ -24,30 +24,30 @@ Um dos problemas que percebemos foi a do custo de materiais tecnológicos, que s
 ## Screenshot das telas do site 
 <br>
 
-## 🖼 Tela principal da plataforma do UPE 
+### 🖼 Tela principal da plataforma do UPE 
 <br>
 
 <br>
 
-## 🖼 Tela Donatários
-
-<br>
-
-<br>
-
-## 🖼 Tela Galeria de Alunos Beneficiados
+### 🖼 Tela Donatários
 
 <br>
 
 <br>
 
-## 🖼 Tela Sobre Nós
+### 🖼 Tela Galeria de Alunos Beneficiados
 
 <br>
 
 <br>
 
-## 🖼 Tela Contato
+### 🖼 Tela Sobre Nós
+
+<br>
+
+<br>
+
+### 🖼 Tela Contato
 
 <br>
 <img src="./Layout/Tela5Contact.png" alt="Tela de Contato"> 
