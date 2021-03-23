@@ -154,7 +154,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
 
 <table>
     <tr>
-
         <td align="center">
             <a href="https://github.com/amandapraca">
                 <img 
@@ -165,7 +164,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
                 <sub><b>Amanda Praça</b></sub>
             </a>
         </td>
-
         <td align="center">
             <a href="https://github.com/Amicuchi">
                 <img 
@@ -176,7 +174,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
                 <sub><b>Anderson Amicuchi</b></sub>
             </a>
         </td>
-
         <td align="center">
             <a href="https://github.com/andersoncostadev">
                 <img 
@@ -187,7 +184,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
                 <sub><b>Anderson Costa</b></sub>
             </a>
         </td>
-
         <td align="center">
             <a href="https://github.com/camilabr74">
                 <img 
@@ -198,7 +194,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
                 <sub><b>Camila Vieira</b></sub>
             </a>
         </td>
-
         <td align="center">
             <a href="https://github.com/PedroHPSilvino">
                 <img 
@@ -209,7 +204,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
                 <sub><b>Pedro Pataro</b></sub>
             </a>
         </td>
-
         <td align="center">
             <a href="https://github.com/samyllasuzane">
                 <img 
