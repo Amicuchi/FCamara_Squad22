@@ -143,7 +143,7 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
 
 <div align=center>
     <a href="https://www.fcamara.com.br/">
-        <img width="200" src="https://blog.fcamara.com.br/wp-content/uploads/2019/10/Logotipo-FCamara-150x33.png>
+        <img width="200" src="https://blog.fcamara.com.br/wp-content/uploads/2019/10/Logotipo-FCamara-150x33.png">
     </a>
 </div>
 
