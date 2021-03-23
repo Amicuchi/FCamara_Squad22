@@ -64,7 +64,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
     <img
-      src="https://devicon.dev/devicon.git/icons/html5/html5-original-wordmark.svg"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png"
       alt="HTML5"
       width="120"
       height="120"
@@ -73,7 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
     <img
-      src="https://devicon.dev/devicon.git/icons/css3/css3-original-wordmark.svg"
+      src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Css3.jpg"
       alt="CSS3"
       width="120"
       height="120"
@@ -82,7 +82,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
     <img
-      src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/260px-Unofficial_JavaScript_logo_2.svg.png"
       alt="Javascript"
       width="120"
       height="120"
