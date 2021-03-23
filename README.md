@@ -154,10 +154,6 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
 
 <table>
     <tr>
-andersonmtb88
-camilabvieira74    
-pedropataro
-samyllasuzane
 
         <td align="center">
             <a href="https://github.com/amandapraca">
