@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(187, 187, 187);
+}
+/* NAVBAR*/
+ ul {
+    list-style:none;
+      overflow: hidden;
+      background-color: #333;
+    }
+        li {
+        float:left;
+        }
+         li a {
+             display: block;
+             color: white;
+             padding: 14px 16px;
+             text-decoration: none;
+            }
+ .active{
+ background-color:#090;
+}
+ button {
+ background-color: #4CAF50;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+ .formdoar, .conheca{
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #8f9292;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 2%;
+    padding: 50px;
+ }
+ .formdoar{
+    position: fixed;
+	left: 70%;
+    right: 3%;
+ }
+ .conheca{
+    position: absolute;
+    right: 35%;
+    left: 3%;
+}
+
