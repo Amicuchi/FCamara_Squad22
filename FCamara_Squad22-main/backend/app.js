@@ -19,17 +19,22 @@ mongoose.connect('mongodb://localhost:27017/UpEDB', {
 app.use(express.urlencoded({
     extended: true
 }));
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '../frontend/public')));
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
+app.set('views', path.join(__dirname, '../frontend/views'));
 
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/registrarEscola', (req, res) => {
+app.get('/registrar/escola', (req, res) => {
     res.render('registrar-escola');
+})
+
+app.post('/registrar', (req, res) => {
+    console.log(req.body);
+    res.redirect('/');
 })
 
 
