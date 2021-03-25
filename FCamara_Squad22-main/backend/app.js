@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 const Escola = require('./models/escola');
 const app = express();
 
-require('dotenv').config();
+//require('dotenv').config();
 
-const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/UeP';
+const databaseUri = "mongodb+srv://PedroPataro:admin@upecluster.iudo1.mongodb.net/UpE" || 'mongodb://localhost:27017/UeP';
 
 mongoose.connect(databaseUri, {
         useNewUrlParser: true,
