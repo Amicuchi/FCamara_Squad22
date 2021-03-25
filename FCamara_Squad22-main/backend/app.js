@@ -4,7 +4,11 @@ const mongoose = require('mongoose');
 const Escola = require('./models/escola');
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/UpEDB', {
+require('dotenv').config();
+
+const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/UeP';
+
+mongoose.connect(databaseUri, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
