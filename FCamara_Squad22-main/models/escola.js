@@ -1,7 +1,6 @@
-const restful = require('node-restful')
-const mongoose = restful.mongoose;
+const mongoose = require('mongoose');
 
-const EscolaUserSchema = mongoose.Schema({
+const EscolaUserSchema = new mongoose.Schema({
 
     nome: {
         type: String,
@@ -45,9 +44,8 @@ const EscolaUserSchema = mongoose.Schema({
         max: 12,
         required: true
     }
-
-
 })
 
-module.exports = mongoose.model('escola', EscolaUserSchema)
+const Escola = mongoose.model('Escola', EscolaUserSchema);
 
+module.exports = Escola;
