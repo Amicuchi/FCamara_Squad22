@@ -5,47 +5,52 @@
 }
 
 body{
-  background-color: rgb(174, 216, 199);
+  background-color: rgb(166, 214, 195);
 }
 
 .container{
-  
+  display: flex;
+  vertical-align:middle;
 }
 
-#leftSide {
-  border: 1px black;
-  width: 40%;
+#leftSide{
+  height: 50vh;
+  text-align: center;
+  padding: auto;
+  background-color: rgb(209, 209, 240);
 }
 
-#rightSide {
+#rightSide{
+  height: 50vh;
+  text-align: center;
+  padding: auto;
+  background-color: rgb(209, 209, 240);
+} 
 
-  border: 1px black;
-  width: 30%;
-}
-
-#h1Initial {
+#h1Initial{
   font-size: 3rem;
 }
 
-#pInitial {
+#pInitial{
   font-size: 2rem;
 }
 
 
 
 
-button {
+.btnInicial {
+  display: block;
+  cursor: pointer;
   background-color: rgb(73, 133, 110);
   border: none;
   border-radius: 1rem;
-  color: white;
   padding: 2rem 5rem;
+  margin: 1rem;
+  width: 25rem;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  margin: 4px 2px;
-  cursor: pointer;
+  color: white;
 }
 
 button:hover{
@@ -57,30 +62,30 @@ button:hover{
 
 /*NAVBAR*/
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    top: 0;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
 
-  li {
-    float: left;
-  }
+li {
+  float: left;
+}
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  li a:hover {
-    background-color: rgb(7, 177, 21);
-  }
+li a:hover {
+  background-color: rgb(7, 177, 21);
+}
 
 section{
     position:absolute;
@@ -100,19 +105,16 @@ aside{
 
 section, 
 aside{
-
     background-color: rgb(235, 235, 235);
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 5px #6b6b6b;
+    border-radius: 1rem;
+    box-shadow: 0.5rem #6b6b6b;
     cursor: pointer;
     transition: 0.5s;
     margin-top: 2%;
 }
 
-
-
-/* header {
+header {
     background-color: rgb(53, 53, 53);
     color:white;
     position: relative;
-} */
+}
