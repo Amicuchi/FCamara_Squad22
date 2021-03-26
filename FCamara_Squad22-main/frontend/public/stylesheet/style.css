@@ -44,7 +44,7 @@ aside{
     padding: 20px 10px 50px 25px;
 }
 section, aside{
-    background-color: rgb(255, 136, 136);
+    background-color: rgb(235, 235, 235);
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #6b6b6b;
     cursor: pointer;
@@ -65,4 +65,7 @@ button {
 }
 button:hover{
     background-color: rgb(7, 177, 21);
+}
+.formCadastro{
+  padding: 100px;
 }
