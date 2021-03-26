@@ -1,11 +1,6 @@
 body{
     background-color: rgb(134, 133, 133);
 }
-header {
-    background-color: rgb(53, 53, 53);
-    color:white;
-    position: relative;
-}
 .aluno{
   background-color: blue;
 }
@@ -15,35 +10,12 @@ header {
 .index{
   background-color: aquamarine;
 }
-/*NAVBAR*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    top: 0;
-  }
-  li {
-    float: left;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color: rgb(7, 177, 21);
-  }
 section{
     position:absolute;
     right: 41%;
     left: 1.25%;
     top: 20%;
-    padding: 5px 10px 500px 25px;
+    padding: 50px;
 }
 aside{
     position:fixed;
@@ -58,15 +30,8 @@ aside{
     transition: 0.5s;
     margin-top: 2%;
 }
-.navbar-nav{
-  background-color: rgb(235, 235, 235);
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px 5px #6b6b6b;
-  margin-top: 2%;
-  position:absolute;
-  top: 20%;
-  width: 100%;
-  height: 100%;
+.home{
+  height: max-content;
 }
 button {
     background-color: #000000;
