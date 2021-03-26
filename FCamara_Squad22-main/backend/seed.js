@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Escola = require('./models/escola');
+const Aluno = require('./models/aluno');
 
 require('dotenv').config();
 
@@ -19,21 +19,20 @@ db.once("open", () => {
 });
 
 const seedDB = async () => {
-    await Escola.deleteMany({});
+    await Aluno.deleteMany({});
     for (let i = 0; i < 7; i++) {
-        const escola = new Escola({
-            nome: 'Escola',
-            cnpj: 12345678901234,
-            telefone: 1234567890,
-            email: 'escola@email.com',
-            logradouro: 'rua não ligo',
-            numero: 10,
-            bairro: 'quem sabe',
+        const aluno = new Aluno({
+            nome: 'Jóse',
+            sobrenome: 'Augusto',
+            email: 'quale@email.com',
+            senha: 'senha',
+            endereco: 'rua não ligo, 10',
+            endereco2: 'ap 10',
             cidade: 'tantufaz',
             estado: 'NB',
-            senha: '123456'
+            cep: 10350540,
         })
-        await escola.save();
+        await aluno.save();
     }
 }
 seedDB().then(() => {
