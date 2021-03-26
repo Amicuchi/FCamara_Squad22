@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(134, 133, 133);
+    background-color: rgb(174, 216, 199);
 }
 header {
     background-color: rgb(53, 53, 53);
@@ -58,8 +58,9 @@ aside{
     margin-top: 2%;
 }
 button {
-    background-color: #000000;
+    background-color: rgb(73, 133, 110);
     border: none;
+    border-radius: 15px;
     color: white;
     padding: 30px 80px;
     text-align: center;
@@ -70,5 +71,5 @@ button {
     cursor: pointer;
 }
 button:hover{
-    background-color: rgb(7, 177, 21);
+    background-color: rgb(17, 36, 29);
 }
