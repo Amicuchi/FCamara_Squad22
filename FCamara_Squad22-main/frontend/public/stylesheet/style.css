@@ -1,11 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+
 body{
-    background-color: rgb(174, 216, 199);
+  background-color: rgb(174, 216, 199);
 }
-header {
-    background-color: rgb(53, 53, 53);
-    color:white;
-    position: relative;
+
+.container{
+  
 }
+
+#leftSide {
+  border: 1px black;
+  width: 40%;
+}
+
+#rightSide {
+
+  border: 1px black;
+  width: 30%;
+}
+
+#h1Initial {
+  font-size: 3rem;
+}
+
+#pInitial {
+  font-size: 2rem;
+}
+
+
+
+
+button {
+  background-color: rgb(73, 133, 110);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 2rem 5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(17, 36, 29);
+}
+
+
+
 
 /*NAVBAR*/
 ul {
@@ -17,9 +65,11 @@ ul {
     position: sticky;
     top: 0;
   }
+
   li {
     float: left;
   }
+
   li a {
     display: block;
     color: white;
@@ -27,6 +77,7 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
+
   li a:hover {
     background-color: rgb(7, 177, 21);
   }
@@ -36,7 +87,7 @@ section{
     right: 41%;
     left: 1.25%;
     top: 20%;
-    padding: 5px 10px 500px 25px;
+    padding: 5px 10px 50px 25px;
 }
 
 aside{
@@ -57,19 +108,11 @@ aside{
     transition: 0.5s;
     margin-top: 2%;
 }
-button {
-    background-color: rgb(73, 133, 110);
-    border: none;
-    border-radius: 15px;
-    color: white;
-    padding: 30px 80px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: rgb(17, 36, 29);
-}
+
+
+
+/* header {
+    background-color: rgb(53, 53, 53);
+    color:white;
+    position: relative;
+} */
