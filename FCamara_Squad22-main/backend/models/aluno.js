@@ -1,32 +1,31 @@
 const mongoose = require('mongoose');
 
-const EscolaUserSchema = new mongoose.Schema({
+const categorias = ['Tintas', 'Cadernos', 'Livros'];
+
+const AlunoSchema = new mongoose.Schema({
 
     nome: {
         type: String,
         required: true
     },
-    cnpj: {
-        type: Number,
-        required: true
-    },
-    telefone: {
-        type: Number,
-        required: true
-    },
-    email: {
-        type: String || Number,
-        required: true
-    },
-    logradouro: {
+    sobrenome: {
         type: String,
         required: true
     },
-    numero: {
-        type: Number,
+    email: {
+        type: String,
         required: true
     },
-    bairro: {
+    senha: {
+        type: String,
+        min: 6,
+        required: true
+    },
+    endereco: {
+        type: String,
+        required: true
+    },
+    endereco2: {
         type: String,
         required: true
     },
@@ -38,14 +37,12 @@ const EscolaUserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    senha: {
-        type: String,
-        min: 6,
-        max: 12,
+    cep: {
+        type: Number,
         required: true
     }
 })
 
-const Escola = mongoose.model('Escola', EscolaUserSchema);
 
-module.exports = Escola;
+
+module.exports = mongoose.model('Aluno', AlunoSchema);
