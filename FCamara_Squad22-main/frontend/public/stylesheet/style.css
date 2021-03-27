@@ -13,30 +13,34 @@ body{
   vertical-align:middle;
 }
 
+#container-index {
+  margin: 5vh 5%;
+}
+
 #leftSide{
-  height: 50vh;
+  height: 40vh;
   text-align: center;
-  padding: auto;
   background-color: rgb(209, 209, 240);
+  border-radius: 2rem;
+  margin: 1rem;
 }
 
 #rightSide{
-  height: 50vh;
+  height: 40vh;
   text-align: center;
-  padding: auto;
-  background-color: rgb(209, 209, 240);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: rgba(209, 209, 240, 0.842);
+  border-radius: 2rem;
 } 
 
 #h1Initial{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #pInitial{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-
-
-
 
 .btnInicial {
   display: block;
