@@ -1,70 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../public/stylesheet/style.css">
-    <title>PÁGINA INICIAL</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/FCamara_Squad22-main/frontend/public/stylesheet/style.css"
+    >
+
+    <!-- LINK PARA CSS DO BOOSTRAP -->
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+        crossorigin="anonymous"
+    >
+
+    <title>Página inicial</title>
 </head>
-    <body>
-               <!-- BARRA DE NAVEGAÇÃO -->
-        <header class="index">
-       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">UpE - Unidos pela Educação</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="doar.html">Sou Doador</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Sou aluno</a>
-              </li>
-            </ul>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm" id="leftSide">
+            <h1 id="h1Initial">Unidos pela Educação</h1>
+            <p id="pInitial">Doando materiais escolares você melhora a educação e transforma vidas.</p>
+          </div>
+          
+          <div class="col-sm" id="rightSide">
+            <button class="btnInicial" id="btnDoacao">Faça uma doação</button>
+            <button class="btnInicial" id="btnAluno">Sou Aluno</button>
           </div>
         </div>
-      </nav>
-</header>
+    </div>
 
-        <section class="home"> <!-- SECTION ON-->
-            <h1>Página Inicial</h1>
-            <p>TESTE FIDLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL<br></p>
-            <p>
-                Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-            </p><br>
-            <p>Some text to enabl88e scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
-            <p>Some textkkk kkkkkto enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><br>
-        </section>
-
-
-        <form>
-            <aside> <!-- ASIDE OK-->
-                 <center>
-                    <a href="doar.html"><button>SOU DOADOR</a>
-                        
-                    <a href="login.html"><button>SOU ALUNO</a>
-                </center>
-            </form>
-
-        </aside>
-        <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    <script 
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
         crossorigin="anonymous">
     </script>
-
-
-
-
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

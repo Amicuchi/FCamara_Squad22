@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-const Escola = require('./models/escola');
+const Aluno = require('./models/aluno');
 const app = express();
 
 //require('dotenv').config();
@@ -32,15 +32,27 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/registrar/escola', (req, res) => {
-    res.render('registrar-escola');
+app.get('/registrar', (req, res) => {
+    res.render('registrar-aluno');
 })
 
-app.post('/registrar', (req, res) => {
-    console.log(req.body);
+app.post('/registrar', async (req, res) => {
+    const aluno = new Aluno(req.body.aluno)
+    await aluno.save();
     res.redirect('/');
 })
 
+app.get('/login', (req, res) => {
+    res.render('login');
+})
+
+app.get('/pesquisa', (req, res) => {
+    res.render('schoolResults');
+})
+
+app.get('/aluno/doacao/obrigado', (req, res) => {
+    res.render('thanks');
+})
 
 app.listen('3000', () => {
     console.log('Escutando porta 3000');
