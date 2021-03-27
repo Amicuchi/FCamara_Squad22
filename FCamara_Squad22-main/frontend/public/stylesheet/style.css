@@ -87,6 +87,7 @@ li a:hover {
   background-color: rgb(7, 177, 21);
 }
 
+
 section{
     position:absolute;
     right: 41%;
@@ -113,8 +114,25 @@ aside{
     margin-top: 2%;
 }
 
-header {
-    background-color: rgb(53, 53, 53);
-    color:white;
-    position: relative;
+.home{
+  height: max-content;
+}
+
+button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 50px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(7, 177, 21);
+}
+footer{
+  background-color: blue;
 }
