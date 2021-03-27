@@ -5,16 +5,18 @@
 }
 
 body{
+  display: flex;
   background-color: rgb(166, 214, 195);
+  justify-content: center;
 }
 
 .container{
-  display: flex;
-  vertical-align:middle;
-}
-
-#container-index {
+  height: 90vh;
+  width: 90%;
   margin: 5vh 5%;
+	border: 1px solid black;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 #leftSide{
@@ -22,7 +24,9 @@ body{
   text-align: center;
   background-color: rgb(209, 209, 240);
   border-radius: 2rem;
+  padding: 1rem 2rem;
   margin: 1rem;
+  justify-content: center;
 }
 
 #rightSide{
@@ -32,6 +36,7 @@ body{
   margin: 1rem;
   background-color: rgba(209, 209, 240, 0.842);
   border-radius: 2rem;
+  justify-content: center;
 } 
 
 #h1Initial{
