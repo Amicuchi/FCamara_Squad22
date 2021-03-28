@@ -16,14 +16,12 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="/FCamara_Squad22-main/frontend/public/stylesheet/index.css"
+        href="../public/stylesheet/index.css"
     >
-
     <title>Página inicial</title>
 </head>
 
 <body>
-
     <div class="container" id="container-index">
         <div class="row">
           <div class="col-sm" id="leftSide">
@@ -32,8 +30,17 @@
           </div>
           
           <div class="col-sm" id="rightSide">
-            <button class="btnInicial" id="btnDoacao">Faça uma doação</button>
-            <button class="btnInicial" id="btnAluno">Sou Aluno</button>
+            <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="passwordLogin" placeholder="Senha">
+                </div>
+                <button class="btnInicial entrar" type="submit">Entrar como aluno</button>
+            </form>
+
+            <button class="btnInicial doar" id="btnDoacao">Faça uma doação</button>
           </div>
         </div>
     </div>
