@@ -68,6 +68,7 @@ body{
 
 button:hover{
     background-color: rgb(7, 177, 21);
+    text-decoration: none;
 }
 
 #emailLogin,
@@ -80,4 +81,8 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.aBotao{
+  text-decoration: none;
 }
