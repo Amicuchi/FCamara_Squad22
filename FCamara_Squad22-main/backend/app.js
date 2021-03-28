@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 const Aluno = require('./models/aluno');
 const app = express();
 
-//require('dotenv').config();
+require('dotenv').config();
 
-const databaseUri = "mongodb+srv://PedroPataro:admin@upecluster.iudo1.mongodb.net/UpE" || 'mongodb://localhost:27017/UeP';
+const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/UeP';
 
 mongoose.connect(databaseUri, {
         useNewUrlParser: true,
@@ -25,6 +25,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.static(path.join(__dirname, '../frontend/public')));
 
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../frontend/views'));
 
@@ -32,8 +33,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+const estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO" ];
+
 app.get('/registrar', (req, res) => {
-    res.render('registrar-aluno');
+    res.render('registrar-aluno', {estados});
 })
 
 app.post('/registrar', async (req, res) => {
