@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-const categorias = ['Tintas', 'Cadernos', 'Livros'];
 
 const AlunoSchema = new mongoose.Schema({
 
