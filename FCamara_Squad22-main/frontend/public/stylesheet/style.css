@@ -1,138 +1,62 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  font-size: 16px;
-}
-
-body{
-  background-color: rgb(166, 214, 195);
-}
-
-.container{
-  display: flex;
-  vertical-align:middle;
-}
-
-#leftSide{
-  height: 50vh;
-  text-align: center;
-  padding: auto;
-  background-color: rgb(209, 209, 240);
-}
-
-#rightSide{
-  height: 50vh;
-  text-align: center;
-  padding: auto;
-  background-color: rgb(209, 209, 240);
-} 
-
-#h1Initial{
-  font-size: 3rem;
-}
-
-#pInitial{
-  font-size: 2rem;
-}
-
-
-
-
-.btnInicial {
-  display: block;
-  cursor: pointer;
-  background-color: rgb(73, 133, 110);
-  border: none;
-  border-radius: 1rem;
-  padding: 2rem 5rem;
-  margin: 1rem;
-  width: 25rem;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-
-button:hover{
-  background-color: rgb(17, 36, 29);
-}
-
-
-
 
 /*NAVBAR*/
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  top: 0;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: rgb(7, 177, 21);
-}
-
-
-section{
-    position:absolute;
-    right: 41%;
-    left: 1.25%;
-    top: 20%;
-    padding: 5px 10px 50px 25px;
-}
-
-aside{
-    position:fixed;
-    left: 60%;
-    right: 1.25%;
-    top: 20%;
-    padding: 20px 10px 50px 25px;
-}
-
-section, 
-aside{
-    background-color: rgb(235, 235, 235);
-    border-radius: 1rem;
-    box-shadow: 0.5rem #6b6b6b;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 2%;
-}
-
-.home{
-  height: max-content;
-}
-
-button {
-    background-color: #000000;
-    border: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
     color: white;
-    padding: 50px 100px;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-button:hover{
+  }
+  
+  li a:hover {
     background-color: rgb(7, 177, 21);
-}
-footer{
-  background-color: blue;
-}
+  }
+  
+  
+  section{
+      position:absolute;
+      right: 41%;
+      left: 1.25%;
+      top: 20%;
+      padding: 5px 10px 50px 25px;
+  }
+  
+  aside{
+      position:fixed;
+      left: 60%;
+      right: 1.25%;
+      top: 20%;
+      padding: 20px 10px 50px 25px;
+  }
+  
+  section, 
+  aside{
+      background-color: rgb(235, 235, 235);
+      border-radius: 1rem;
+      box-shadow: 0.5rem #6b6b6b;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 2%;
+  }
+  
+  .home{
+    height: max-content;
+  }  
+
+  footer{
+    background-color: blue;
+  }
