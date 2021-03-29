@@ -1,8 +1,44 @@
-#divFooter{
+.divFooter{
     position: absolute;
-    width: 1440px;
-    height: 244px;
+    width: 100%;
+    height: 15rem;
 
     /* Cinza 1 */
     background: #CEDAE0;
+}
+
+.h3Footer{
+    font-size: 1.5rem;
+}
+
+.pFooter{
+    font-size: 0.75rem;
+}
+
+#linha1{
+
+}
+
+#linha2{
+
+}
+
+#divDonate{
+
+}
+
+#divContato{
+
+}
+
+#divSociais{
+
+}
+
+#linksPaginas{
+
+}
+
+#copyright{
+
 }
