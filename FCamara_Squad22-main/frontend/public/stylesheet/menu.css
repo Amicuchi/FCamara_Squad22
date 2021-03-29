@@ -1,26 +1,2 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    font-size: 16px;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-header nav{
-    background-color: #e0e6ee;
-    /* background-color: #1877f2; */
-    height: 1rem;
-}
-
-.nav-item{
-    border: none;
-    margin: 0.1rem;
-    width: 15rem;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.nav-item:hover{
-    background-color: #b919b9;
-    color: white;
-}
+/* ARQUIVO SERÁ UTILIZADO PARA CSS DA BARRA DE MENU */
 
