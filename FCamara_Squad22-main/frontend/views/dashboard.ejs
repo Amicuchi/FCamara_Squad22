@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include('../partials/head'); %>
+
+    <!-- CSS do Dashboard -->
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="stylesheet/dashboard.css"
+    >
+
+</head>
+
+<body>
+<header>
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <!-- TÍTULO DA PÁGINA -->
+    <section class="py-5 text-center container topo">
+        <div class="row py-lg-5 col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Lista de Alunos</h1>
+        </div>
+    </section>
+    
+    <div id="studentDashboard">
+        <div id="optionsMenu">
+
+        </div>
+    
+        <div id="optionsResults">
+    
+        </div>
+    </div>
+    
+</main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <%- include('../partials/footer'); %>
+</body>
+</html>
