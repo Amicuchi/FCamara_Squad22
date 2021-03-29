@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- CONTEÚDO DO HEAD -->
+    <%- include('../partials/head'); %>
+
+    <!-- CSS DA PÁGINA DE DOAÇÃO -->
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="stylesheet/doar.css"
+    >
+
+    <title>Nossa História</title>
+</head>
+
+<body>
+    <header>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <%- include('../partials/header'); %>
+    </header>
+
+    <section class="pesquisa"> <!-- ASIDE OK-->  
+        <form>
+
+           <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button></form></center>
+        </form>
+    </section>
+
+    <section class="home"> <!-- SECTION ON-->
+
+        <h1>Resultado da Pesquisa</h1>
+
+        <div class="album py-5 bg-light">
+          <div class="container">
+
+              <!-- CARD COM FOTO E DADOS DE ALUNO QUE RECEBERÁ DOAÇÃO
+                  DEVE SER INSERIDO POR JS APÓS VARREDURA NO ARRAY COM
+                  OS DADOS DOS ALUNOS CADASTRADOS
+              -->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <!-- CARD DE FOTO DE ALUNO -->
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <svg
+                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                              xmlns="http://www.w3.org/2000/svg" role="img" 
+                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                              focusable="false">
+                                  <title>Foto do Aluno</title>
+                                  <rect width="100%" height="100%" fill="#55595c"/>
+                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                          </svg>
+                          <div class="card-body">
+                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
+                                                      Escola: EMEF Professora Helena</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- CARD DE FOTO DE ALUNO -->
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <svg 
+                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                              xmlns="http://www.w3.org/2000/svg" role="img" 
+                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                              focusable="false">
+                                  <title>Placeholder</title>
+                                  <rect width="100%" height="100%" fill="#55595c"/>
+                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                          </svg>
+                          <div class="card-body">
+                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
+                                                      Escola: EMEF Professora Helena</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- CARD DE FOTO DE ALUNO -->
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <svg 
+                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                              xmlns="http://www.w3.org/2000/svg" role="img" 
+                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                              focusable="false">
+                                  <title>Placeholder</title>
+                                  <rect width="100%" height="100%" fill="#55595c"/>
+                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                          </svg>
+                          <div class="card-body">
+                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
+                                                      Escola: EMEF Professora Helena</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- CARD DE FOTO DE ALUNO -->
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <svg 
+                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                              xmlns="http://www.w3.org/2000/svg" role="img" 
+                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                              focusable="false">
+                                  <title>Placeholder</title>
+                                  <rect width="100%" height="100%" fill="#55595c"/>
+                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                          </svg>
+                          <div class="card-body">
+                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
+                                                      Escola: EMEF Professora Helena</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- CARD DE FOTO DE ALUNO -->
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <svg 
+                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                              xmlns="http://www.w3.org/2000/svg" role="img" 
+                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                              focusable="false">
+                                  <title>Placeholder</title>
+                                  <rect width="100%" height="100%" fill="#55595c"/>
+                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                          </svg>
+                          <div class="card-body">
+                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
+                                                      Escola: EMEF Professora Helena</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- CARD DE FOTO DE ALUNO -->
+                  <div class="col">
+                      <div class="card shadow-sm">
+                          <svg 
+                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                              xmlns="http://www.w3.org/2000/svg" role="img" 
+                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                              focusable="false">
+                                  <title>Placeholder</title>
+                                  <rect width="100%" height="100%" fill="#55595c"/>
+                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                          </svg>
+                          <div class="card-body">
+                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
+                                                      Escola: EMEF Professora Helena</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+      <nav aria-label="Navegação de página exemplo">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Próximo</a>
+          </li>
+        </ul>
+      </nav>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
