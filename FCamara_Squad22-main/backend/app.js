@@ -50,6 +50,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/index', (req, res) => {
+    res.render('index');
+});
+
 app.get('/login', (req, res) => {
     res.render('index');
 })
@@ -73,8 +77,3 @@ app.get('/registrar', (req, res) => {
 app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 })
-
-
-
-
-
