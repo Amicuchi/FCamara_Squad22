@@ -46,6 +46,16 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 });
 
+
 app.listen('3000', () => {
     console.log('Escutando porta 3000');
 });
+
+app.get('/dashboard', (req, res) => {
+    res.render('dashboard');
+})
+
+app.get('/historia', (req, res) => {
+    res.render('historia');
+})
+
