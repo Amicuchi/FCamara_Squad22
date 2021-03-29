@@ -1,0 +1,40 @@
+
+.text{
+position:relative;
+float: left;
+width:65%;
+height: 300px;
+padding: 100px;
+margin:auto;
+background-color: rgb(184, 190, 195);
+text-align: center;
+
+}
+.picture{
+position:relative;
+float: right;
+width:35%;
+height: 300px;
+padding: 100px;
+text-align: center;
+background-color: rgb(184, 190, 195);
+}
+.picture-sobre{
+    position:relative;
+    float: left;
+    width:35%;
+    height: 300px;
+    padding: 100px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    }
+    .textsobre{
+        position:relative;
+        float: right;
+        width:65%;
+        height: 300px;
+        padding: 100px;
+        margin:auto;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }

@@ -77,6 +77,7 @@ app.get('/registrar', (req, res) => {
 app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 })
+
 app.get('/historia', (req, res) => {
     res.render('historia');
 })
