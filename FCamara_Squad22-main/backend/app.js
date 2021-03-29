@@ -23,10 +23,12 @@ mongoose.connect(databaseUri, {
 app.use(express.urlencoded({
     extended: true
 }));
+
 app.use(express.static(path.join(__dirname, '../frontend/public')));
 
 
 app.set('view engine', 'ejs');
+
 app.set('views', path.join(__dirname, '../frontend/views'));
 
 app.get('/', (req, res) => {
@@ -46,7 +48,7 @@ app.post('/registrar', async (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-    res.render('login');
+    res.render('index');
 })
 
 app.get('/pesquisa', (req, res) => {
@@ -55,6 +57,14 @@ app.get('/pesquisa', (req, res) => {
 
 app.get('/aluno/doacao/obrigado', (req, res) => {
     res.render('thanks');
+})
+
+app.get('/dashboard', (req, res) => {
+    res.render('dashboard');
+})
+
+app.get('/doar', (req, res) => {
+    res.render('doar');
 })
 
 app.listen('3000', () => {
