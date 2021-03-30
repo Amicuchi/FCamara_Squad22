@@ -32,3 +32,9 @@
 .hwhite{
     background-color:rgb(255, 255, 255);
 }
+.card{
+    border-radius: 20px;
+    padding: 10px;
+    margin-inline: 20%;
+
+}
