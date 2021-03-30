@@ -11,6 +11,10 @@ const AlunoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    rg: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true
@@ -25,6 +29,14 @@ const AlunoSchema = new mongoose.Schema({
         required: true
     },
     endereco2: {
+        type: String,
+        required: true
+    },
+    responsavelLegal: {
+        type: String,
+        required: true
+    },
+    escola: {
         type: String,
         required: true
     },
