@@ -3,7 +3,7 @@
     height: 8rem;
     bottom: 0px;
 
-    background: #8a9296;    /* Cinza 1 */
+    background: rgb(206, 218, 224);    /* Cinza 1 */
 }
 
 .h3Footer{
@@ -22,23 +22,8 @@
 #linha1,
 #linha2{
     text-align: center;
-}
-
-#linha1{
-    
-}
-
-#linha2{
     text-decoration: none;
     color: #333333;
-}
-
-#divDonate{
-
-}
-
-#divContato{
-
 }
 
 #divSociais a img{

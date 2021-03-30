@@ -34,6 +34,7 @@ app.set('views', path.join(__dirname, '../frontend/views'));
 
 // ROTAS PARA PAGINAS
 app.use('/', indexRoutes);
+
 app.use('/aluno', alunoRoutes);
 
 app.all('*', (req, res, next) => {
@@ -42,7 +43,7 @@ app.all('*', (req, res, next) => {
 
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
-    if (!err.message) err.message = 'Oh No, Something Went Wrong!'
+    if (!err.message) err.message = 'Ops! Alguma coisa deu errado.'
     res.status(statusCode).render('error', { err })
 });
 
@@ -55,7 +56,34 @@ app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 })
 
+app.get('/doar', (req, res) => {
+    res.render('doar');
+})
+
 app.get('/historia', (req, res) => {
     res.render('historia');
 })
 
+app.get('/index', (req, res) => {
+    res.render('index');
+})
+
+app.get('/', (req, res) => {
+    res.render('index');
+})
+
+app.get('/menu-aluno', (req, res) => {
+    res.render('menu-aluno');
+})
+
+app.get('/registrar', (req, res) => {
+    res.render('registrar-aluno');
+})
+
+app.get('/pesquisa', (req, res) => {
+    res.render('schoolResults');
+})
+
+app.get('/obrigado', (req, res) => {
+    res.render('thanks');
+})
