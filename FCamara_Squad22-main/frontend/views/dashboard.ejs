@@ -20,24 +20,46 @@
   <%- include('../partials/header'); %>
 </header>
 
-<main class="home">
-    <!-- TÍTULO DA PÁGINA -->
-    <section class="py-5 text-center container topo">
-        <div class="row py-lg-5 col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Lista de Alunos</h1>
-        </div>
-    </section>
-    
-    <div id="studentDashboard">
-        <div id="optionsMenu">
-
-        </div>
-    
-        <div id="optionsResults">
-    
-        </div>
+<main class="home container">
+    <div class="row">
+        <header id="bemVindoAluno" class="col-12">
+                <h1 class="fw-light">Olá, Mariana!</h1>
+                <p>Suas informações estão aqui.</p>
+        </header>
     </div>
-    
+    <section class="row" id="studentDashboard optionsMenu">
+        <nav class="col-lg-3 col-md-3 col-sm-12">
+            <ul id="navbarDashboard" class="navbar-nav mr-auto justify-content-between">
+                <li class="nav-item botaoDashboard">
+                    <a class="nav-link" href="registrar">
+                        <img src="/img/DadosCadastrais.png" alt="">
+                        <p>Dados cadastrais</p>
+                        <p><small>Matenha-os sempre atualizados</small></p>
+                    </a>
+                </li>
+                <li class="nav-item botaoDashboard">
+                    <a class="nav-link" href="registrar">
+                        <img src="/img/DadosCadastrais.png" alt="">
+                        <p>Doações solicitadas</p>
+                        <p><small>Acompanhe a sua solicitação</small></p>
+                    </a>
+                </li>
+                <li class="nav-item botaoDashboard">
+                    <a class="nav-link" href="registrar">
+                        <img src="/img/DadosCadastrais.png" alt="">
+                        <p>Solicite uma doação</p>
+                        <p><small>Te ajudamos com materiais escolares</small></p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="col-lg-9 col-md-9 col-sm-12" id="studentDashboard optionsResults">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Per aumento de cachacis, eu reclamis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
+
+            <p>Diuretics paradis num copo é motivis de denguis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Viva Forevis aptent taciti sociosqu ad litora torquent. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.</p>
+            
+        </section>
+    </section>
 </main>
 
     <footer>

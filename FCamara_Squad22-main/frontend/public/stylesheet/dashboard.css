@@ -1,0 +1,30 @@
+.home{
+    width: 90%;
+    min-height: 65vh;
+}
+
+#navbarDashboard{
+    background-color: #199199;
+    min-height: 50vh;
+}
+
+#bemVindoAluno{
+    background-color: aqua;
+    height: 4rem;
+}
+
+header div h1,
+header div p{
+    text-align: left;
+}
+
+ul li a img{
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+section #optionsResults{
+    background-color: yellowgreen;
+    min-height: 50vh;
+
+}
