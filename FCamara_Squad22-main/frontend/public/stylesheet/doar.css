@@ -1,0 +1,9 @@
+.pesquisa{
+    position: static;
+    padding: 20px 15px;
+    background-color: transparent;
+    right: 30%;
+}
+.home{
+    position: static;
+}
