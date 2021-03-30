@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- CONTEÚDO DO HEAD -->
+    <%- include('../partials/head'); %>
+    
+    <title>Deu ruim!</title>
+</head>
+
+<body>
+    <header>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <%- include('../partials/header'); %>
+    </header>
+    <div class="row home">
+        <div class="col-6 offset-3">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading"><%=err.message%></h4>
+                <p><%= err.stack %></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

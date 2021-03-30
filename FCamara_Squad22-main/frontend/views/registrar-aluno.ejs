@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- CONTEÚDO DO HEAD -->
+  <%- include('../partials/head'); %>
+
+  <title>Registrar</title>
+</head>
+
+<body>
+  <header>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <%- include('../partials/header'); %>
+  </header>
+
+  <section class="container my-5 home">
+    <form action="/aluno/registrar" method="POST">
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="name">Nome</label>
+          <input type="text" class="form-control" placeholder="Nome" id="name" name="aluno[nome]">
+        </div>
+        <div class="col-md-6">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" class="form-control" placeholder="Sobrenome" id="lastname" name="aluno[sobrenome]">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="aluno[email]">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" name="aluno[senha]">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0" name="aluno[endereco]">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Endereço 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc." name="aluno[endereco2]">
+      </div>
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="inputCity">Cidade</label>
+          <input type="text" class="form-control" id="inputCity" name="aluno[cidade]">
+        </div>
+        <div class="col-md-4">
+          <label for="inputEstado">Estado</label>
+          <select id="inputEstado" class="form-control" name="aluno[estado]">
+            <option value="" disabled selected hidden>Estado</option>
+            <% for (let es of estados) {%>
+              <option value="<%= es %>"><%= es %></option>
+            <% } %> 
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputCEP">CEP</label>
+          <input type="text" class="form-control" id="inputCEP" name="aluno[cep]">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Clique em mim
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </section>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

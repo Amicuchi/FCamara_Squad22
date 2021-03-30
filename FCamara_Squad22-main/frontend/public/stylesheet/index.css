@@ -1,8 +1,8 @@
-* {
+*{
   padding: 0px;
   margin: 0px;
   font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Mulish, Helvetica, Arial, sans-serif;
 }
 
 body{
@@ -25,7 +25,7 @@ body{
   text-align: center;
   padding: 1rem 2rem;
   margin: 1rem;
-  /* background-color: f0f2f5; */
+  /* background-color: #f0f2f5; */
   /* border-radius: 3rem; */
 
   align-self: center;
@@ -47,36 +47,45 @@ body{
 .btnInicial {
   display: block;
   cursor: pointer;
-  background-color: #1877f2;
   border: none;
   border-radius: 1rem;
-  padding: 1.5rem 5rem;
-  margin: 1rem;
-  width: 25rem;
+  /* padding: 0.7rem 5rem; */
+  margin: 0rem;
+  width: 18rem;
+  height: 3rem;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
   color: white;
 }
 
-button:hover{
-  background-color: rgb(17, 36, 29);
+.entrar{
+  background-color: #1877f2;
 }
 
-button {
-    background-color: #000000;
-    border: none;
-    color: white;
-    padding: 50px 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.doar{
+  background-color: #b919b9;
+  margin-top: 2rem;
 }
+
 button:hover{
     background-color: rgb(7, 177, 21);
 }
 
+#emailLogin,
+#passwordLogin{
+  width: 18rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
 
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aBotao{
+  text-decoration: none;
+}

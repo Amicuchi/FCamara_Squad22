@@ -24,33 +24,41 @@ Um dos problemas que percebemos foi a do custo de materiais tecnológicos, que s
 ## Screenshot das telas do site 
 <br>
 
-### 🖼 Tela principal da plataforma do UPE 
+### 🖼 Página inicial 
 <br>
 
 <br>
 
-### 🖼 Tela Donatários
-
-<br>
-
-<br>
-
-### 🖼 Tela Galeria de Alunos Beneficiados
+### 🖼 Faça uma doação
 
 <br>
 
 <br>
 
-### 🖼 Tela Sobre Nós
+
+### 🖼 Resultado da pesquisa
 
 <br>
 
 <br>
 
-### 🖼 Tela Contato
+
+### 🖼 Cadastre-se como aluno
 
 <br>
-<img src="./Layout/Tela5Contact.png" alt="Tela de Contato"> 
+
+<br>
+
+### 🖼 Menu do Aluno
+
+<br>
+
+<br>
+
+### 🖼 Obrigado pela doação
+
+<br>
+<img src="./FCamara_Squad22-main/telasDoSite/obrigado.png" alt="Tela de Agradecimento"> 
 <br>
 
 

@@ -1,0 +1,15 @@
+#pesquisa{
+    /* position: static; */
+    padding: 1rem;
+    background-color: transparent;
+    /* right: 30%; */
+    margin: 2rem 0.5rem;
+}
+
+.home{
+    position: static;
+}  
+
+.home h1{
+    text-align: center;
+}

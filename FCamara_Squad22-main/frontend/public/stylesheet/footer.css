@@ -1,0 +1,38 @@
+.divFooter{
+    width: 100%;
+    height: 8rem;
+    bottom: 0px;
+
+    background: rgb(206, 218, 224);    /* Cinza 1 */
+}
+
+.h3Footer{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+
+    color: #333333;   /* Cinza _ */
+}
+
+.pFooter{
+    font-size: 0.7rem;
+}
+
+#linha1,
+#linha2{
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+#divSociais a img{
+    width: 2rem;
+    height: 2rem;
+    margin-inline: 0.5rem;
+}
+
+#linha2 #linksPaginas ul li a{
+    text-decoration: none;
+    color: #333333;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- CONTEÚDO DO HEAD -->
+    <%- include('../partials/head'); %>
+
+    <title>Resultado de Escolas</title>
+
+    <!-- CSS da Bootstrap da "Lista de Alunos" -->
+    <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- CSS da Página de "Resultados de Alunos" -->
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="stylesheet/schoolResults.css"
+    >
+</head>
+
+<body>
+  <header>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <%- include('../partials/header'); %>
+  </header>
+
+<main>
+    <!-- TÍTULO DA PÁGINA -->
+    <section class="py-5 text-center container home">
+        <div class="row py-lg-5 col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Lista de Alunos</h1>
+        </div>
+    </section>
+
+    <!-- LISTA DE ALUNOS -->
+    <div class="container">
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">Bruce Wiles Nonato</div>
+            <div id="left">
+                <div class="panel-body">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Casamentiss faiz malandris se pirulitá. Manduma pindureta quium dia nois paga. Quem num gosta di mim que vai caçá sua turmis!</div>
+                <button>Itens</button>
+                <button>Contato</button>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Jenifer Lopes Camargo</div>
+            <div id="left">
+                <div class="panel-body">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Casamentiss faiz malandris se pirulitá. Manduma pindureta quium dia nois paga. Quem num gosta di mim que vai caçá sua turmis!</div>
+                <button>Aluno</button>
+                <button>Itens</button>
+                <button>Contato</button>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Afília Demaria de Nazaré</div>
+            <div id="left">
+                <div class="panel-body">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Casamentiss faiz malandris se pirulitá. Manduma pindureta quium dia nois paga. Quem num gosta di mim que vai caçá sua turmis!</div>
+                <button>Aluno</button>
+                <button>Itens</button>
+                <button>Contato</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        
+</main>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+
+</body>
+</html>
