@@ -5,7 +5,7 @@
     font-style: inherit;
 }
 .text, .picture{
-    position:relative;
+
     height: 300px;
     padding: 100px;
     background-color: rgb(184, 190, 195);
@@ -22,7 +22,7 @@
     text-align: center;
 }
 .picture-sobre, .textsobre{
-    position:relative;
+
     height: 300px;
     padding: 100px;
     background-color: rgb(255, 255, 255);
