@@ -1,3 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: Mulish, Helvetica, Arial, sans-serif;
+  }
 .container{
     border: 15px;
     min-height: 0px;
