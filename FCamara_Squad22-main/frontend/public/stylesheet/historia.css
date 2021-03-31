@@ -4,46 +4,57 @@
     font-size: 16px;
     font-family: Mulish, Helvetica, Arial, sans-serif;
   }
+  
 .home{
     background-color: #CEDAE0;
     color: white;
     padding: 5%;
 }
-.bi.bi-water{
+
+.bi .bi-water{
     font-size: 200px;
     text-align: center;
     padding: 0%;
 }
+
 .container{
     border: 15px;
     min-height: 0px;
 }
+
 .div1{
     border: 5px;
     text-align: center;
     padding: 5%;
 }
+
 .div2{
     border: 5px;
     text-align: center;
     padding: 5%;
 }
+
 .title{
     text-align: center;
     width: 100%;
     font-size: 35px;
     font-style: inherit;
 }
-.hwhite,.hgray{
+
+.hwhite,
+.hgray{
     height: 80%;
     padding: 10px;
 }
+
 .hgray{
     background-color: #F7F7F7;
 }
+
 .hwhite{
     background-color:rgb(255, 255, 255);
 }
+
 .card{
     border-radius: 20px;
     padding: 10px;
