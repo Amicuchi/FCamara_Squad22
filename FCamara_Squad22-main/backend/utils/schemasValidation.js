@@ -6,7 +6,7 @@ module.exports.alunoSchema = Joi.object({
         sobrenome: Joi.string().required(),
         rg: Joi.string().required(),
         email: Joi.string().required(),
-        senha: Joi.string().required().min(6),
+        password: Joi.string().required().min(6),
         endereco: Joi.string().required(),
         endereco2: Joi.string().required(),
         nomeResponsavelLegal: Joi.string().required(),
