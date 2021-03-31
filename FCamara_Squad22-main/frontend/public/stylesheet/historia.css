@@ -9,23 +9,25 @@
 .home{
     background-color: #CEDAE0;
     color: white;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
 }
 .container{
     border: 15px;
     min-height: 0px;
+    position: relative;
+    text-align: center;
 }
 .div1,
 .div2{
     border: 5px;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
 }
 .hwhite,
 .hgray{
     height: 80%;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
 }
 .hgray{
@@ -42,7 +44,7 @@
     border: none;
     border-radius: 2rem;
     /* padding: 0.7rem 5rem; */
-    margin: 0rem;
+    margin: 10%;
     width: 18rem;
     height: 3rem;
     font-size: 1rem;
@@ -62,8 +64,9 @@
                         /*CARDS DO SITE*/
 .card{
     border-radius: 20px;
-    padding: 10px;
-    margin-inline: 20%;
+    padding: 0px;
+    width: 20rem;
+    margin-inline: 10%;
     box-shadow: 5px 5px 5px 0px #cbcbcc;
 }
 .card:hover{
@@ -77,5 +80,5 @@
     padding: 2%;
 }
 .bi.bi-water {
-    font-size: 200px;
+    font-size: 150px;
 }
