@@ -6,7 +6,12 @@
   }
 .home{
     background-color: #CEDAE0;
-    padding: 100px;
+    color: white;
+    padding: 10%;
+
+}
+.bi.bi-water{
+    font-size: 200px;
 }
 .container{
     border: 15px;
@@ -15,10 +20,12 @@
 .div1{
     border: 5px;
     text-align: center;
+    padding: 5%;
 }
 .div2{
     border: 5px;
     text-align: center;
+    padding: 5%;
 }
 .title{
     text-align: center;
@@ -27,11 +34,11 @@
     font-style: inherit;
 }
 .hwhite,.hgray{
-    height: 100%;
-    padding: 1px;
+    height: 80%;
+    padding: 10px;
 }
 .hgray{
-    background-color:rgb(184, 190, 195);
+    background-color: #F7F7F7;
 }
 .hwhite{
     background-color:rgb(255, 255, 255);
@@ -41,6 +48,4 @@
     padding: 10px;
     margin-inline: 20%;
     box-shadow: 5px 5px 5px 5px #6b6b6d;
-
-
 }
