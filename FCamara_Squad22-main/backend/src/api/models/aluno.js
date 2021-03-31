@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-const categorias = ['Tintas', 'Cadernos', 'Livros'];
 
 const alunoSchema = new mongoose.Schema({
 
@@ -13,11 +12,36 @@ const alunoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    rg: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    senha: {
+        type: String,
+        min: 6,
+        required: true
+    },
     endereco: {
         type: String,
         required: true
     },
     endereco2: {
+        type: String,
+        required: true
+    },
+    nomeResponsavelLegal: {
+        type: String,
+        required: true
+    },
+    sobrenome: {
+        type: String,
+        required: true
+    },
+    escola: {
         type: String,
         required: true
     },

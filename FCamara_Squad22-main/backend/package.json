@@ -2,9 +2,9 @@
   "name": "fcamara_squad22-main",
   "version": "1.0.0",
   "description": "Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/).",
-  "main": "app.js",
+  "main": "src/loader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,9 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.1.0"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
