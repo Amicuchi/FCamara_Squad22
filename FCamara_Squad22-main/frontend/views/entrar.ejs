@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+  <!-- CONTEÚDO DO HEAD -->
+  <%- include('../partials/head'); %>
+
+  <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="stylesheet/entrar.css"
+  >
+  <title>Entrar</title>
+</head>
+
+<body> 
+  <header>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <%- include('../partials/header'); %>
+  </header>
+
+
+    <div class="container" id="container-index">
+        <div class="row">
+          <div class="col-sm" id="leftSide">
+            <h1 id="h1Initial">Unidos pela Educação</h1>
+            <p id="pInitial">Doando materiais escolares você melhora a educação e transforma vidas.</p>
+          </div>
+
+          <div class="col-sm" id="rightSide">
+            <!-- FORMULÁRIO DE LOGIN DE ALUNO -->
+            <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="passwordLogin" placeholder="Senha">
+                </div>
+                <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
+                <a class="aBotao" href="/dashboard"><button class="btnInicial entrar" id="btnAluno">Sou Aluno</button></a>
+            </form>
+
+            <!-- BOTÃO PARA ABRIR O CADASTRO DE ALUNO -->
+            <a class="aBotao" href="doar"><button class="btnInicial doar" id="btnDoacao">Cadastrar Aluno</button></a>
+          </div>
+        </div>
+    </div>
+
+  <footer>
+      <%- include('../partials/footer'); %>
+  </footer>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
