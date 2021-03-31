@@ -10,13 +10,6 @@
     color: white;
     padding: 5%;
 }
-
-.bi .bi-water{
-    font-size: 200px;
-    text-align: center;
-    padding: 15%;
-}
-
 .container{
     border: 15px;
     min-height: 0px;
@@ -43,21 +36,25 @@
 
 .hwhite,
 .hgray{
-    height: 80%;
-    padding: 10px;
+    padding: 5%;
+    text-align: center;
 }
 
 .hgray{
     background-color: #F7F7F7;
-}
 
+}
 .hwhite{
     background-color:rgb(255, 255, 255);
 }
-
 .card{
     border-radius: 20px;
     padding: 10px;
     margin-inline: 20%;
     box-shadow: 5px 5px 5px 5px #6b6b6d;
+}
+.bi.bi-person-circle, .bi.bi-water{
+    font-size: 300%;
+    color:#474747;
+    padding: 2%;
 }
