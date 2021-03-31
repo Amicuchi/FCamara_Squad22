@@ -32,7 +32,11 @@ const AlunoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    responsavelLegal: {
+    nomeResponsavelLegal: {
+        type: String,
+        required: true
+    },
+    sobrenome: {
         type: String,
         required: true
     },
