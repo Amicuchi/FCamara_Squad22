@@ -7,11 +7,12 @@
 .home{
     background-color: #CEDAE0;
     color: white;
-    padding: 10%;
-
+    padding: 5%;
 }
 .bi.bi-water{
     font-size: 200px;
+    text-align: center;
+    padding: 0%;
 }
 .container{
     border: 15px;
