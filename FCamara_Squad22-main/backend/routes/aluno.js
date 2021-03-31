@@ -22,10 +22,15 @@ alunoRouter.get('/registrar', (req, res) => {
 });
 
 alunoRouter.post('/registrar', validateAluno, catchAsync(async (req, res) => {
-    const aluno = new Aluno(req.body.aluno)
-    await aluno.save();
-    res.redirect('/');
+    const aluno = (req.body.aluno);
+    const criarAluno = new Aluno(aluno);
+    const registrarAluno = await Aluno.register(criarAluno, aluno.password);
+    res.redirect('/aluno/perfil');
 }));
+
+alunoRouter.get('/perfil', async (req, res) => {
+    res.render('menu-aluno');
+})
 
 alunoRouter.get('/doacao/obrigado', (req, res) => {
     res.render('thanks');
