@@ -1,0 +1,29 @@
+.menu-superior{
+    background-color: white;
+    height: 3rem;
+
+}
+
+#logo-header{
+    width: 2.5rem;
+}
+
+.nav-item{
+    border-radius: 3rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    border-radius: 3rem;
+    color: white;
+    background-color: #A9B3B7;
+}
+
+.home{
+    margin-top: 5rem;
+}

@@ -1,44 +1,38 @@
 .divFooter{
-    position: absolute;
     width: 100%;
-    height: 15rem;
+    height: 8rem;
+    bottom: 0px;
 
-    /* Cinza 1 */
-    background: #CEDAE0;
+    background: rgb(206, 218, 224);    /* Cinza 1 */
 }
 
 .h3Footer{
-    font-size: 1.5rem;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+
+    color: #333333;   /* Cinza _ */
 }
 
 .pFooter{
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
-#linha1{
-
-}
-
+#linha1,
 #linha2{
-
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
 }
 
-#divDonate{
-
+#divSociais a img{
+    width: 2rem;
+    height: 2rem;
+    margin-inline: 0.5rem;
 }
 
-#divContato{
-
-}
-
-#divSociais{
-
-}
-
-#linksPaginas{
-
-}
-
-#copyright{
-
+#linha2 #linksPaginas ul li a{
+    text-decoration: none;
+    color: #333333;
 }

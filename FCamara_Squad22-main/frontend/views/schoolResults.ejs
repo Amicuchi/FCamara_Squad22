@@ -1,38 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- CSS do Bootstrap --> 
-  <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous">
-
-  <!-- CSS Geral do Site -->
-  <!-- <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="stylesheet/style.css"
-  > -->
-  
-  <!-- CSS da Barra de Menu -->
-  <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="stylesheet/menu.css"
-  >
-
-  <!-- CSS do Footer -->
-  <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="../public/stylesheet/footer.css"
-  >
+    <!-- CONTEÚDO DO HEAD -->
+    <%- include('../partials/head'); %>
 
     <title>Resultado de Escolas</title>
 
@@ -47,13 +17,6 @@
         type="text/css" 
         href="stylesheet/schoolResults.css"
     >
-
-    <!-- CSS da Barra de Menu -->
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
-        href="/FCamara_Squad22-main/frontend/public/stylesheet/menu.css"
-    >
 </head>
 
 <body>
@@ -64,7 +27,7 @@
 
 <main>
     <!-- TÍTULO DA PÁGINA -->
-    <section class="py-5 text-center container topo">
+    <section class="py-5 text-center container home">
         <div class="row py-lg-5 col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Lista de Alunos</h1>
         </div>
