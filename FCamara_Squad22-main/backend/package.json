@@ -2,7 +2,7 @@
   "name": "fcamara_squad22-main",
   "version": "1.0.0",
   "description": "Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/).",
-  "main": "src/loader.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon"
   },

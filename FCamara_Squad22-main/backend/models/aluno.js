@@ -3,45 +3,12 @@ const passportLocalMongoose = require('passport-local-mongoose');
 
 
 const alunoSchema = new mongoose.Schema({
-
-    nome: {
+    
+    nomeResponsavel: {
         type: String,
         required: true
     },
-    sobrenome: {
-        type: String,
-        required: true
-    },
-    rg: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    senha: {
-        type: String,
-        min: 6,
-        required: true
-    },
-    endereco: {
-        type: String,
-        required: true
-    },
-    endereco2: {
-        type: String,
-        required: true
-    },
-    nomeResponsavelLegal: {
-        type: String,
-        required: true
-    },
-    sobrenome: {
-        type: String,
-        required: true
-    },
-    escola: {
+    sobrenomeResponsavel: {
         type: String,
         required: true
     },
@@ -53,7 +20,36 @@ const alunoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    cep: {
+    logradouro: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        min: 8,
+        required: true
+    },
+    nomeAluno: {
+        type: String,
+        required: true
+    },
+    sobrenomeAluno: {
+        type: String,
+        required: true
+    },
+    escola: {
+        type: String,
+        required: true
+    },
+    declaracaoMatricula: {
+        type: String,
+        required: true
+    },
+    rg: {
         type: String,
         required: true
     }
