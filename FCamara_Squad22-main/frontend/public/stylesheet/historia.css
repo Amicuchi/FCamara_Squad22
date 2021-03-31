@@ -10,7 +10,7 @@
     padding: 10%;
 
 }
-.bi.bi-water{
+.bi.bi-water {
     font-size: 200px;
 }
 .container{
@@ -33,9 +33,12 @@
     font-size: 35px;
     font-style: inherit;
 }
-.hwhite,.hgray{
+.hwhite,
+.hgray{
     height: 80%;
     padding: 10px;
+    padding: 5%;
+    text-align: center;
 }
 .hgray{
     background-color: #F7F7F7;
@@ -48,4 +51,9 @@
     padding: 10px;
     margin-inline: 20%;
     box-shadow: 5px 5px 5px 5px #6b6b6d;
+}
+.bi.bi-person-circle{
+    font-size: 300%;
+    color: #474747;
+    padding: 2%;
 }
