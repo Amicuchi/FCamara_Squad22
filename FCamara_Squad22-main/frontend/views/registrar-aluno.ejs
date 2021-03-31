@@ -4,74 +4,115 @@
 <head>
   <!-- CONTEÚDO DO HEAD -->
   <%- include('../partials/head'); %>
-
+  
+  <link rel="stylesheet" href="/stylesheet/registrar.css">
   <title>Registrar</title>
 </head>
 
 <body>
   <header>
     <!-- BARRA DE NAVEGAÇÃO -->
-    <%- include('../partials/header'); %>
+    <%- include('../partials/header') %> 
   </header>
 
   <section class="container my-5 home">
-    <form action="/aluno/registrar" method="POST">
-      <div class="form-group row">
+    <h1 class="display-5">Cadastro de Aluno</h1>
+    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data">
+      <div class="form-group row mt-3">
         <div class="col-md-6">
-          <label for="name">Nome</label>
-          <input type="text" class="form-control" placeholder="Nome" id="name" name="aluno[nome]">
+          <label for="nameResp">Nome do pai ou responsável</label>
+          <input type="text" class="form-control" id="nameResp" name="aluno[nomeResponsavel]">
         </div>
         <div class="col-md-6">
-          <label for="lastname">Sobrenome</label>
-          <input type="text" class="form-control" placeholder="Sobrenome" id="lastname" name="aluno[sobrenome]">
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="aluno[email]">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4">Senha</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" name="aluno[password]">
+          <label for="lastnameResp">Sobrenome</label>
+          <input type="text" class="form-control" id="lastnameResp" name="aluno[sobrenomeResponsavel]">
         </div>
       </div>
-      <div class="form-group">
-        <label for="inputAddress">Endereço</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0" name="aluno[endereco]">
-      </div>
-      <div class="form-group">
-        <label for="inputAddress2">Endereço 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc." name="aluno[endereco2]">
-      </div>
-      <div class="form-group row">
-        <div class="col-md-6">
-          <label for="inputCity">Cidade</label>
-          <input type="text" class="form-control" id="inputCity" name="aluno[cidade]">
+      <div class="form-group row mt-3">
+        <div class="col-8 col-md-3">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control" id="cidade" name="aluno[cidade]">
         </div>
-        <div class="col-md-4">
-          <label for="inputEstado">Estado</label>
-          <select id="inputEstado" class="form-control" name="aluno[estado]">
+        <div class="col-4 col-md-2">
+          <label for="estado">Estado</label>
+          <select id="estado" class="form-control" name="aluno[estado]">
             <option value="" disabled selected hidden>Estado</option>
             <% for (let es of estados) {%>
               <option value="<%= es %>"><%= es %></option>
-            <% } %> 
+            <% } %>
           </select>
         </div>
-        <div class="col-md-2">
-          <label for="inputCEP">CEP</label>
-          <input type="text" class="form-control" id="inputCEP" name="aluno[cep]">
+        <div class="col-md-7">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" name="aluno[logradouro]" id="logradouro" class="form-control">
         </div>
       </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Clique em mim
-          </label>
+      <div class="form-group mt-3">
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" class="form-control" id="email" name="aluno[email]">
+      </div>
+      <div class="form-group row mt-3">
+        <div class="col-md-6">
+          <label for="password">Senha</label>
+          <input type="password" class="form-control" id="password" name="aluno[password]">
+        </div>
+        <div class="col-md-6">
+          <label for="confirmPassword">Confirmar senha</label>
+          <input type="password" class="form-control" id="confirmPassword" name="aluno[password]">
+        </div>
+        <small id="passwordHelp" class="form-text text-muted ml-3">Digite uma senha de 8 caracteres ou mais</small>
+      </div>
+      <h2 class="display-5">Dados do aluno</h2>
+
+      <div class="form-group row mt-3">
+        <div class="col-md-6">
+          <label for="nomeAluno">Nome do aluno</label>
+          <input type="text" class="form-control" name="aluno[nomeAluno]" id="nomeAluno">
+        </div>
+        <div class="col-md-6">
+          <label for="sobrenomeAluno">Sobrenome</label>
+          <input type="text" name="aluno[sobrenomeAluno]" id="sobrenomeAluno" class="form-control">
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <div class="form-group mt-3">
+        <label for="escola">Nome da Escola</label>
+        <input type="text" name="aluno[escola]" id="escola" class="form-control">
+      </div>
+      <div class="form-group row mt-4">
+        <div class="col-md-6">
+          <label for="matricula">Declaração de matricula</label>
+          <div class="input-group">
+            <div class="custom-file ">
+              <input type="file" class="custom-file-input" id="matricula" name="aluno[matricula]">
+              <label class="custom-file-label" for="matricula">Choose file</label>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary btn-file" type="button" id="btn-matricula"><i class="bi bi-upload"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="rg">RG do aluno</label>
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="rg" name="aluno[rg]">
+              <label class="custom-file-label" for="rg">Choose file</label>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary btn-file" type="button" id="btn-rg"><i class="bi bi-upload"></i></button>
+            </div>
+          </div>
+        </div>
+        <small id="emailHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
+      </div>
+      <div class="form-group mt-5">
+        <p>Ao clicar em CADASTRAR, você concorda com os nossos <a href="#">Termos, Política de Dados e Política de Cookies</a>.</p>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <button type="submit" class="btn btn-primary" id="cadastro">Cadastrar</button>
+        </div>
+      </div>
     </form>
   </section>
 
@@ -81,6 +122,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
+  <script src="/js/passwordMatch.js"></script>
 </body>
 
 </html>
