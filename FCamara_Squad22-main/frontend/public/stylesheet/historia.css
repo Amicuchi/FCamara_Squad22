@@ -10,6 +10,7 @@
     background-color: #CEDAE0;
     color: white;
     padding: 5%;
+    text-align: center;
 }
 .container{
     border: 15px;
@@ -32,6 +33,23 @@
 }
 .hwhite{
     background-color:rgb(255, 255, 255);
+}
+                        /*BOTÕES DO SITE*/
+
+.btnInicial {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    /* padding: 0.7rem 5rem; */
+    margin: 0rem;
+    width: 18rem;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #A9B3B7;
+    color: white;
 }
                         /*LETRAS E FONTES DO SITE*/
 .title{
