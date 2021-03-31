@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 const categorias = ['Tintas', 'Cadernos', 'Livros'];
 
-const AlunoSchema = new mongoose.Schema({
+const alunoSchema = new mongoose.Schema({
 
     nome: {
         type: String,
@@ -10,15 +11,6 @@ const AlunoSchema = new mongoose.Schema({
     },
     sobrenome: {
         type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    senha: {
-        type: String,
-        min: 6,
         required: true
     },
     endereco: {
@@ -43,6 +35,6 @@ const AlunoSchema = new mongoose.Schema({
     }
 })
 
+alunoSchema.plugin(passportLocalMongoose, {usernameField: 'email'})
 
-
-module.exports = mongoose.model('Aluno', AlunoSchema);
+module.exports = mongoose.model('Aluno', alunoSchema);
