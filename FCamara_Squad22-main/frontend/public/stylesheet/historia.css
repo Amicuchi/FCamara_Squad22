@@ -4,38 +4,28 @@
     font-size: 16px;
     font-family: Mulish, Helvetica, Arial, sans-serif;
   }
+
+                        /*LAYOUT ESTRUTURA DO SITE*/
 .home{
     background-color: #CEDAE0;
     color: white;
-    padding: 10%;
-
-}
-.bi.bi-water{
-    font-size: 200px;
+    padding: 5%;
 }
 .container{
     border: 15px;
     min-height: 0px;
 }
-.div1{
-    border: 5px;
-    text-align: center;
-    padding: 5%;
-}
+.div1,
 .div2{
     border: 5px;
     text-align: center;
     padding: 5%;
 }
-.title{
-    text-align: center;
-    width: 100%;
-    font-size: 35px;
-    font-style: inherit;
-}
-.hwhite,.hgray{
+.hwhite,
+.hgray{
     height: 80%;
-    padding: 10px;
+    padding: 5%;
+    text-align: center;
 }
 .hgray{
     background-color: #F7F7F7;
@@ -43,9 +33,31 @@
 .hwhite{
     background-color:rgb(255, 255, 255);
 }
+                        /*LETRAS E FONTES DO SITE*/
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    font-style: inherit;
+}
+
+                        /*CARDS DO SITE*/
 .card{
     border-radius: 20px;
     padding: 10px;
     margin-inline: 20%;
-    box-shadow: 5px 5px 5px 5px #6b6b6d;
+    box-shadow: 5px 5px 5px 0px #cbcbcc;
+}
+.card:hover{
+    transition: 0.5s;
+	transform: scale(1.02,1.02);
+}
+                        /*ICONS DO SITE*/
+.bi.bi-person-circle{
+    font-size: 300%;
+    color: #474747;
+    padding: 2%;
+}
+.bi.bi-water {
+    font-size: 200px;
 }
