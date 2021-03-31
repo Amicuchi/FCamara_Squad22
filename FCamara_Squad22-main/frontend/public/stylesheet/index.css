@@ -1,90 +1,61 @@
-*{
-  padding: 0px;
-  margin: 0px;
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    font-style: inherit;
 }
 
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.text, 
+.picture{
+
+    height: 300px;
+    padding: 100px;
+    background-color: rgb(184, 190, 195);
 }
 
-.container{
-  height: 90vh;
-  width: 90%;
-  margin: 5vh 5%;
-
-  display: flex;
+.text{
+    float: left;
+    width:65%;
+    margin:auto;
+    text-align: center;
 }
 
-#leftSide,
-#rightSide {
-  height: 40vh;
-  text-align: center;
-  padding: 1rem 2rem;
-  margin: 1rem;
-  /* background-color: #f0f2f5; */
-  /* border-radius: 3rem; */
-
-  align-self: center;
-  justify-content: center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.picture{
+    float: right;
+    width:35%;
+    text-align: center;
 }
 
-#h1Initial{
-  font-size: 2.5rem;
+.picture-sobre, 
+.textsobre{
+
+    height: 300px;
+    padding: 100px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 
-#pInitial{
-  font-size: 1.5rem;
+.picture-sobre{
+    float: left;
+    width:35%;
 }
 
-.btnInicial {
-  display: block;
-  cursor: pointer;
-  border: none;
-  border-radius: 1rem;
-  /* padding: 0.7rem 5rem; */
-  margin: 0rem;
-  width: 18rem;
-  height: 3rem;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
+.textsobre{
+    float: right;
+    width:65%;
+    margin:auto;
 }
 
-.entrar{
-  background-color: #1877f2;
+.hwhite, 
+.hgray{
+    height: 100%;
+    padding: 1px;
 }
 
-.doar{
-  background-color: #b919b9;
-  margin-top: 2rem;
+.hgray{
+    background-color:rgb(184, 190, 195);
 }
 
-button:hover{
-    background-color: rgb(7, 177, 21);
-}
-
-#emailLogin,
-#passwordLogin{
-  width: 18rem;
-  text-align: center;
-  border-radius: 0.5rem;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.aBotao{
-  text-decoration: none;
+.hwhite{
+    background-color:rgb(255, 255, 255);
 }

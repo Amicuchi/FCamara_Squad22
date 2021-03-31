@@ -1,5 +1,5 @@
 <div class="container divFooter">
-    <div class="w-100" id="linha1">
+    <div class="row w-100" id="linha1">
         <div class="col" id="divDonate">
             <h3 class="h3Footer">Donate</h3>
             <p class="pFooter">A Donate trabalha pela transformação social auxiliando na aquisição de materiais escolares e dispositivos móveis para alunos de escolas públicas.</p>
@@ -10,23 +10,25 @@
         </div>
         <div class="col" id="divSociais">
             <h3 class="h3Footer" id="sociaisFooter">Acompanhe-nos nas Redes Sociais</h3>
-            <a href="http://"><img src="" alt=""/></a>
-            <a href="http://"><img src="" alt=""/></a>
-            <a href="http://"><img src="" alt=""/></a>
+            <a href="http://youtube.com/"><img src="/img/Yt.png" alt="YouTube"/></a>
+            <a href="http://linkedin.com/"><img src="/img/in.png" alt="YouTube"/></a>
+            <a href="http://facebook.com/"><img src="/img/Fb.png" alt="Facebook"/></a>
+            <a href="http://instagram.com/"><img src="/img/ig.png" alt="Instagram"/></a>
+            <a href="http://twitter.com/"><img src="/img/tt.png" alt="YouTube"/></a>
         </div>
     </div>
-    <div class="w-100" id="linha2">
-        <div id="linksPaginas">
-            <ul  class="row justify-content-between">
-                <li><a class="nav-link pFooter" id="inicio" href="../views/index.ejs">Página Inicial</a></li>
-                <li><a class="nav-link pFooter" id="doar" href="../views/doar">Seja um doador</a></li>
-                <li><a class="nav-link pFooter" id="colaborar" href="../views/colaborar.ejs">Seja um colaborador</a></li>
-                <li><a class="nav-link pFooter" id="cadastroAluno" href="../views/registrar-aluno.ejs">Cadastre-se</a></li>
-                <li><a class="nav-link pFooter" id="historias" href="../views/historias.ejs">Nossas histórias</a></li>
-                <li><a class="nav-link pFooter" id="login" href="../views/index.ejs">Entrar</a></li>
+    <div class="row w-100 align-items-center" id="linha2">
+        <div class="col-8" id="linksPaginas">
+            <ul class="col list-inline list-unstyled justify-content-between">
+                <li class="list-inline-item"><a class="nav-link pFooter" id="inicio" href="../views/index.ejs">Página Inicial</a></li>
+                <li class="list-inline-item"><a class="nav-link pFooter" id="doar" href="../views/doar">Sou doador</a></li>
+                <!-- <li class="list-inline-item"><a class="nav-link pFooter" id="colaborar" href="../views/colaborar.ejs">Seja um colaborador</a></li> -->
+                <li class="list-inline-item"><a class="nav-link pFooter" id="cadastroAluno" href="../views/registrar-aluno.ejs">Sou aluno</a></li>
+                <li class="list-inline-item"><a class="nav-link pFooter" id="historias" href="../views/historias.ejs">Nossas histórias</a></li>
+                <!-- <li class="list-inline-item"><a class="nav-link pFooter" id="login" href="../views/index.ejs">Entrar</a></li> -->
             </ul>
         </div>
-        <div id="copyright">
+        <div class="col-4" id="copyright">
             <p class="pFooter">Copyright © 2021 Donate. Todos os direitos reservados.</p>
         </div>
     </div>
@@ -42,4 +44,3 @@ crossorigin="anonymous">
 
 <!-- Script da Equipe -->
 <script src="../js/script.js"></script>
-

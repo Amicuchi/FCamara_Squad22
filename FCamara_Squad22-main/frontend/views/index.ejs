@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- CONTEÚDO DO HEAD -->
     <%- include('../partials/head'); %>
 
+    <!-- CSS DA INDEX -->
     <link 
         rel="stylesheet" 
         type="text/css" 
         href="stylesheet/index.css"
     >
-    <title>Página inicial</title>
+    <title>Nossa História</title>
 </head>
 
 <body>
-    <div class="container" id="container-index">
-        <div class="row">
-          <div class="col-sm" id="leftSide">
-            <h1 id="h1Initial">Unidos pela Educação</h1>
-            <p id="pInitial">Doando materiais escolares você melhora a educação e transforma vidas.</p>
-          </div>
+    <header>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <%- include('../partials/header'); %>
+    </header>
 
-          <div class="col-sm" id="rightSide">
-            <!-- FORMULÁRIO DE LOGIN DE ALUNO -->
-            <form>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="Digite seu email">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" id="passwordLogin" placeholder="Senha">
-                </div>
-                <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
-                <a class="aBotao" href="dashboard"><button class="btnInicial entrar" id="btnAluno">Sou Aluno</button></a>
-                <!-- LINK PARA ABRIR O CADASTRO DE ALUNO -->
-                <a href="/registrar-aluno">Sou aluno e não tenho cadastro</a>
-            </form>
-
-            <!-- BOTÃO PARA ABRIR O CADASTRO DE DOADOR -->
+    <!-- O PROJETO-->
+    <section class="hgray home"> 
+        <div class="text">
+             <h3>
+             Ajudamos você a fazer a diferança na vida de outras pessoas através de doações
+             </h3>
+             <!-- BOTÃO PARA ABRIR O CADASTRO DE DOADOR -->
             <a class="aBotao" href="doar"><button class="btnInicial doar" id="btnDoacao">Faça uma doação</button></a>
-          </div>
         </div>
-    </div>
-    
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-        crossorigin="anonymous">
-    </script>
-    <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
-        crossorigin="anonymous">
-    </script>
-    <script 
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
-        crossorigin="anonymous">
+        <div class="picture">  <!-- FOTO A DIREITA-->
+            <h3> Foto
+            </h3>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS-->
+    <section class="hwhite">
+        <header class="title"> -Quem somos-</header>
+        <div class="picture-sobre">
+            <h3>
+             A FOTO É AQUI
+             </h3>
+        </div>
+        <div class="textsobre">
+            <h6> Aqui seu gesto vale muito!</h6>
+            <p>A Donate trabalha pela transformação social auxiliando na aquisição de materiais escolares e dispositivos móveis para alunos de escolas municipais e estaduais.</p>
+            <p>Estamos sempre em busca de uma sociedade mais humana.</p>
+            <p>Faça parte desse projeto!</p>
+        </div>
+    </section>
+
+    <!-- SEJA UM DOADOR-->
+    <section class="hgray"> 
+        <header class="title"> -Seja um doador-</header>
+            <h3>
+            Doação de Materiais Escolares (Saiba mais...)<br>
+            Doação de Materiais Escolares (Saiba mais...)<br>
+            Doação de Materiais Escolares (Saiba mais...)<br>
+            </h3>
+    </section>
+
+    <!-- HISTÓRIAS-->
+    <section class="hwhite">
+        <header class="title"> -Nossas histórias-</header>
+        <h3>
+        Doação de Materiais Escolares (Saiba mais...)<br>
+        Doação de Materiais Escolares (Saiba mais...)<br>
+        Doação de Materiais Escolares (Saiba mais...)<br>
+        </h3>
+    </section>
+
+    <!-- COLABORADORES-->
+    <section class="hgray">
+        <header class="title"> -Colaboradores-</header>
+        <h3>
+        Doação de Materiais Escolares (Saiba mais...)<br>
+        Doação de Materiais Escolares (Saiba mais...)<br>
+        Doação de Materiais Escolares (Saiba mais...)<br>
+        </h3>
+    </section>
+
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
