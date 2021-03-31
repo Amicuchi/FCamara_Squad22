@@ -1,0 +1,23 @@
+#cadastro {
+    width: 50%;
+    max-width: 370px;
+    border-radius: 55px;
+}
+
+.custom-file-label{
+    border-right: none;
+    border-radius: 0;
+}
+
+.custom-file-label::after {
+    display: none;
+}
+
+.btn-file {
+    border-color: #CED4DA;
+    border-left: none;
+}
+
+.termos {
+    text-decoration: underline;
+}

@@ -4,45 +4,41 @@
     font-size: 16px;
     font-family: Mulish, Helvetica, Arial, sans-serif;
   }
-
 .home{
     background-color: #CEDAE0;
     color: white;
-    padding: 5%;
+    padding: 10%;
+
+}
+.bi.bi-water{
+    font-size: 200px;
 }
 .container{
     border: 15px;
     min-height: 0px;
 }
-
 .div1{
     border: 5px;
     text-align: center;
     padding: 5%;
 }
-
 .div2{
     border: 5px;
     text-align: center;
     padding: 5%;
 }
-
 .title{
     text-align: center;
     width: 100%;
     font-size: 35px;
     font-style: inherit;
 }
-
-.hwhite,
-.hgray{
-    padding: 5%;
-    text-align: center;
+.hwhite,.hgray{
+    height: 80%;
+    padding: 10px;
 }
-
 .hgray{
     background-color: #F7F7F7;
-
 }
 .hwhite{
     background-color:rgb(255, 255, 255);
@@ -52,9 +48,4 @@
     padding: 10px;
     margin-inline: 20%;
     box-shadow: 5px 5px 5px 5px #6b6b6d;
-}
-.bi.bi-person-circle, .bi.bi-water{
-    font-size: 300%;
-    color:#474747;
-    padding: 2%;
 }
