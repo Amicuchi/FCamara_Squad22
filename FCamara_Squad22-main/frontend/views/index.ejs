@@ -23,14 +23,15 @@
 
           <div class="col-sm" id="rightSide">
             <!-- FORMULÁRIO DE LOGIN DE ALUNO -->
-            <form>
-              <header>E-mail: </header>
+
+            <form action="/login" method="POST">
+
                 <div class="form-group">
-                  <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="Digite seu email">
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email" name="email">
                 </div>
               <header>Senha: </header>
                 <div class="form-group">
-                  <input type="password" class="form-control" id="passwordLogin" placeholder="Senha">
+                  <input type="password" class="form-control" id="password" placeholder="Senha" name="password">
                 </div>
                 <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
                 <a class="aBotao" href="/dashboard"><button class="btnInicial entrar" id="btnAluno">Sou Aluno</button></a>
