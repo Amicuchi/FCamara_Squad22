@@ -9,6 +9,7 @@ const ExpressError = require('./utils/ExpressError');
 const Aluno = require('./models/aluno');
 const indexRoutes = require('./routes/index');
 const alunoRoutes = require('./routes/aluno');
+const devRoutes = require('./routes/devRoutes');
 
 const app = express();
 
@@ -61,6 +62,8 @@ app.set('views', path.join(__dirname, '../frontend/views'));
 app.use('/', indexRoutes);
 
 app.use('/aluno', alunoRoutes);
+
+app.use('/', devRoutes);
 
 app.all('*', (req, res, next) => {
     next(new ExpressError('Page Not Found', 404))

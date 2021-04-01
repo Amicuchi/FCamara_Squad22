@@ -12,5 +12,5 @@ module.exports.alunoSchema = Joi.object({
         nomeAluno: Joi.string().required(),
         sobrenomeAluno: Joi.string().required(),
         escola: Joi.string().required(),
-    }).required()
+    })
 })

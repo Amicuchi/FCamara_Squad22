@@ -5,8 +5,9 @@
   <!-- CONTEÚDO DO HEAD -->
   <%- include('../partials/head'); %>
   
-  <link rel="stylesheet" href="/stylesheet/registrar.css">
   <title>Registrar</title>
+  <link rel="stylesheet" href="/stylesheet/registrar.css">
+  
 </head>
 
 <body>
@@ -17,25 +18,25 @@
 
   <section class="container my-5 home">
     <h1 class="display-5">Cadastro de Aluno</h1>
-    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data">
+    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
       <div class="form-group row mt-3">
         <div class="col-md-6">
           <label for="nameResp">Nome do pai ou responsável</label>
-          <input type="text" class="form-control" id="nameResp" name="aluno[nomeResponsavel]">
+          <input type="text" class="form-control" id="nameResp" name="aluno[nomeResponsavel]" required>
         </div>
         <div class="col-md-6">
           <label for="lastnameResp">Sobrenome</label>
-          <input type="text" class="form-control" id="lastnameResp" name="aluno[sobrenomeResponsavel]">
+          <input type="text" class="form-control" id="lastnameResp" name="aluno[sobrenomeResponsavel]" required>
         </div>
       </div>
       <div class="form-group row mt-3">
         <div class="col-8 col-md-3">
           <label for="cidade">Cidade</label>
-          <input type="text" class="form-control" id="cidade" name="aluno[cidade]">
+          <input type="text" class="form-control" id="cidade" name="aluno[cidade]" required>
         </div>
         <div class="col-4 col-md-2">
           <label for="estado">Estado</label>
-          <select id="estado" class="form-control" name="aluno[estado]">
+          <select id="estado" class="form-control" name="aluno[estado]" required>
             <option value="" disabled selected hidden>Estado</option>
             <% for (let es of estados) {%>
               <option value="<%= es %>"><%= es %></option>
@@ -44,46 +45,47 @@
         </div>
         <div class="col-md-7">
           <label for="logradouro">Logradouro</label>
-          <input type="text" name="aluno[logradouro]" id="logradouro" class="form-control">
+          <input type="text" name="aluno[logradouro]" id="logradouro" class="form-control" required>
         </div>
       </div>
       <div class="form-group mt-3">
         <label for="email">Endereço de e-mail</label>
-        <input type="email" class="form-control" id="email" name="aluno[email]">
+        <input type="email" class="form-control" id="email" name="aluno[email]" required>
       </div>
       <div class="form-group row mt-3">
         <div class="col-md-6">
           <label for="password">Senha</label>
-          <input type="password" class="form-control" id="password" name="aluno[password]">
+          <input type="password" class="form-control" id="password" name="aluno[password]" required>
+          <small id="passwordHelp" class="form-text text-muted ml-3">Digite uma senha de 8 caracteres ou mais</small>
         </div>
         <div class="col-md-6">
           <label for="confirmPassword">Confirmar senha</label>
-          <input type="password" class="form-control" id="confirmPassword" name="aluno[password]">
+          <input type="password" class="form-control" id="confirmPassword" name="aluno[confirmPassword]" required>
+          <small id="message" class="form-text"></small>
         </div>
-        <small id="passwordHelp" class="form-text text-muted ml-3">Digite uma senha de 8 caracteres ou mais</small>
       </div>
       <h2 class="display-5">Dados do aluno</h2>
 
       <div class="form-group row mt-3">
         <div class="col-md-6">
           <label for="nomeAluno">Nome do aluno</label>
-          <input type="text" class="form-control" name="aluno[nomeAluno]" id="nomeAluno">
+          <input type="text" class="form-control" name="aluno[nomeAluno]" id="nomeAluno" required>
         </div>
         <div class="col-md-6">
           <label for="sobrenomeAluno">Sobrenome</label>
-          <input type="text" name="aluno[sobrenomeAluno]" id="sobrenomeAluno" class="form-control">
+          <input type="text" name="aluno[sobrenomeAluno]" id="sobrenomeAluno" class="form-control" required>
         </div>
       </div>
       <div class="form-group mt-3">
         <label for="escola">Nome da Escola</label>
-        <input type="text" name="aluno[escola]" id="escola" class="form-control">
+        <input type="text" name="aluno[escola]" id="escola" class="form-control" required>
       </div>
       <div class="form-group row mt-4">
         <div class="col-md-6">
           <label for="matricula">Declaração de matricula</label>
           <div class="input-group">
             <div class="custom-file ">
-              <input type="file" class="custom-file-input" id="matricula" name="aluno[matricula]">
+              <input type="file" class="custom-file-input" id="matricula" name="aluno[matricula]" style="display: none;" required>
               <label class="custom-file-label" for="matricula">Choose file</label>
             </div>
             <div class="input-group-append">
@@ -95,7 +97,7 @@
           <label for="rg">RG do aluno</label>
           <div class="input-group">
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="rg" name="aluno[rg]">
+              <input type="file" class="custom-file-input" id="rg" name="aluno[rg]" required>
               <label class="custom-file-label" for="rg">Choose file</label>
             </div>
             <div class="input-group-append">
@@ -103,7 +105,7 @@
             </div>
           </div>
         </div>
-        <small id="emailHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
+        <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
       </div>
       <div class="form-group mt-5">
         <p>Ao clicar em CADASTRAR, você concorda com os nossos <a href="#">Termos, Política de Dados e Política de Cookies</a>.</p>
@@ -123,6 +125,8 @@
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
   <script src="/js/passwordMatch.js"></script>
+  <script src="/js/formValidation.js"></script>
+  <script src="/js/displayFilename.js"></script>
 </body>
 
 </html>

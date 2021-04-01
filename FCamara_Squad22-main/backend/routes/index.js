@@ -11,7 +11,7 @@ indexRouter.get('/login', (req, res) => {
     res.render('entrar');
 });
 
-indexRouter.post('/login', passport.authenticate('local', {failureRedirect: '/'}), (req, res) => {
+indexRouter.post('/login', passport.authenticate('local', {failureRedirect: '/login'}), (req, res) => {
     res.redirect('/dashboard');
 });
 
@@ -20,8 +20,8 @@ indexRouter.get('/pesquisa', (req, res) => {
 });
 
 indexRouter.get('/dashboard', isLoggedIn, (req, res) => {
-    const {nome} = req.user;
-    res.render('dashboard', {nome});
+    const {nomeResponsavel} = req.user;
+    res.render('dashboard', {nomeResponsavel});
 });
 
 indexRouter.get('/doar', (req, res) => {
