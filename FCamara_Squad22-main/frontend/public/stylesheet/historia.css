@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-size: 16px;
-    font-family: Mulish, Helvetica, Arial, sans-serif;
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
   }
 
                         /*LAYOUT ESTRUTURA DO SITE*/
@@ -44,8 +44,9 @@
     border: none;
     border-radius: 2rem;
     /* padding: 0.7rem 5rem; */
-    margin: 10%;
-    width: 18rem;
+    margin-top: 5%;
+    margin-left: 0%;
+    width: 10rem;
     height: 3rem;
     font-size: 1rem;
     text-align: center;
@@ -53,20 +54,30 @@
     background-color: #A9B3B7;
     color: white;
 }
-                        /*LETRAS E FONTES DO SITE*/
+                        /*LETRAS E LINHAS DO SITE*/
 .title{
     text-align: center;
     width: 100%;
     font-size: 35px;
-    font-style: inherit;
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+}
+h4{
+    font-size: 20px;
+    text-align: justify;
+}
+h3{
+    text-align: start;
 }
 
                         /*CARDS DO SITE*/
 .card{
     border-radius: 20px;
     padding: 0px;
-    width: 20rem;
-    margin-inline: 10%;
+    width: 18rem;
+    margin-inline: 5%;
     box-shadow: 5px 5px 5px 0px #cbcbcc;
 }
 .card:hover{
@@ -75,7 +86,7 @@
 }
                         /*ICONS DO SITE*/
 .bi.bi-person-circle{
-    font-size: 300%;
+    font-size: 350%;
     color: #474747;
     padding: 2%;
 }
