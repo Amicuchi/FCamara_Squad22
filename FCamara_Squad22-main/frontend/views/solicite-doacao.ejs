@@ -8,7 +8,7 @@
   <link 
       rel="stylesheet" 
       type="text/css" 
-      href="/stylesheet/entrar.css"
+      href="/stylesheet/solicite-doacao.css"
   >
   <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
   <title>Solicite uma Doação</title>
@@ -26,27 +26,59 @@
 
             <div class="col-md-4 div1"> <!-- COLUNA 1-->
 
-              <h1 class="title">MENU CADASTRO</h1>
-              <p class="legenda">Aqui seu gesto vale muito. A sua doação pode transformar vidas!</p>
+              <h1 class="title">Olá, nomeUser</h1>
+              <p class="legenda">Menu de navegação</p>
+
+                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Dados Cadastrais</button></a>
+                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Doações Solicitadas</button></a>
+                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Solicite uma Doação</button></a>
 
             </div>
 
-            <div class="col-md-8 div2"> <!-- LOGIN LADO 2-->
-              <h3>Lista de Materiais</h3>
+            <div class="col-md-6 div2"> <!-- LOGIN LADO 2-->
+              <h3>Solicitar doação - Lista de materiais</h3>
               <form action="/login" method="POST">
 
                 <div class="form-group">
-                  <p>E-mail</p>
-                  <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+                  <p>Nome Material</p>
+                      <select class="custom-select custom-select-sm">
+                        <option selected>Escolha o material</option>
+                        <option value="1">Apontador</option>
+                        <option value="2">Agenda</option>
+                        <option value="3">Borracha</option>
+                        <option value="4"> Caderno</option>
+                        <option value="5">Caderneta</option>
+                        <option value="6">Canetas esferográficas 0.8, 1.0, 1.2</option>
+                         <option value="7">Colas brancas</option>
+                        <option value="8">Colas em bastão</option>
+                        <option value="9">Compasso</option>
+                        <option value="10">Estojos escolares</option>
+                        <option value="11">Folhas em EVA</option>
+                        <option value="12">Lápis de cor (caixa)</option>
+                        <option value="13">Livros didáticos</option>
+                        <option value="14">Marca texto</option>
+                        <option value="15">Massas para modelar</option>
+                        <option value="16">Mochilas - infantil e juvenil</option>
+                        <option value="17">Papel sulfite</option>
+                        <option value="18">Réguas diversas</option>
+                        <option value="19">Tesouras escolares</option>
+                        <option value="20"> Outros...</option>
+                     </select>
+
+                <div class="col-md-1 div2"> teste
+                </div>
+                
+                <div class="col-md-1 div2"> 
+                  teste
                 </div>
 
                   <p>Senha</p>
                 <div class="form-group">
-                  <input type="password" class="form-control" id="password" placeholder="Senha" name="password">
+
                 </div>
                 <a href="#" class="btnLink" id="btnEsqueciSenha">Esqueci minha senha</a>
                 <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
-                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Entrar</button></a>
+
 
               </form>
 

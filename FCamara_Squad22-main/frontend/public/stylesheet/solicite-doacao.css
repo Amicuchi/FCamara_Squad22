@@ -7,12 +7,17 @@
                         /*LAYOUT ESTRUTURA DO SITE*/
 .div1,
 .div2{
-    border: 5px;
-    padding: 5%;
-    padding-top: 10%;
+    margin-top: 5%;
+
+
 }
 .div1{
-    padding-top: 20%;
+    background-color: red;
+    padding: 5px;
+}
+.container{
+    margin: 0%;
+
 }
                         /*BOTÕES DO SITE*/
 .btnEntrar,
@@ -20,9 +25,9 @@
     display: block;
     cursor: pointer;
     border: none;
-    border-radius: 3rem;
+    border-radius: 0.5rem;
     margin-top: 5%;
-    margin-left: 0%;
+    margin-left: 5%;
     width: 10rem;
     height: 3rem;
     font-size: 1rem;
@@ -32,7 +37,7 @@
     color: white;
 }
 .btnEntrar{
-    width: 29rem;
+    width: 20rem;
 }
 .btnCadastrar {
     color: #A9B3B7;
