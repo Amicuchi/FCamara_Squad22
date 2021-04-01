@@ -98,9 +98,6 @@ h5{ /*Títulos de Cards*/
 p{ /*Textos de Cards*/
     font-size: 15px;
 }
-
-
-
                         /*CARDS DO SITE*/
 .card{
     border-radius: 20px;
@@ -121,4 +118,5 @@ p{ /*Textos de Cards*/
 }
 .bi.bi-water {
     font-size: 150px;
+    color:#a2a1aa;
 }
