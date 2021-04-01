@@ -24,15 +24,6 @@ const alunoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    email: {
-        type: String,
-        required: true
-    },
-    password: {
-        type: String,
-        min: 8,
-        required: true
-    },
     nomeAluno: {
         type: String,
         required: true
@@ -42,14 +33,6 @@ const alunoSchema = new mongoose.Schema({
         required: true
     },
     escola: {
-        type: String,
-        required: true
-    },
-    declaracaoMatricula: {
-        type: String,
-        required: true
-    },
-    rg: {
         type: String,
         required: true
     }

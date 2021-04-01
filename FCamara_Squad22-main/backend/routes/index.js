@@ -4,11 +4,14 @@ const { isLoggedIn } = require('../middleware/isLoggedIn');
 const indexRouter = express.Router();
 
 indexRouter.get('/', (req, res) => {
-    res.render('index');
+    res.render('historia');
+});
+
+indexRouter.get('/login', (req, res) => {
+    res.render('entrar');
 });
 
 indexRouter.post('/login', passport.authenticate('local', {failureRedirect: '/'}), (req, res) => {
-
     res.redirect('/dashboard');
 });
 
@@ -17,17 +20,12 @@ indexRouter.get('/pesquisa', (req, res) => {
 });
 
 indexRouter.get('/dashboard', isLoggedIn, (req, res) => {
-        const {nome} = req.user;
+    const {nome} = req.user;
     res.render('dashboard', {nome});
-});
-
-indexRouter.get('/historia', (req, res) => {
-    res.render('historia');
 });
 
 indexRouter.get('/doar', (req, res) => {
     res.render('doar');
 });
-
 
 module.exports = indexRouter;
