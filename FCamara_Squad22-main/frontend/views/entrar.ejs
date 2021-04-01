@@ -10,6 +10,7 @@
       type="text/css" 
       href="/stylesheet/entrar.css"
   >
+  <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
   <title>Entrar</title>
 </head>
 
@@ -21,36 +22,40 @@
     <section class="hwhite">
 
       <div class="container">
-         <header class="title"> Quem somos</header>
-           <br>
-
             <div class="row">
 
             <div class="col-md-6 div1"> <!-- COLUNA 1-->
 
               <h1 class="title">Unidos pela Educação</h1>
-              <p class="legenda">Doando materiais escolares você melhora a educação e transforma vidas.</p>
+              <p class="legenda">Aqui seu gesto vale muito. A sua doação pode transformar vidas!</p>
 
             </div>
 
             <div class="col-md-6 div2"> <!-- LOGIN LADO 2-->
+              <h3>Entrar</h3>
               <form>
+
                 <div class="form-group">
+                  <p>E-mail</p>
                   <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
                 </div>
 
+                  <p>Senha</p>
                 <div class="form-group">
                   <input type="password" class="form-control" id="password" placeholder="Senha" name="password">
                 </div>
-
+                <a href="#" class="btnLink" id="btnEsqueciSenha">Esqueci minha senha</a>
                 <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
-                <a class="aBotao" href="/dashboard"><button class="btnInicial entrar" id="btnAluno">Sou Aluno</button></a>
+                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Entrar</button></a>
 
               </form>
 
             <!-- BOTÃO PARA ABRIR O CADASTRO DE ALUNO -->
-                <a class="aBotao" href="doar"><button class="btnInicial doar" id="btnDoacao">Cadastrar Aluno</button></a>
-          </div>
+                <a class="aBotao" href="/registrar-aluno"><button class="btnCadastrar" id="btnDoacao">Cadastrar Aluno</button></a>
+                <br>
+                <a href="/doar" class="btnDoador" id="btnDoador">Sou doador</a>
+              </div>
+
         </div>
 
 
@@ -58,8 +63,9 @@
         </div>
 
     </div>
+    
 </section>
- 
+
 
 
   <footer>

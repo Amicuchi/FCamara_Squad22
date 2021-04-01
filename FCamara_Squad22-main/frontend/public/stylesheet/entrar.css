@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+  }
+                        /*LAYOUT ESTRUTURA DO SITE*/
+.div1,
+.div2{
+    border: 5px;
+    padding: 5%;
+    padding-top: 10%;
+}
+.div1{
+    padding-top: 20%;
+}
+                        /*BOTÕES DO SITE*/
+.btnEntrar,
+.btnCadastrar {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    margin-top: 5%;
+    margin-left: 0%;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #A9B3B7;
+    color: white;
+}
+.btnEntrar{
+    width: 29rem;
+}
+.btnCadastrar {
+    color: #A9B3B7;
+    background-color: white;
+    border: 1.4px solid #A9B3B7;
+    margin-left: 35%;
+}
+.btnDoador{
+    margin-left: 45%;
+
+}
+
+                        /*LETRAS E LINHAS DO SITE*/
+p{ /*Textos de Cards*/
+    font-size: 15px;
+}
+.legenda,
+.title {
+    font-size: 20px;
+    text-align: center;
+}
+.title{
+    font-size: 26px;
+    font-weight: bold;
+}
+h3{ /*Home (Sobre) / Seja um Doador*/
+    text-align: start;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 0%;
+}
