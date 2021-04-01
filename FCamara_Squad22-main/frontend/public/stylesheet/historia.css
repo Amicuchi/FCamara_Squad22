@@ -34,17 +34,19 @@
     background-color: #F7F7F7;
 }
 .hwhite{
-    background-color:rgb(255, 255, 255);
+    background-color:#ffff;
 }
                         /*BOTÕES DO SITE*/
 
 .btnInicial,
-.btnDoar{
+.btnDoar,
+.btnColaborador,
+.btnVerTodos {
     display: block;
     cursor: pointer;
     border: none;
     border-radius: 3rem;
-    margin-top: 7%;
+    margin-top: 10%;
     margin-left: 0%;
     width: 10rem;
     height: 3rem;
@@ -58,6 +60,22 @@
     margin-left: 25%;
     width: 120px;
 }
+.btnHistorias{
+    text-decoration-line: underline;
+    color: #a6aeb1;
+}
+.btnColaborador,
+.btnVerTodos {
+    opacity: 0.6;
+    cursor: not-allowed;
+    display: inline-block;
+    margin-top: 2%;
+}
+.btnVerTodos{
+    color: #A9B3B7;
+    background-color: white;
+    border: 1.4px solid #A9B3B7;
+}
 
                         /*LETRAS E LINHAS DO SITE*/
 .title{
@@ -68,6 +86,7 @@
 }
 h3{ /*Home (Sobre) / Seja um Doador*/
     text-align: start;
+    font-size: 40px;
 }
 h4{ /*Quem Somos*/
     font-size: 20px;
@@ -88,7 +107,7 @@ p{ /*Textos de Cards*/
     padding: 0px;
     width: 18rem;
     margin-inline: 5%;
-    box-shadow: 5px 5px 5px 0px #cbcbcc;
+    box-shadow: 10px 40px 50px -20px rgba(169, 179, 183, 0.4);
 }
 .card:hover{
     transition: 0.5s;
@@ -96,9 +115,9 @@ p{ /*Textos de Cards*/
 }
                         /*ICONS DO SITE*/
 .bi.bi-person-circle{
-    font-size: 350%;
-    color: #474747;
-    padding: 2%;
+    font-size: 300%;
+    color: #818080;
+    padding: 1%;
 }
 .bi.bi-water {
     font-size: 150px;
