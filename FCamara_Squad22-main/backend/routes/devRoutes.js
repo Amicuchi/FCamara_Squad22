@@ -9,6 +9,10 @@ devRouter.get('/nome do arquivo', (req, res) => {
 devRouter.get('/historia', (req, res) => {
     res.render('historia')
 })
+devRouter.get('/solicite-doacao', (req, res) => {
+    res.render('solicite-doacao')
+})
+
 
 
 module.exports = devRouter;
