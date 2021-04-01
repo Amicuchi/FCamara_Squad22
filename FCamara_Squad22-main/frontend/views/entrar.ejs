@@ -18,36 +18,53 @@
     <!-- BARRA DE NAVEGAÇÃO -->
     <%- include('../partials/header'); %>
   </header>
+    <section class="hwhite">
 
+      <div class="container">
+         <header class="title"> Quem somos</header>
+           <br>
 
-    <div class="container" id="container-index">
-        <div class="row">
-          <div class="col-sm" id="leftSide">
-            <h1 id="h1Initial">Unidos pela Educação</h1>
-            <p id="pInitial">Doando materiais escolares você melhora a educação e transforma vidas.</p>
-          </div>
+            <div class="row">
 
-          <div class="col-sm" id="rightSide">
-            <!-- FORMULÁRIO DE LOGIN DE ALUNO -->
-            <form>
+            <div class="col-md-6 div1"> <!-- COLUNA 1-->
+
+              <h1 class="title">Unidos pela Educação</h1>
+              <p class="legenda">Doando materiais escolares você melhora a educação e transforma vidas.</p>
+
+            </div>
+
+            <div class="col-md-6 div2"> <!-- LOGIN LADO 2-->
+              <form>
                 <div class="form-group">
                   <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
                 </div>
+
                 <div class="form-group">
                   <input type="password" class="form-control" id="password" placeholder="Senha" name="password">
                 </div>
+
                 <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
                 <a class="aBotao" href="/dashboard"><button class="btnInicial entrar" id="btnAluno">Sou Aluno</button></a>
-            </form>
+
+              </form>
 
             <!-- BOTÃO PARA ABRIR O CADASTRO DE ALUNO -->
-            <a class="aBotao" href="doar"><button class="btnInicial doar" id="btnDoacao">Cadastrar Aluno</button></a>
+                <a class="aBotao" href="doar"><button class="btnInicial doar" id="btnDoacao">Cadastrar Aluno</button></a>
           </div>
         </div>
+
+
+
+        </div>
+
     </div>
+</section>
+ 
+
 
   <footer>
       <%- include('../partials/footer'); %>
   </footer>
+
 </body>
 </html>
