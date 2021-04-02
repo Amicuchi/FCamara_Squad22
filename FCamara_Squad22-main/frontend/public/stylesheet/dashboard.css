@@ -1,17 +1,16 @@
 .home{
     width: 90%;
     min-height: 65vh;
-    
 }
 
-
-.navbarDashboard{ /* COLUNA 1 - BOTÕES */
-    background-color: none;
+#navbarDashboard{
+    background-color: #199199;
+    min-height: 50vh;
 }
 
 #bemVindoAluno{
-    background-color: none;
-    height: 5rem;
+    background-color: aqua;
+    height: 4rem;
 }
 
 header div h1,
@@ -28,51 +27,4 @@ section #optionsResults{
     background-color: yellowgreen;
     min-height: 50vh;
 
-}
-/*ALTERAÇÕES CAMILA*/
- /*Estilização Botões*/
-.btnEntrar{
-    width: 20rem;
-    height: 3.5rem;
-    font-size: 1rem;
-    text-align: left;
-    border-radius: 0.5rem;
-    margin: 2%;
-    background-color: #A9B3B7;
-    border: none;
-    font-weight: bold;
-    color: white;
-}
- /*Estilização DIVS*/
-.div1,
-.div2 { 
-    padding: 30px;
-    min-width: 25rem;
-    text-align: center;
-}
-.div1{ /*COLUNA 1 - BOTÕES*/
-
-}
-.div2{ /*COLUNA 2 - BOTÃO*/
-    background-color:none;
-}
-/*Estilização LETRAS*/
-.pbtn{
-    font-size: small;
-    font-weight:lighter;
-}
-.title{ 
-    font-weight: bold;
-    padding-top: 50px;
-}
-.subtitle{
-    font-size: 20px;
-}
-/*Estilização ICONS*/
-.bi.bi{
-    color:  #A9B3B7;
-    font-size: 65px;
-}
-.bi.bi-facebook{
-    color:  #A9B3B7;
 }
