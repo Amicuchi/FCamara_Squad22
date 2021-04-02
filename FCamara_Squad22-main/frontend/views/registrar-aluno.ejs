@@ -17,8 +17,9 @@
   </header>
 
   <section class="container my-5 home">
-    <h1 class="display-5">Cadastro de Aluno</h1>
-    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+    <br>
+    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data" class="needs-validation form-border my-4" novalidate>
+      <h1 class="display-5">Cadastro de Aluno</h1>
       <div class="form-group row mt-3">
         <div class="col-md-6">
           <label for="nameResp">Nome do pai ou responsável</label>
@@ -30,13 +31,13 @@
         </div>
       </div>
       <div class="form-group row mt-3">
-        <div class="col-8 col-md-3">
+        <div class="col-sm-8 col-md-3">
           <label for="cidade">Cidade</label>
           <input type="text" class="form-control" id="cidade" name="aluno[cidade]" required>
         </div>
-        <div class="col-4 col-md-2">
+        <div class="col-sm-4 col-md-2">
           <label for="estado">Estado</label>
-          <select id="estado" class="form-control" name="aluno[estado]" required>
+          <select id="estado" class="form-control custom-select" name="aluno[estado]" required>
             <option value="" disabled selected hidden>Estado</option>
             <% for (let es of estados) {%>
               <option value="<%= es %>"><%= es %></option>
@@ -107,10 +108,10 @@
         </div>
         <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
       </div>
-      <div class="form-group mt-5">
+      <div class="form-group mt-5 text-center">
         <p>Ao clicar em CADASTRAR, você concorda com os nossos <a href="#">Termos, Política de Dados e Política de Cookies</a>.</p>
       </div>
-      <div class="row">
+      <div class="row mt-4">
         <div class="col text-center">
           <button type="submit" class="btn btn-primary" id="cadastro">Cadastrar</button>
         </div>

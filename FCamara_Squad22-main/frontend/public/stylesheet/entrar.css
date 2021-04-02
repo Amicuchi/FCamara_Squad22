@@ -28,16 +28,17 @@
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
-    background-color: #A9B3B7;
-    color: white;
+    background-color: #1241C5;
+    color: #ffffff;
 }
 .btnEntrar{
-    width: 29rem;
+    width: 100%;
+    max-width: 522px;
 }
 .btnCadastrar {
-    color: #A9B3B7;
-    background-color: white;
-    border: 1.4px solid #A9B3B7;
+    color: #1241C5;
+    background-color: #ffffff;
+    border: 1px solid #1241C5;
     margin-left: 35%;
 }
 .btnDoador{

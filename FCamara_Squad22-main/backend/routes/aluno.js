@@ -1,9 +1,11 @@
 const express = require('express');
 const alunoRouter = express.Router();
 const Aluno = require('../models/aluno');
+const ListaMaterial = require ('../models/listaMaterial')
 const catchAsync = require('../utils/catchAsync');
 const ExpressError = require('../utils/ExpressError');
 const {alunoSchema} = require('../utils/schemasValidation');
+const { isLoggedIn } = require('../middleware/isLoggedIn');
 const fileUpload = require('../middleware/fileUpload');
 
 const estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO" ];
@@ -33,6 +35,20 @@ alunoRouter.post('/registrar', [validateAluno, fileUpload.fields(fields)], catch
     const registrarAluno = await Aluno.register(criarAluno, aluno.password);
     res.redirect('/login');
 }));
+
+alunoRouter.get('/pedido-doacao', isLoggedIn, (req, res) => {
+    res.render('solicite-doacao');
+});
+
+alunoRouter.post('/pedido-doacao', isLoggedIn, catchAsync(async(req, res) => {
+    const {_id} = req.user;
+    const aluno = await Aluno.findById(_id);
+    const listaMaterial = new ListaMaterial(req.body.listaMaterial);
+    aluno.listaMateriais.push(listaMaterial);
+    await listaMaterial.save();
+    await aluno.save();
+    res.redirect('/dashboard');
+}))
 
 alunoRouter.get('/doacao/obrigado', (req, res) => {
     res.render('thanks');

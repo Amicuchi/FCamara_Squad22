@@ -1,7 +1,9 @@
 const express = require('express');
 const passport = require('passport');
-const { isLoggedIn } = require('../middleware/isLoggedIn');
 const indexRouter = express.Router();
+const { isLoggedIn } = require('../middleware/isLoggedIn');
+const Aluno = require('../models/aluno');
+const catchAsync = require('../utils/catchAsync');
 
 indexRouter.get('/', (req, res) => {
     res.render('historia');
