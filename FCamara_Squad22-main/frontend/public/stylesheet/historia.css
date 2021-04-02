@@ -2,120 +2,85 @@
     padding: 0px;
     margin: 0px;
     font-size: 16px;
-    font-family: 'Mulish', Helvetica, Arial, sans-serif;
-  }
-
-                        /*LAYOUT ESTRUTURA DO SITE*/
-.home{
-    background-color: #CEDAE0;
-    color: white;
-    padding: 2%;
-    text-align: center;
-}
-.container{
-    border: 15px;
-    min-height: 0px;
-    position: relative;
-    text-align: center;
-}
-.div1,
-.div2{
-    border: 5px;
-    text-align: center;
-    padding: 2%;
-}
-.hwhite,
-.hgray{
-    height: 80%;
-    padding: 2%;
-    text-align: center;
-}
-.hgray{
-    background-color: #F7F7F7;
-}
-.hwhite{
-    background-color:#ffff;
-}
-                        /*BOTÕES DO SITE*/
-
-.btnInicial,
-.btnDoar,
-.btnColaborador,
-.btnVerTodos {
-    display: block;
-    cursor: pointer;
-    border: none;
-    border-radius: 3rem;
-    margin-top: 10%;
-    margin-left: 0%;
-    width: 10rem;
-    height: 3rem;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-    background-color: #1241C5;
-    color: white;
-}
-.btnDoar{
-    margin-left: 25%;
-    width: 120px;
-}
-.btnHistorias{
-    color: #a6aeb1;
-}
-.btnColaborador,
-.btnVerTodos {
-    opacity: 0.6;
-    cursor: not-allowed;
-    display: inline-block;
-    margin-top: 2%;
-}
-.btnVerTodos{
-    color: #A9B3B7;
-    background-color: white;
-    border: 1.4px solid #1241C5;
 }
 
-                        /*LETRAS E LINHAS DO SITE*/
-.title{
-    text-align: center;
+.main {
     width: 100%;
-    font-size: 35px;
+    height: 100%;
+    min-height: 522px;
+    background-color: #A9B3B7;
+}
+
+.main-text {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FEFEFE;
+}
+
+.block {
+    background-color: white;
+}
+
+.block:nth-child(odd) {
+    background-color: #F6F6F6;
+    ;
+}
+
+.text {
     font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    margin-bottom: 0;
 }
-h3{ /*Home (Sobre) / Seja um Doador*/
-    text-align: start;
-    font-size: 40px;
+
+.text-line {
+    margin: auto;
+    max-width: 56px;
+    border-top: 2px solid #000;
+    color: #000;
 }
-h4{ /*Quem Somos*/
-    font-size: 20px;
-    text-align: justify;
+
+.block-p{
+    font-size: 24px;
+    line-height: 28px;
 }
-h5{ /*Títulos de Cards*/
-    font-weight: bold;
+
+.btn-primary {
+    background-color: #6157C1;
+    border-color: #6157C1;
 }
-p{ /*Textos de Cards*/
-    font-size: 15px;
-}
-                        /*CARDS DO SITE*/
-.card{
-    border-radius: 20px;
-    padding: 0px;
-    width: 18rem;
-    margin-inline: 5%;
+
+.card {
+    min-width: 300px;
+    min-height: 541px;
+    margin: auto, 2em;
     box-shadow: 10px 40px 50px -20px rgba(169, 179, 183, 0.4);
+    border-radius: 20px;
 }
+
+.card > img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .card:hover{
     transition: 0.5s;
 	transform: scale(1.02,1.02);
 }
-                        /*ICONS DO SITE*/
-.bi.bi-person-circle{
-    font-size: 300%;
-    color: #818080;
-    padding: 1%;
+
+.card-footer {
+    background: none;
+    border: none;
+    margin-top: 5em;
 }
-.bi.bi-water {
-    font-size: 150px;
-    color:#a2a1aa;
+
+.card-link {
+    text-decoration: underline;
+}
+
+.colab {
+    max-height: 70px;
+    max-width: 70px;
+    border-radius: 10px;
 }

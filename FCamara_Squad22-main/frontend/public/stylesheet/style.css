@@ -3,8 +3,7 @@
 body {
     height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
 }
 
 footer {
