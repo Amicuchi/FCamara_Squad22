@@ -7,11 +7,7 @@
 
     <title>Doar</title>
     <!-- CSS DA PÁGINA DE DOAÇÃO -->
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
-        href="stylesheet/doar.css"
-    >
+    <link rel="stylesheet" type="text/css" href="stylesheet/doar.css">
 </head>
 
 <body>
@@ -25,20 +21,20 @@
         <h1>Resultado da Pesquisa</h1>
 
         <aside id="pesquisa">
-            <form class="form-inline my-2 my-lg-0">
+            <form action="/pesquisa" method="GET" class="form-inline my-2 my-lg-0">
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Buscar por...</label>
-                        <select class="form-control form-control mr-sm-2">
-                            <option>Nome Escola</option>
-                            <option>Material</option>
-                        </select>
+                    <select class="form-control form-control mr-sm-2" name="qType">
+                        <option value="escola">Nome Escola</option>
+                        <option value="tipoMaterial">Material</option>
+                    </select>
                 </div> <br>
 
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="q">
 
 
-                     <!-- *PESQUISA POR CIDADE* <input type="text" class="form-control" placeholder="Cidade">
+                <!-- *PESQUISA POR CIDADE* <input type="text" class="form-control" placeholder="Cidade">
 
                         *PESQUISA POR ESTADO* <select id="estado" class="form-control custom-select" name="aluno[estado]" required>
                             <option value="" disabled selected hidden>Estado</option>
@@ -50,90 +46,39 @@
         </aside>
 
         <div class="album py-5 bg-light">
-          <div class="container">
+            <div class="container">
 
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                  <!-- CARD DE FOTO DE ALUNO -->
-                  <div class="col">
-                      <div class="card shadow-sm">
-                          <svg
-                              class="bd-placeholder-img card-img-top" width="100%" height="225" 
-                              xmlns="http://www.w3.org/2000/svg" role="img" 
-                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
-                              focusable="false">
-                                  <title>Foto do Aluno</title>
-                                  <rect width="100%" height="100%" fill="#55595c"/>
-                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
-                          </svg>
-                          <div class="card-body">
-                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
-                                                      Escola: EMEF Professora Helena</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- CARD DE FOTO DE ALUNO -->
+                    <% for (aluno of alunos) {%>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <svg
+                                    class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                                    xmlns="http://www.w3.org/2000/svg" role="img" 
+                                    aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+                                    focusable="false">
+                                        <title>Foto do Aluno</title>
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
+                                </svg>
+                                <div class="card-body">
+                                    <p class="card-text">   Nome do Aluno: <%= aluno.nomeAluno %> <%= aluno.sobrenomeAluno %>  <br>
+                                                            Escola: <%= aluno.escola %> </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+        <!-- DESABILITADO POR ANDERSON -->
+        <!-- MOTIVO: ACHO MELHOR APARECER TODAS AS OPÇÕES NUMA ÚNICA PÁGINA -->
+        <!-- SE PREFERIREM, BASTA REABILITAR E CONFIGURAR PARA FUNCIONAR -->
 
-                  <!-- CARD DE FOTO DE ALUNO -->
-                  <div class="col">
-                      <div class="card shadow-sm">
-                          <svg
-                              class="bd-placeholder-img card-img-top" width="100%" height="225"
-                              xmlns="http://www.w3.org/2000/svg" role="img"
-                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                              focusable="false">
-                                  <title>Placeholder</title>
-                                  <rect width="100%" height="100%" fill="#55595c"/>
-                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
-                          </svg>
-                          <div class="card-body">
-                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
-                                                      Escola: EMEF Professora Helena</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- CARD DE FOTO DE ALUNO -->
-                  <div class="col">
-                      <div class="card shadow-sm">
-                          <svg
-                              class="bd-placeholder-img card-img-top" width="100%" height="225"
-                              xmlns="http://www.w3.org/2000/svg" role="img"
-                              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                              focusable="false">
-                                  <title>Placeholder</title>
-                                  <rect width="100%" height="100%" fill="#55595c"/>
-                                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto do Aluno</text>
-                          </svg>
-                          <div class="card-body">
-                              <p class="card-text">   Nome do Aluno: Bruce Wilis Nonato. <br>
-                                                      Escola: EMEF Professora Helena</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-
-      <!-- DESABILITADO POR ANDERSON -->
-      <!-- MOTIVO: ACHO MELHOR APARECER TODAS AS OPÇÕES NUMA ÚNICA PÁGINA -->
-      <!-- SE PREFERIREM, BASTA REABILITAR E CONFIGURAR PARA FUNCIONAR -->
-
-      <!-- <nav aria-label="Navegação entre páginas">
+        <!-- <nav aria-label="Navegação entre páginas">
         <ul class="pagination justify-content-center">
           <li class="page-item disabled">
             <a class="page-link" href="#" tabindex="-1">Anterior</a>
@@ -154,7 +99,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
 </body>
 
