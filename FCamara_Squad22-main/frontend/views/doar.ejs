@@ -26,7 +26,30 @@
         
         <aside id="pesquisa">
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Buscar por...</label>
+                    <select class="form-control form-control-sm">
+                        <option>Localização</option>
+                        <option>Nome Escola</option>
+                        <option>Material</option>
+                      </select>
+                  </div><br>
+
+                  <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+
+
+                        <input type="text" class="form-control" placeholder="Cidade">
+
+                        <select id="estado" class="form-control custom-select" name="aluno[estado]" required>
+                            <option value="" disabled selected hidden>Estado</option>
+                        </select>
+
+                      </div>
+                    </div>
+    
+
+
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </aside>
