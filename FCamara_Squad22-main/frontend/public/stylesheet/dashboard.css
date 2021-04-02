@@ -38,7 +38,7 @@ section #optionsResults{
     text-align: left;
     border-radius: 0.5rem;
     margin: 2%;
-    background-color: #A9B3B7;
+    background-color: #6157C1;
     border: none;
     font-weight: bold;
     color: white;
@@ -75,4 +75,13 @@ section #optionsResults{
 }
 .bi.bi-facebook{
     color:  #A9B3B7;
+}
+.bi.bi-person,
+.bi.bi-gift,
+.bi.bi-suit-heart{
+    float: left;
+    font-size: 30px;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
 }
