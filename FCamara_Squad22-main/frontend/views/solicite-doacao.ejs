@@ -21,82 +21,74 @@
   </header>
     <section class="hwhite">
 
-      <div class="container">
-            <div class="row">
+   <div class="container">
+      <div class="row"> <!-- LINHA 1--> 
+              <div class="col-md-3 div1">   <!-- COLUNA MENU-->
+                  <h1 class="title">Olá, nomeUser</h1>
+                  <p class="legenda">Menu de navegação</p>
 
-            <div class="col-md-4 div1"> <!-- COLUNA 1-->
-
-              <h1 class="title">Olá, nomeUser</h1>
-              <p class="legenda">Menu de navegação</p>
-
-                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Dados Cadastrais</button></a>
-                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Doações Solicitadas</button></a>
-                <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Solicite uma Doação</button></a>
-
-            </div>
-
-            <div class="col-md-6 div2"> <!-- LOGIN LADO 2-->
-              <h3>Solicitar doação - Lista de materiais</h3>
-              <form action="/login" method="POST">
-
-                <div class="form-group">
-                  <p>Nome Material</p>
-                      <select class="custom-select custom-select-sm">
-                        <option selected>Escolha o material</option>
-                        <option value="1">Apontador</option>
-                        <option value="2">Agenda</option>
-                        <option value="3">Borracha</option>
-                        <option value="4"> Caderno</option>
-                        <option value="5">Caderneta</option>
-                        <option value="6">Canetas esferográficas 0.8, 1.0, 1.2</option>
-                         <option value="7">Colas brancas</option>
-                        <option value="8">Colas em bastão</option>
-                        <option value="9">Compasso</option>
-                        <option value="10">Estojos escolares</option>
-                        <option value="11">Folhas em EVA</option>
-                        <option value="12">Lápis de cor (caixa)</option>
-                        <option value="13">Livros didáticos</option>
-                        <option value="14">Marca texto</option>
-                        <option value="15">Massas para modelar</option>
-                        <option value="16">Mochilas - infantil e juvenil</option>
-                        <option value="17">Papel sulfite</option>
-                        <option value="18">Réguas diversas</option>
-                        <option value="19">Tesouras escolares</option>
-                        <option value="20"> Outros...</option>
-                     </select>
-
-                <div class="col-md-1 div2"> teste
-                </div>
-                
-                <div class="col-md-1 div2"> 
-                  teste
-                </div>
-
-                  <p>Senha</p>
-                <div class="form-group">
-
-                </div>
-                <a href="#" class="btnLink" id="btnEsqueciSenha">Esqueci minha senha</a>
-                <!-- BOTÃO PARA REALIZAR LOGIN DE ALUNO -->
-
-
-              </form>
-
-            <!-- BOTÃO PARA ABRIR O CADASTRO DE ALUNO -->
-                <a class="aBotao" href="/registrar-aluno"><button class="btnCadastrar" id="btnDoacao">Cadastrar Aluno</button></a>
-                <br>
-                <a href="/doar" class="btnDoador" id="btnDoador">Sou doador</a>
+                  <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Dados Cadastrais</button></a>
+                  <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Doações Solicitadas</button></a>
+                  <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Solicite uma Doação</button></a>
               </div>
 
-        </div>
+              <div class="col-md-9 div2">
+ 
+                  <div class="container dois"> <!-- DIV 2--> 
+                     <h3>Solicitar doação - Lista de materiais</h3>
+                    <div class="row">       <!-- LINHA 2-->        
 
+                      <div class="col-md-9 div2"> <!-- CADASTRO LISTA DE MATERIAIS-->              
+                        <form action="/login" method="POST">
 
+                          <div class="form-group">
+                              <p>Nome Material</p>
+                            <select class="custom-select custom-select-sm">
+                              <option selected>Escolha o material</option>
+                              <option value="1">Apontador</option>
+                              <option value="2">Agenda</option>
+                              <option value="3">Borracha</option>
+                              <option value="4"> Caderno</option>
+                              <option value="5">Caderneta</option>
+                              <option value="6">Canetas esferográficas 0.8, 1.0, 1.2</option>
+                              <option value="7">Colas brancas</option>
+                              <option value="8">Colas em bastão</option>
+                              <option value="9">Compasso</option>
+                              <option value="10">Estojos escolares</option>
+                              <option value="11">Folhas em EVA</option>
+                              <option value="12">Lápis de cor (caixa)</option>
+                              <option value="13">Livros didáticos</option>
+                              <option value="14">Marca texto</option>
+                              <option value="15">Massas para modelar</option>
+                              <option value="16">Mochilas - infantil e juvenil</option>
+                              <option value="17">Papel sulfite</option>
+                              <option value="18">Réguas diversas</option>
+                              <option value="19">Tesouras escolares</option>
+                              <option value="20"> Outros...</option>
+                            </select>
+                          </div>  
+                          <input class="form-control" type="text" placeholder="Descrição do Material...">
+                      </div>  
 
-        </div>
+                            <div class="col-md-2 div3"> <!-- QUANTIDADE-->
+                            <div class="form-group">
+                              <label for="formLista">Quantidade</label>
+                                <input type="number" class="form-control" id="formQuantidade" placeholder="Quantidade">
+                            </div>
+                            <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">Incluir</button></a>
+                            </form>
+                          </div>
+                  
+                    </div><!-- ROW 2-->
+                  </div> <!-- CONTAINER 2-->
+               </div>   <!-- DIV 2-->
 
-    </div>
+        </div> <!-- ROW 1-->
+
+      </div> <!--CONTAINER 1-->
     
-</section>
+      </section>
+   </div> 
 
 
 

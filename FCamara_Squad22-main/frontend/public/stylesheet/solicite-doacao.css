@@ -6,18 +6,23 @@
   }
                         /*LAYOUT ESTRUTURA DO SITE*/
 .div1,
-.div2{
+.div2,
+.div3{
     margin-top: 5%;
-
-
 }
 .div1{
-    background-color: red;
-    padding: 5px;
+
+}
+.div2{
+
+}
+.div3{
+
 }
 .container{
     margin: 0%;
-
+    padding: 0px;
+        min-height: 500px;
 }
                         /*BOTÕES DO SITE*/
 .btnEntrar,
@@ -27,7 +32,7 @@
     border: none;
     border-radius: 0.5rem;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 15%;
     width: 10rem;
     height: 3rem;
     font-size: 1rem;
@@ -37,7 +42,7 @@
     color: white;
 }
 .btnEntrar{
-    width: 20rem;
+    width: 10rem;
 }
 .btnCadastrar {
     color: #A9B3B7;
@@ -47,7 +52,6 @@
 }
 .btnDoador{
     margin-left: 45%;
-
 }
 
                         /*LETRAS E LINHAS DO SITE*/
@@ -67,5 +71,5 @@ h3{ /*Home (Sobre) / Seja um Doador*/
     text-align: start;
     font-size: 30px;
     font-weight: bold;
-    padding-top: 0%;
+    padding-top: 5%;
 }
