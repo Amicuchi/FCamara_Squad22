@@ -12,5 +12,8 @@ devRouter.get('/historia', (req, res) => {
 devRouter.get('/solicite-doacao', (req, res) => {
     res.render('solicite-doacao')
 })
+devRouter.get('/solicite', (req, res) => {
+    res.render('solicite')
+})
 
 module.exports = devRouter;
