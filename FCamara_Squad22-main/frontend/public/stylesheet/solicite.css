@@ -40,22 +40,33 @@ section #optionsResults{
 }
 /*ALTERAÇÕES CAMILA*/
  /*Estilização Botões*/
-.btnEntrar{
-    width: 20rem;
-    height: 3.5rem;
-    font-size: 1rem;
-    text-align: left;
-    border-radius: 0.5rem;
-    margin: 2%;
+
+.btnSolicitar{
     background-color: #6157C1;
-    border: none;
-    font-weight: bold;
     color: white;
+}
+.btnVoltar{
+    background-color: #FFC775;
+    color: black;
+}
+
+.btnVoltar,
+.btnSolicitar {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    width: 8rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+
 }
  /*Estilização DIVS*/
 .div1,
 .div2 { 
-    padding: 30px;
+
     min-width: 25rem;
     text-align: left;
 }
@@ -93,4 +104,15 @@ section #optionsResults{
     color: white;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.pe{
+    margin:2%;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 25rem;
+}
+.pe2{
+    border-radius: 0.5px;
+    padding: 5px;
 }
