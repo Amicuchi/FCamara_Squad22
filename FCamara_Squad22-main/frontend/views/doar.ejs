@@ -47,9 +47,8 @@
 
         <div class="album py-5 bg-light">
             <div class="container">
-
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <!-- CARD DE FOTO DE ALUNO -->
+                    <!-- CARD DE ALUNO -->
                     <% for (aluno of alunos) {%>
                         <div class="col">
                             <div class="card shadow-sm">
@@ -64,7 +63,8 @@
                                 </svg> -->
                                 <div class="card-body">
                                     <p class="card-text">   Nome do Aluno: <strong><%= aluno.nomeAluno %> <%= aluno.sobrenomeAluno %></strong>  <br>
-                                                            Escola: <strong><%= aluno.escola %></strong> </p>
+                                                            Escola: <strong><%= aluno.escola %></strong>
+                                    </p>
                                     <div class="d-flex justify-content-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
@@ -72,8 +72,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <br>
                     <% } %>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
