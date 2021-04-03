@@ -18,6 +18,20 @@
 
 .pFooter{
     font-size: 0.7rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+.pFooter:hover{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+#pFooterLeft{
+    text-align: left;
+    margin-left: 5rem;
+    align-self: center;
 }
 
 #linha1,
