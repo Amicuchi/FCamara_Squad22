@@ -4,10 +4,31 @@
     font-size: 16px;
     font-family: 'Mulish', Helvetica, Arial, sans-serif;
   }
-  
-.form-border {
+
+  html, body {
+    height: 100%;
+    margin: 0
+  }
+  body{
+    background-image: url("/img/bgcadastro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  h1{
+    font-weight: bold;
+  }
+  .form-border {
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
     padding: 4em;
+    background-color: white;
+  }
+  .btnInc{
+    background-color: #6157C1;
+    height: 3rem;
+    width: 20rem;
+    border: none;
 }
