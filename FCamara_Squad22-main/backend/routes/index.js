@@ -5,6 +5,7 @@ const { isLoggedIn } = require('../middleware/isLoggedIn');
 const Aluno = require('../models/aluno');
 const ListaMaterial = require('../models/listaMaterial');
 const catchAsync = require('../utils/catchAsync');
+const transformText = require('../utils/transformText');
 
 indexRouter.get('/', (req, res) => {
     res.render('historia');
@@ -31,18 +32,15 @@ indexRouter.get('/doar', catchAsync(async(req, res) => {
 indexRouter.get('/pesquisa', catchAsync(async(req, res) => {
     const {qType, q} = req.query;
     if (qType === 'escola') {
-        const alunos = await Aluno.find({escola : { $regex: q}}).populate('listaMateriais');
+        const alunos = await Aluno.find({escola : { $regex: transformText(q)}});
         return res.render('schoolResults', {alunos})
     } else if (qType === 'tipoMaterial') {
         const material = await ListaMaterial.find({$or: [
-            {tipoMaterial: {$regex: q}},
-            {materialDesc: {$regex: q}}
-        ]});
-        for (m of material) {
-            const alunos = await Aluno.find({listaMateriais: {$in: m._id}}).populate('listaMateriais');
-            console.log(alunos)
-            return res.render('schoolResults', {alunos})
-        }
+            {tipoMaterial: {$regex: transformText(q)}},
+            {materialDesc: {$regex: transformText(q)}}
+        ]}); 
+        const alunos = await Aluno.find({listaMateriais: {$in: material}});
+        return res.render('schoolResults', {alunos})
     }
 }))
 
