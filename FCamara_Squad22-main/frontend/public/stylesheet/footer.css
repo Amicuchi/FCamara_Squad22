@@ -4,16 +4,22 @@
     bottom: 0px;
     padding-top: 1em;
 
+    font-family: Mulish;
+
     background: rgb(206, 218, 224);    /* Cinza 1 */
 }
 
 .h3Footer{
-    font-family: Mulish;
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
 
     color: #333333;   /* Cinza _ */
+}
+
+#h3Left{
+    text-align: left;
+    margin-left: 20%;
 }
 
 .pFooter{
@@ -30,13 +36,12 @@
 
 #pFooterLeft{
     text-align: left;
-    /*  */
 }
 
 #divPFooter{
     align-self: center;
     max-width: 240px;
-    margin-left: 7rem;
+    margin-left: 20%;
 }
 
 #linha1,
