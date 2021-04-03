@@ -219,7 +219,7 @@ Depois que o merge da sua pull request ser feito, você pode deletar a sua branc
                     width="150px;" 
                     alt="Imagem de Samylla" />
                 <br />
-                <sub><b>Leonardo Silva</b></sub>
+                <sub><b>Samylla Suzane</b></sub>
             </a>
         </td>
     </tr>
