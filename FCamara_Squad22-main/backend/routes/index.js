@@ -44,4 +44,9 @@ indexRouter.get('/pesquisa', catchAsync(async(req, res) => {
     }
 }))
 
+indexRouter.get('/logout', (req, res) => {
+    req.logout();
+    res.redirect('/');
+})
+
 module.exports = indexRouter;

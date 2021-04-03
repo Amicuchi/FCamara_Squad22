@@ -2,27 +2,36 @@
 
 <!-- BARRA DE NAVEGAÇÃO -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-style">
-      <a class="navbar-brand ml-5" href="#"><img id="logo-header" src="/img/logo.png" alt="Logo UpE"></a>
+      <a class="navbar-brand ml-5" href="/#donate"><img id="logo-header" src="/img/logo.png" alt="Logo UpE"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class=""><i class="fas fa-bars icon"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul id="links" class="navbar-nav mx-auto">
           <li class="nav-item mx-4">
-            <a class="nav-link" id="inicio" href="/">Página inicial</a></a>
+            <a class="nav-link" href="/#sobre-nos">Sobre nós</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" id="aluno" href="/dashboard">Sou aluno</a>
+            <a class="nav-link" href="/#seja-doador">Seja um doador</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" id="doador" href="/doar">Sou doador</a>
+            <a class="nav-link" href="/#historia">Nossas histórias</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" id="historias" href="/historia">Nossas histórias</a>
+            <a class="nav-link" href="/#parceiros">Parcerias</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link active entrar" id="entrar" href="/login">Entrar</a>
+            <a class="nav-link" href="/aluno/registrar">Cadastrar</a>
           </li>
+          <% if(!currentUser) {%> 
+          <li class="nav-item mx-4">
+            <a class="nav-link entrar" href="/login">Entrar</a>
+          </li>
+          <% } else {%> 
+          <li class="nav-item mx-4">
+            <a class="nav-link entrar" href="/logout">Sair</a>
+          </li>
+          <% } %> 
         </ul>
       </div>
     </nav>

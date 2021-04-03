@@ -1,4 +1,8 @@
 /* ARQUIVO SERÁ UTILIZADO PARA CSS QUE SEJA IGUAL PARA TODO O SITE */
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     height: 100vh;

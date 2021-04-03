@@ -55,6 +55,11 @@ passport.use(Aluno.createStrategy());
 passport.serializeUser(Aluno.serializeUser());
 passport.deserializeUser(Aluno.deserializeUser());
 
+app.use((req, res, next) => {
+    res.locals.currentUser = req.user;
+    next();
+})
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../frontend/views'));
 
