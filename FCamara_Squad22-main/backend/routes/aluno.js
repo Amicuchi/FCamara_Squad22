@@ -37,18 +37,18 @@ alunoRouter.post('/registrar', [validateAluno, fileUpload.fields(fields)], catch
     res.redirect('/login');
 }));
 
-alunoRouter.get('/pedido-doacao', isLoggedIn, (req, res) => {
-    res.render('solicite-doacao');
+alunoRouter.get('/solicite-doacao', isLoggedIn, (req, res) => {
+    res.render('solicite');
 });
 
-alunoRouter.post('/pedido-doacao', isLoggedIn, catchAsync(async(req, res) => {
-    const {_id} = req.user;
+alunoRouter.post('/solicitar-doacao', isLoggedIn, catchAsync(async(req, res) => {
+    /* const {_id} = req.user;
     const aluno = await Aluno.findById(_id);
     const {tipoMaterial, qntMaterial, materialDesc} = req.body.listaMaterial;
     const listaMaterial = new ListaMaterial({tipoMaterial: tipoMaterial, qntMaterial: qntMaterial, materialDesc: transformText(materialDesc)});
     aluno.listaMateriais.push(listaMaterial);
     await listaMaterial.save();
-    await aluno.save();
+    await aluno.save(); */
     res.redirect('/dashboard');
 }))
 

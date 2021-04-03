@@ -42,26 +42,25 @@ section #optionsResults{
  /*Estilização Botões*/
 
 .btnSolicitar{
+    width: 100%;
+    max-width: 470px;
     background-color: #6157C1;
+    border-color: #6157C1;
     color: white;
 }
 .btnVoltar{
-    background-color: #FFC775;
-    color: black;
+    max-width: 169px;
+    background-color: #F6F6F6;
+    border: 1px solid #6157C1;
+    color: #6157C1;
 }
 
 .btnVoltar,
 .btnSolicitar {
     display: block;
     cursor: pointer;
-    border: none;
-    border-radius: 3rem;
-    width: 8rem;
-    height: 3rem;
     text-align: center;
-    padding-top: 10px;
     font-weight: bold;
-
 }
  /*Estilização DIVS*/
 .div1,
