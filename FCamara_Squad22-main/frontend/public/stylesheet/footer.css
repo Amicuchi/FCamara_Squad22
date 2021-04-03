@@ -3,9 +3,7 @@
     height: 100%;
     bottom: 0px;
     padding-top: 1em;
-
     font-family: Mulish;
-
     background: #B4AFEC;    /* Cinza 1 */
 }
 
@@ -13,7 +11,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
-
+    text-align: center;
     color: #333333;   /* Cinza _ */
 }
 
