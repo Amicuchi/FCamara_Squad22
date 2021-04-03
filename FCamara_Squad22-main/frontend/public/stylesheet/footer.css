@@ -30,8 +30,13 @@
 
 #pFooterLeft{
     text-align: left;
-    margin-left: 5rem;
+    /*  */
+}
+
+#divPFooter{
     align-self: center;
+    max-width: 240px;
+    margin-left: 7rem;
 }
 
 #linha1,
@@ -39,6 +44,11 @@
     text-align: center;
     text-decoration: none;
     color: #333333;
+}
+
+#divDonate{
+    align-content: center;
+    align-items: center;
 }
 
 #divSociais a img{
