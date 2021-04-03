@@ -18,48 +18,34 @@
   <section class="container mt-5">
     <div class="row">
       <div class="m-auto">
-        <form action="/aluno/pedido-doacao" method="POST" class="form-border my-5">
-          <h1 class="display-5 mt-0">Adicionar material</h1>
+        <form action="/aluno/solicitar-doacao" method="POST" class="form-border my-5 needs-validation" novalidate>
+          <h1 class="display-5 mt-0">Solicitar material escolar</h1>
           <div class="form-group row">
             <div class="col-md-6">
-              <label for="tipoMaterial">Tipo de Material</label>
-              <select id="tipoMaterial" class="form-control custom-select" name="listaMaterial[tipoMaterial]">
-                <option selected disabled hidden>Escolha o material</option>
-                <option value="apontador">Apontador</option>
-                <option value="agenda">Agenda</option>
-                <option value="borracha">Borracha</option>
-                <option value="caderno"> Caderno</option>
-                <option value="caderneta">Caderneta</option>
-                <option value="caneta esferografica">Caneta esferográfica</option>
-                <option value="cola branca">Colas brancas</option>
-                <option value="cola em bastão">Colas em bastão</option>
-                <option value="compasso">Compasso</option>
-                <option value="estojo escolare">Estojos escolares</option>
-                <option value="folha EVA">Folhas EVA</option>
-                <option value="lapis de cor (caixa)">Lápis de cor (caixa)</option>
-                <option value="livro didático">Livros didáticos</option>
-                <option value="marca texto">Marca texto</option>
-                <option value="massa para modelar">Massas para modelar</option>
-                <option value="mochila">Mochilas</option>
-                <option value="papel sulfite (pacote)">Papel sulfite (pacote)</option>
-                <option value="regua">Réguas</option>
-                <option value="tesoura escolare">Tesouras escolares</option>
-                <option value="outros">Outros...</option>
+              <label for="tipoMaterial">Tipo de material</label>
+              <select id="tipoMaterial" class="form-control custom-select" name="listaMaterial[tipoMaterial]" required>
+                <option value="" disabled selected hidden>Escolha o material</option>
+                <% for (material of materialEscolar) {%> 
+                  <option value="<%= material.db %>"><%= material.nome %></option>
+                <% } %> 
               </select>
             </div>
             <div class="col-md-6">
               <label for="qntMaterial">Quantidade</label>
-              <input type="number" class="form-control" id="qntMaterial" placeholder="Quantidade" name="listaMaterial[qntMaterial]">
+              <input type="number" class="form-control" id="qntMaterial" placeholder="Quantidade" name="listaMaterial[qntMaterial]" required>
             </div>
           </div>
           <div class="form-group">
             <label for="materialDesc">Descrição do Material</label>
-            <textarea name="listaMaterial[materialDesc]" id="materialDesc" cols="30" rows="10" class="form-control"></textarea>
+            <textarea name="listaMaterial[materialDesc]" id="materialDesc" cols="30" rows="10" class="form-control" required></textarea>
           </div>
           <div class="row">
             <div class="col text-center">
-              <button type="submit" class="btnInc btn-primary mt-3" id="cadastro">Incluir Material</button>
+              <button type="submit" class="btnInc btn-primary my-3" id="cadastro">Incluir Material</button>
             </div>
+          </div>
+          <div class="text-center">
+            <a href="/dashboard" class="btn btn-primary btnVoltar">Voltar</a>
           </div>
         </form>
       </div>
@@ -69,7 +55,7 @@
   <footer>
     <%- include('../partials/footer'); %>
   </footer>
-
+  <script src="/js/formValidation.js"></script>
 </body>
 
 </html>

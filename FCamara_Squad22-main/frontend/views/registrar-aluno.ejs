@@ -24,16 +24,25 @@
         <div class="col-md-6">
           <label for="nameResp">Nome do pai ou responsável</label>
           <input type="text" class="form-control" id="nameResp" name="aluno[nomeResponsavel]" required>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
         <div class="col-md-6">
           <label for="lastnameResp">Sobrenome</label>
           <input type="text" class="form-control" id="lastnameResp" name="aluno[sobrenomeResponsavel]" required>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
       </div>
       <div class="form-group row mt-3">
         <div class="col-sm-8 col-md-3">
           <label for="cidade">Cidade</label>
           <input type="text" class="form-control" id="cidade" name="aluno[cidade]" required>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
         <div class="col-sm-4 col-md-2">
           <label for="estado">Estado</label>
@@ -43,21 +52,33 @@
               <option value="<%= es %>"><%= es %></option>
             <% } %>
           </select>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
         <div class="col-md-7">
           <label for="logradouro">Logradouro</label>
           <input type="text" name="aluno[logradouro]" id="logradouro" class="form-control" required>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
       </div>
       <div class="form-group mt-3">
         <label for="email">Endereço de e-mail</label>
         <input type="email" class="form-control" id="email" name="aluno[email]" required>
+        <div class="invalid-feedback">
+          Digite um email valido
+        </div>
       </div>
       <div class="form-group row mt-3">
         <div class="col-md-6">
           <label for="password">Senha</label>
           <input type="password" class="form-control" id="password" name="aluno[password]" required>
           <small id="passwordHelp" class="form-text text-muted ml-3">Digite uma senha de 8 caracteres ou mais</small>
+          <div class="invalid-feedback">
+            Digite uma senha valida
+          </div>
         </div>
         <div class="col-md-6">
           <label for="confirmPassword">Confirmar senha</label>
@@ -71,15 +92,24 @@
         <div class="col-md-6">
           <label for="nomeAluno">Nome do aluno</label>
           <input type="text" class="form-control" name="aluno[nomeAluno]" id="nomeAluno" required>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
         <div class="col-md-6">
           <label for="sobrenomeAluno">Sobrenome</label>
           <input type="text" name="aluno[sobrenomeAluno]" id="sobrenomeAluno" class="form-control" required>
+          <div class="invalid-feedback">
+            Campo obrigatório
+          </div>
         </div>
       </div>
       <div class="form-group mt-3">
         <label for="escola">Nome da Escola</label>
         <input type="text" name="aluno[escola]" id="escola" class="form-control" required>
+        <div class="invalid-feedback">
+          Campo obrigatório
+        </div>
       </div>
       <div class="form-group row mt-4">
         <div class="col-md-6">
@@ -92,6 +122,9 @@
             <div class="input-group-append">
               <button class="btn btn-outline-secondary btn-file" type="button" id="btn-matricula"><i class="bi bi-upload"></i></button>
             </div>
+            <div class="invalid-feedback">
+              Campo obrigatório
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -103,6 +136,9 @@
             </div>
             <div class="input-group-append">
               <button class="btn btn-outline-secondary btn-file" type="button" id="btn-rg"><i class="bi bi-upload"></i></button>
+            </div>
+            <div class="invalid-feedback">
+              Campo obrigatório
             </div>
           </div>
         </div>

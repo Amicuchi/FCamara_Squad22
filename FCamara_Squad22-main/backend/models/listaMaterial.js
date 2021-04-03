@@ -12,7 +12,7 @@ const listaMaterialSchema = new mongoose.Schema({
     },
     materialDesc: {
         type: String,
-        minlength: 10,
+        minlength: 5,
         maxlength: 500,
         required: true
     }

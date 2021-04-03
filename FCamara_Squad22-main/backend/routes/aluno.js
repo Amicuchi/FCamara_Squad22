@@ -8,6 +8,7 @@ const {alunoSchema} = require('../utils/schemasValidation');
 const { isLoggedIn } = require('../middleware/isLoggedIn');
 const fileUpload = require('../middleware/fileUpload');
 const transformText = require('../utils/transformText');
+const {materialEscolar} = require('../utils/materialList');
 
 const estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO" ];
 
@@ -38,17 +39,17 @@ alunoRouter.post('/registrar', [validateAluno, fileUpload.fields(fields)], catch
 }));
 
 alunoRouter.get('/solicite-doacao', isLoggedIn, (req, res) => {
-    res.render('solicite');
+    res.render('solicite-doacao', {materialEscolar});
 });
 
 alunoRouter.post('/solicitar-doacao', isLoggedIn, catchAsync(async(req, res) => {
-    /* const {_id} = req.user;
+    const {_id} = req.user;
     const aluno = await Aluno.findById(_id);
     const {tipoMaterial, qntMaterial, materialDesc} = req.body.listaMaterial;
     const listaMaterial = new ListaMaterial({tipoMaterial: tipoMaterial, qntMaterial: qntMaterial, materialDesc: transformText(materialDesc)});
     aluno.listaMateriais.push(listaMaterial);
     await listaMaterial.save();
-    await aluno.save(); */
+    await aluno.save();
     res.redirect('/dashboard');
 }))
 
