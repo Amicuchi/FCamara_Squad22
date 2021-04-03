@@ -10,7 +10,7 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="stylesheet/dashboard.css"
+        href="stylesheet/solicite.css"
     >
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
 </head>
@@ -25,27 +25,57 @@
 <main class="home container">
     <div class="row">
         <header id="bemVindoAluno" class="col-12">
-                <h1 class="fw-light">Olá, <%= nomeResponsavel %> !</h1>
-                <p>Suas informações estão aqui.</p>
+                <h1 class="fw-light">Materiais escolares</h1>
+                <p>Escolha de uma a três opções.</p>
         </header>
 
-        <div class="col-md-4 div1 navbarDashboard">   <!-- COLUNA 1 - BOTÕES-->
+    <div class="col-md-6 div1 navbarDashboard">   <!-- COLUNA 1 - BOTÕES-->
+
+        <ul class="list-group list-group-flush pe2">
+            <li class="list-group-item pe">
+                <div class="custom-control custom-checkbox cu">
+                    <input type="checkbox" class="custom-control-input" id="check1">
+                    <label class="custom-control-label" for="check1">Caderno Escolar de 12 matérias</label>
+                </div>
+            </li>
+
+            <li class="list-group-item pe">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check2">
+                    <label class="custom-control-label" for="check2">Kit básico de lápis, caneta e borracha</label>
+                </div>
+            </li>
+
+            <li class="list-group-item pe">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check3">
+                    <label class="custom-control-label" for="check3">Estojo escolar para lápis e caneta</label>
+                </div>
+            </li>
+
+            <li class="list-group-item pe">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check4">
+                    <label class="custom-control-label" for="check4">Kit escolar de réguas</label>
+                 </div>
+            </li>
+
+            <li class="list-group-item pe">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check5">
+                    <label class="custom-control-label" for="check5">Escolher outro material</label>
+                </div>
+            </li>
+        </ul>
+                <a href="#" class="btnVoltar mb-5">VOLTAR</a> <a href="#" class="btnSolicitar btn-primary">SOLICITAR</a>
                 
-            <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">
-                <i class="bi bi-person"></i>
-                Dados Cadastrais 
-                <p class="pbtn">Mantenha-os sempre atualizados</p>
-            </button></a>
+    
+    </div>
 
-            <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">
-                <i class="bi bi-gift"></i>
-                Doações Solicitadas
-             <p class="pbtn">Acompanhe a sua solicitação</p>
-            </button></a>
-        </div>
 
-        <div class="col-md-3 div2 navbarDashboard"> <!-- COLUNA 2 - BOTÕES-->
-            <a class="aBotao" href="/aluno/pedido-doacao"><button class="btnEntrar" id="btnAluno">
+
+       <!-- <div class="col-md-3 div2 navbarDashboard"> --> <!-- COLUNA 2 - BOTÕES-->
+           <!-- <a class="aBotao" href="/aluno/pedido-doacao"><button class="btnEntrar" id="btnAluno">
                 <i class="bi bi-suit-heart"></i>
                 Solicite uma Doação
                 <p class="pbtn">Te ajudamos com materiais escolares</p>
@@ -68,7 +98,7 @@
             <i class="bi bi-facebook"></i>
             <i class="bi bi-linkedin"></i>
 
-        </div>
+        </div> -->
 
 
 
