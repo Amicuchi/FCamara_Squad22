@@ -18,6 +18,25 @@
 
 .pFooter{
     font-size: 0.7rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+.pFooter:hover{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+#pFooterLeft{
+    text-align: left;
+    /*  */
+}
+
+#divPFooter{
+    align-self: center;
+    max-width: 240px;
+    margin-left: 7rem;
 }
 
 #linha1,
@@ -25,6 +44,11 @@
     text-align: center;
     text-decoration: none;
     color: #333333;
+}
+
+#divDonate{
+    align-content: center;
+    align-items: center;
 }
 
 #divSociais a img{
