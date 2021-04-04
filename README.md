@@ -85,7 +85,7 @@ Ao final de todas as fases iniciais, apenas 210 pessoas ficaram para serem divid
 ### 🖼 Obrigado pela doação
 
 <br>
-<img src="/telas/09_obrigado.png" alt="Tela de Obrigado pela doação"> 
+<img src="/telas/09_Obrigado.png" alt="Tela de Obrigado pela doação"> 
 <br>
 
 ## 🛠 Tecnologias
