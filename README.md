@@ -153,6 +153,32 @@ As seguintes ferramentas foram usadas na construção do projeto:
     />
   </a>
   
+  <a href="https://mongoosejs.com/" target="_blank">
+    <img
+      src="https://miro.medium.com/max/648/1*iDvsmUwzZQxJSKdL0xzwIA.png"
+      alt="Mongoose"
+      width="120"
+      height="120"
+    />
+  </a>
+
+  <a href="https://expressjs.com/pt-br/" target="_blank">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+      alt="Express"
+      width="120"
+      height="120"
+    />
+  </a>
+
+  <a href="https://www.mongodb.com/" target="_blank">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/512px-MongoDB_Logo.svg.png"
+      alt="Mongo.DB"
+      width="120"
+      height="120"
+    />
+  </a>
 </p>
 
 <br>
@@ -163,14 +189,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 # Clonar o repositório
 git clone https://github.com/Amicuchi/FCamara_Squad22.git
 
-# Entrar numa IDE de sua preferência 
+# Entrar numa IDE de sua preferência
 
-# Executar o servidor ou usar um puglin que cria um servidor
+# Entre na pasta FCamara_Squad22-main/backend e execute o "npm install"
+
+# Execute app.js para inicializar o servidor local
 
 ```
 
 Feito isso, abra o seu navegador e acesse `http://localhost:3000/`
-ou em uma porta de sua preferência.
 <br>
 
 ## 🤔 Como contribuir ? 🤝  <br/>
