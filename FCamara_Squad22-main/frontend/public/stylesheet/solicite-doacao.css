@@ -17,15 +17,17 @@
   }
   .btnInc{
   background-color: #6157C1;
-  height: 3rem;
-  width: 20rem;
+  height: 54px;
+  max-width: 470px;
+  width: 100%;
   border: none;
   }
   .btnVoltar {
   background-color: #F6F6F6;
   border: 1px solid #6157C1;
   color: #6157C1;
-  width: 7rem;
+  max-width: 170px;
+  width: 100%;
   }
   .title{
   font-weight: bold;
