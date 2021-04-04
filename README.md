@@ -29,41 +29,64 @@ Ao final de todas as fases iniciais, apenas 210 pessoas ficaram para serem divid
 
 ### 🖼 Página inicial 
 <br>
-
+<img src="/telas/01_Inicial.png" alt="Tela inicial">
 <br>
 
-### 🖼 Faça uma doação
+### 🖼 Login
 
 <br>
-
-<br>
-
-
-### 🖼 Resultado da pesquisa
-
-<br>
-
+<img src="/telas/02_Entrar.png" alt="Tela de login">
 <br>
 
 
-### 🖼 Cadastre-se como aluno
+### 🖼 Cadastro de Aluno
 
 <br>
-
+<img src="/telas/03_Cadastro.png" alt="Tela de Cadastro de Aluno">
 <br>
 
-### 🖼 Menu do Aluno
+
+### 🖼 Dashboard do Aluno
 
 <br>
+<img src="/telas/04_Dashboard.png" alt="Dashboard">
+<br>
 
+### 🖼 Tipo de Necessiade do Aluno
+
+<br>
+<img src="/telas/05_TipoDeDoacao.png" alt="Tipo de Necessidade do Aluno">
+<br>
+
+### 🖼 Tela de Escolha de Material a ser pedido
+
+<br>
+<img src="/telas/06_Solicite.png" alt="Escolha de material a ser pedido"> 
+<br>
+
+### 🖼 Tela de Opções de Material a ser pedido
+
+<br>
+<img src="/telas/07_Solicite.png" alt="Opções de material a ser pedido"> 
+<br>
+
+### 🖼 Tela de Aprovação de Pedido
+
+<br>
+<img src="/telas/08_Aprovacao.png" alt="Tela de Aprovação de Pedido"> 
+<br>
+
+### 🖼 Opções para o Doador
+
+<br>
+<img src="/telas/10_Doador.png" alt="Tela de Opções para o Doador"> 
 <br>
 
 ### 🖼 Obrigado pela doação
 
 <br>
-<img src="./FCamara_Squad22-main/telasDoSite/09_obrigado.png" alt="Tela de Agradecimento"> 
+<img src="/telas/09_obrigado.png" alt="Tela de Obrigado pela doação"> 
 <br>
-
 
 ## 🛠 Tecnologias
 
