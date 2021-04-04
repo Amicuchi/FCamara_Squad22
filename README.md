@@ -1,6 +1,7 @@
-# Projeto "Unidos pela Educação - UPE" - Squad_22
+# Projeto "Donate" - Squad_22
 
-Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/).
+Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/) que foi realizado entre 22/03/21 e 04/04/21.
+
 
 <h4 align="center"> 
 	🚧  Unidos pela Educação 👨‍🏫 Demonstração ✔️ 🚧
@@ -9,16 +10,18 @@ Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](htt
 
 ## :coffee: Um pouquinho sobre o Hackathon FCamara
 
-O Programa de Formação da FCamara foi busca para selecionar as pessoas com "sangue mais laranja" dentre os que conseguiram passar para a etapa do Hackathon. <br>
-Para poder ingressar no Programa, cada participante foi submetido a um processo seletivo que contou com a inscrição de mais de 5 mil pessoas, que passaram por teste de conhecimento lógico e técnico e posteriormente, passaram por entrevista para garantir que além de ter conhecimento técnico, também tenham o sangue laranja que faz a FCamara um lugar único para se trabalhar.
-
+O Hackathon do Programa de Formação foi realizado pela Shawee. <br>
+Ele é a fase onde pudemos colocará em prática toda a teoria que temos aprendido cotidianamente. <br>
+Foi entregue um desafio, e nosso objetivo era transformá-lo em uma solução. <br>
+Assim fizemos, afinal, "Missão dada é missão cumprida!" <br>
+O objetivo do evento é selecionar as pessoas com "sangue mais laranja" dentre os que conseguiram passar para a etapa do Hackathon. <br>
+Para poder ingressar no Programa, cada participante foi submetido a um processo seletivo que contou com a inscrição de mais de 5 mil pessoas, que passaram por teste de conhecimento lógico e técnico e posteriormente, passaram por entrevista para garantir que além de ter conhecimento técnico, também tenham o sangue laranja que faz a FCamara um lugar único para se trabalhar. <br>
+Ao final de todas as fases iniciais, apenas 210 pessoas ficaram para serem divididas em 48 squads.
+<br>
 <br>
 
 ## 💻 Sobre o projeto
 
-Os 250 participantes que chegaram até a fase do Hackathon foram divididos em SQUADS para solucionarem uma problemática. A dificuldade de alunos de escolas públicas em terem acesso a materiais escolares.
-<br>
-Um dos problemas que percebemos foi a do custo de materiais tecnológicos, que são tão importantes atualmente na formação e educação de uma criança ou adolescente em idade escolar.
 
 
 ## Screenshot das telas do site 
@@ -58,7 +61,7 @@ Um dos problemas que percebemos foi a do custo de materiais tecnológicos, que s
 ### 🖼 Obrigado pela doação
 
 <br>
-<img src="./FCamara_Squad22-main/telasDoSite/obrigado.png" alt="Tela de Agradecimento"> 
+<img src="./FCamara_Squad22-main/telasDoSite/09_obrigado.png" alt="Tela de Agradecimento"> 
 <br>
 
 
@@ -106,6 +109,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
     />
   </a>
   
+  <a href="https://ejs.co/" target="_blank">
+    <img
+      src="/telas/EJSLogo.gif"
+      alt="Bootstrap"
+      width="120"
+      height="120"
+    />
+  </a>
+  
   #### **Back-end** 
   <br>
 
@@ -134,8 +146,9 @@ git clone https://github.com/Amicuchi/FCamara_Squad22.git
 
 ```
 
-Feito isso, abra o seu navegador e acesse `http://localhost:5500/`
+Feito isso, abra o seu navegador e acesse `http://localhost:3000/`
 ou em uma porta de sua preferência.
+<br>
 
 ## 🤔 Como contribuir ? 🤝  <br/>
 ```bash
@@ -146,6 +159,7 @@ ou em uma porta de sua preferência.
 
 Depois que o merge da sua pull request ser feito, você pode deletar a sua branch. 
 ```
+<br>
 
 ## **:star2: AGRADECIMENTOS**
 
