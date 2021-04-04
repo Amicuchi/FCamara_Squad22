@@ -193,7 +193,7 @@ git clone https://github.com/Amicuchi/FCamara_Squad22.git
 
 # Entre na pasta FCamara_Squad22-main/backend e execute o "npm install"
 
-# Execute app.js para inicializar o servidor local
+# Execute node app.js para inicializar o servidor local
 
 ```
 
