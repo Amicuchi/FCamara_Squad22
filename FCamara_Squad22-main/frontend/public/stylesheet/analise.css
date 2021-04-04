@@ -22,11 +22,6 @@ body{
     background-color: none;
     padding: 2px;
 }
-
-header div h1,
-header div p{
-    text-align: left;
-}
 .form-group{
     margin-top: 5%;
     width: 22rem;
