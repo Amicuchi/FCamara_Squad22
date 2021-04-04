@@ -10,7 +10,7 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="stylesheet/dashboard.css"
+        href="stylesheet/escolha-solicite.css"
     >
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
 </head>
@@ -25,30 +25,30 @@
 <main class="home container">
     <div class="row">
         <header id="bemVindoAluno" class="col-12">
-                <h1 class="fw-light">Olá, <%= nomeResponsavel %> !</h1>
-                <p>Suas informações estão aqui.</p>
+            <h1 class="title">Deseja solicitar uma doação?</h1>
+            <p class="subtitle">Escolha a opção que seu filho precisa</p>
         </header>
 
         <div class="col-md-4 div1 navbarDashboard">   <!-- COLUNA 1 - BOTÕES-->
-                
+
             <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">
-                <i class="bi bi-person"></i>
-                Dados Cadastrais 
-                <p class="pbtn">Mantenha-os sempre atualizados</p>
+                <i class="bi bi-book"></i>
+                Materiais escolares
+                <p class="pbtn">Kit escolar básico</p>
             </button></a>
 
             <a class="aBotao" href="/dashboard"><button class="btnEntrar" id="btnAluno">
-                <i class="bi bi-gift"></i>
-                Doações Solicitadas
-             <p class="pbtn">Acompanhe a sua solicitação</p>
+                <i class="bi bi-question"></i>
+                FAQ
+             <p class="pbtn">Gostaria de tirar alguma dúvida?</p>
             </button></a>
         </div>
 
         <div class="col-md-3 div2 navbarDashboard"> <!-- COLUNA 2 - BOTÕES-->
             <a class="aBotao" href="/aluno/solicite-doacao"><button class="btnEntrar" id="btnAluno">
-                <i class="bi bi-suit-heart"></i>
-                Solicite uma Doação
-                <p class="pbtn">Te ajudamos com materiais escolares</p>
+                <i class="bi bi-phone"></i>
+                Eletrônicos
+                <p class="pbtn">Dispositivos móveis para uso escolar</p>
             </button></a>
         </div>
 
@@ -57,16 +57,10 @@
     <div class="row 2">
         <div class="col-md-12">
             <h3 class="title">
-                Compartilhe nosso programa na sua redes
+                <a href="/dashboard" class="btn btn-primary btnVoltar mx-auto my-5">VOLTAR</a>
             </h3>
             
-            <p class="subtitle">
-                e ajude outros a também receberem doações
-            </p>
 
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-linkedin"></i>
 
         </div>
 

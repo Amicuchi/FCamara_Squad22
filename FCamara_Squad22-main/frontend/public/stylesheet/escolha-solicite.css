@@ -23,23 +23,9 @@ body{
     height: 5rem;
 }
 
-header div h1,
-header div p{
-    text-align: left;
-}
-
-ul li a img{
-    max-width: 3rem;
-    max-height: 3rem;
-}
-
-section #optionsResults{
-    background-color: yellowgreen;
-    min-height: 50vh;
-
-}
 /*ALTERAÇÕES CAMILA*/
  /*Estilização Botões*/
+
 .btnEntrar{
     width: 20rem;
     height: 3.5rem;
@@ -49,21 +35,29 @@ section #optionsResults{
     margin: 2%;
     background-color: #6157C1;
     border: none;
-    font-weight: bold;
     color: white;
+}
+.btnEntrar,
+.btnVoltar{
+    font-weight: bold;
+}
+.btnVoltar{
+    max-width: 169px;
+    background-color: #F6F6F6;
+    border: 1px solid #6157C1;
+    color: #6157C1;
+    width: 7rem;
 }
  /*Estilização DIVS*/
 .div1,
-.div2 { 
+.div2 {
     padding: 30px;
     min-width: 25rem;
     text-align: left;
-}
-.div1{ /*COLUNA 1 - BOTÕES*/
-
+    margin-top: 5%;
 }
 .div2{ /*COLUNA 2 - BOTÃO*/
-    background-color:none;
+    padding-left: -15px;
 }
 /*Estilização LETRAS*/
 .pbtn{
@@ -72,24 +66,21 @@ section #optionsResults{
 }
 .title{ 
     font-weight: bold;
-    padding-top: 50px;
 }
 .subtitle{
     font-size: 20px;
 }
+.title,
+.subtitle{
+    margin-left: 2%;
+}
 /*Estilização ICONS*/
-.bi.bi{
-    color:  #A9B3B7;
-    font-size: 65px;
-}
-.bi.bi-facebook{
-    color:  #A9B3B7;
-}
-.bi.bi-person,
-.bi.bi-gift,
-.bi.bi-suit-heart{
+
+.bi.bi-phone,
+.bi.bi-book,
+.bi.bi-question{
     float: left;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
     padding-right: 15px;
     padding-left: 15px;
