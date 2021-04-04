@@ -4,7 +4,8 @@
   "description": "Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/).",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start": "node app.js" 
   },
   "author": "",
   "license": "ISC",

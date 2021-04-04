@@ -82,11 +82,6 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 });
 
-
-app.listen('3000', () => {
-    console.log('Escutando porta 3000');
-});
-
 app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 })
@@ -122,3 +117,9 @@ app.get('/pesquisa', (req, res) => {
 app.get('/obrigado', (req, res) => {
     res.render('thanks');
 })
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log(`Escutando porta ${port}`);
+});
