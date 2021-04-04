@@ -28,14 +28,14 @@
             <form action="/pesquisa" method="GET" class="form-inline my-2 my-lg-0">
 
                 <div class="form-group">
-                    <label for="exampleFormControlSelect2">Buscar por...</label>
-                        <select class="form-control form-control mr-sm-2" name="qType">
-                            <option value="escola">Nome Escola</option>
-                            <option value="tipoMaterial">Material</option>
-                        </select>
-                </div> <br>
-
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="q">
+                    <label for="search">Buscar</label>
+                    <select class="form-control mx-5" name="q" id="search">
+                        <option disabled selected hidden>Escolha o material</option>
+                        <% for (material of materialEscolar) {%>
+                        <option value="<%= material.db %>"><%= material.nome %></option>
+                        <% } %>
+                    </select>
+                </div>
 
 
                      <!-- *PESQUISA POR CIDADE* <input type="text" class="form-control" placeholder="Cidade">
