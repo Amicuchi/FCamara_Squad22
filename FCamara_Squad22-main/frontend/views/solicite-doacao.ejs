@@ -19,47 +19,48 @@
     <div class="row">
       <div class="m-auto">
         <form action="/aluno/solicitar" method="POST" class="form-border my-5 needs-validation" novalidate>
-          <h1 class="display-5 mt-0">Solicitar material escolar</h1>
+            <h1 class="title">Solicitar materiais escolares</h1>
+            <p class="subtitle">Escolha de uma a quatro opções</p>
           <div class="form-group row">
-            <div class="col-md-3 mx-auto">
+            <div class="col-md-4 mx-auto">
               <label for="tipoMaterial">Opção 1</label>
               <select id="tipoMaterial" class="form-control custom-select" name="listaMaterial[tipoMaterial]" required>
                 <option value="" disabled selected hidden>Escolha o material</option>
-                <% for (material of materialEscolar) {%> 
+                <% for (material of materialEscolar) {%>
                   <option value="<%= material.db %>"><%= material.nome %></option>
-                <% } %> 
+                <% } %>
               </select>
             </div>
-            <div class="col-md-3 mx-auto">
+            <div class="col-md-4 mx-auto">
               <label for="tipoMaterial2">Opção 2</label>
               <select id="tipoMaterial2" class="form-control custom-select" name="listaMaterial[tipoMaterial]">
                 <option  disabled selected hidden>Escolha o material</option>
-                <% for (material of materialEscolar) {%> 
+                <% for (material of materialEscolar) {%>
                   <option value="<%= material.db %>"><%= material.nome %></option>
-                <% } %> 
+                <% } %>
               </select>
             </div>
-            <div class="col-md-3 mx-auto">
+            <div class="col-md-4 mx-auto">
               <label for="tipoMaterial3">Opção 3</label>
               <select id="tipoMaterial3" class="form-control custom-select" name="listaMaterial[tipoMaterial]">
                 <option  disabled selected hidden>Escolha o material</option>
-                <% for (material of materialEscolar) {%> 
+                <% for (material of materialEscolar) {%>
                   <option value="<%= material.db %>"><%= material.nome %></option>
-                <% } %> 
+                <% } %>
               </select>
             </div>
           </div>
           <div class="form-group">
             <label for="materialDesc">Descrição do Material</label>
-            <textarea name="listaMaterial[materialDesc]" id="materialDesc" cols="30" rows="10" class="form-control" placeholder="Se você quer outro material que não está na lista por favor especifique"></textarea>
+            <textarea name="listaMaterial[materialDesc]" id="materialDesc" cols="30" rows="7" class="form-control" placeholder="Se você deseja outro material que não está na lista, por favor especifique"></textarea>
           </div>
           <div class="row">
             <div class="col text-center">
-              <button type="submit" class="btnInc btn-primary my-3" id="cadastro">Incluir Material</button>
+              <button type="submit" class="btnInc btn-primary my-3" id="cadastro">ENVIAR</button>
             </div>
           </div>
           <div class="text-center">
-            <a href="/dashboard" class="btn btn-primary btnVoltar">Voltar</a>
+            <a href="/dashboard" class="btn btn-primary btnVoltar">VOLTAR</a>
           </div>
         </form>
       </div>
