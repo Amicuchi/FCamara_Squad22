@@ -30,8 +30,10 @@ mongoose.connect(databaseUri, {
         console.log(err);
     });
 
+const secret = process.env.SECRET || 'thisshouldbeabettersecret!'
+
 const sessionConfig = {
-    secret: 'thisshouldbeabettersecret!',
+    secret: secret,
     resave: false,
     saveUninitialized: true,
     cookie: {
