@@ -20,7 +20,7 @@ body{
 
 #bemVindoAluno{
     background-color: none;
-    height: 5rem;
+    height: 9rem;
 }
 
 /*ALTERAÇÕES CAMILA*/
@@ -51,13 +51,9 @@ body{
  /*Estilização DIVS*/
 .div1,
 .div2 {
-    padding: 30px;
-    min-width: 25rem;
+    min-width: 21rem;
     text-align: left;
-    margin-top: 5%;
-}
-.div2{ /*COLUNA 2 - BOTÃO*/
-    padding-left: -15px;
+    margin-left: 2%;
 }
 /*Estilização LETRAS*/
 .pbtn{

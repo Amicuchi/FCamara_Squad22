@@ -28,16 +28,6 @@ header div p{
     text-align: left;
 }
 
-ul li a img{
-    max-width: 3rem;
-    max-height: 3rem;
-}
-
-section #optionsResults{
-    background-color: yellowgreen;
-    min-height: 50vh;
-
-}
 /*ALTERAÇÕES CAMILA*/
  /*Estilização Botões*/
 .btnEntrar{
