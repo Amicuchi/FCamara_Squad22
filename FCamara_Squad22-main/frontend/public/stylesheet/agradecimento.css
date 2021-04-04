@@ -14,7 +14,7 @@ body{
     background-attachment: fixed;
 }
 
-.navbarDashboard{ /* COLUNA 1 - BOTÕES */
+.navbarDashboard{
     background-color: none;
 }
 
@@ -22,18 +22,11 @@ body{
     background-color: none;
     padding: 2px;
 }
-.form-group{
-    margin-top: 5%;
-    width: 22rem;
-}
+
 h1{
     font-weight: bold;
 }
-
-/*ALTERAÇÕES CAMILA*/
- /*Estilização Botões*/
-
-.btnSolicitar{
+.btnVoltar{
     width: 100%;
     max-width: 470px;
     background-color: #6157C1;
@@ -41,40 +34,13 @@ h1{
     color: white;
     display: block;
     cursor: pointer;
-    text-align: center;
     font-weight: bold;
 }
- /*Estilização DIVS*/
-.div1,
-.div2 {
-    min-width: 25rem;
-    text-align: left;
-}
 /*Estilização LETRAS*/
-.pbtn{
-    font-size: small;
-    font-weight:lighter;
-}
 .title{
     font-weight: bold;
     padding-top: 15px;
 }
 .subtitle{
     font-size: 20px;
-}
-/*Estilização ICONS*/
-.custom-file-label{
-    border-right: none;
-    border-radius: 0;
-    cursor: pointer;
-}
-
-.custom-file-label::after {
-    display: none;
-}
-
-.btn-file {
-    border-color: #CED4DA;
-    border-left: none;
-    background-color: white;
 }
