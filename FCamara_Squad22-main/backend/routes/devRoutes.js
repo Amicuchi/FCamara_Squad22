@@ -21,5 +21,8 @@ devRouter.get('/analise', (req, res) => {
 devRouter.get('/escolha-solicite', (req, res) => {
     res.render('escolha-solicite')
 })
+devRouter.get('/agradecimento', (req, res) => {
+    res.render('agradecimento')
+})
 
 module.exports = devRouter;
