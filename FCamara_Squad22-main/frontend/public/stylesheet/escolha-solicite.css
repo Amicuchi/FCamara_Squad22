@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0
+}
+body{
+    background-image: url("/img/bgdashboard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbarDashboard{ /* COLUNA 1 - BOTÕES */
+    background-color: none;
+}
+
+#bemVindoAluno{
+    background-color: none;
+    height: 5rem;
+}
+
+header div h1,
+header div p{
+    text-align: left;
+}
+
+ul li a img{
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+section #optionsResults{
+    background-color: yellowgreen;
+    min-height: 50vh;
+
+}
+/*ALTERAÇÕES CAMILA*/
+ /*Estilização Botões*/
+.btnEntrar{
+    width: 20rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    margin: 2%;
+    background-color: #6157C1;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+ /*Estilização DIVS*/
+.div1,
+.div2 { 
+    padding: 30px;
+    min-width: 25rem;
+    text-align: left;
+}
+.div1{ /*COLUNA 1 - BOTÕES*/
+
+}
+.div2{ /*COLUNA 2 - BOTÃO*/
+    background-color:none;
+}
+/*Estilização LETRAS*/
+.pbtn{
+    font-size: small;
+    font-weight:lighter;
+}
+.title{ 
+    font-weight: bold;
+    padding-top: 50px;
+}
+.subtitle{
+    font-size: 20px;
+}
+/*Estilização ICONS*/
+.bi.bi{
+    color:  #A9B3B7;
+    font-size: 65px;
+}
+.bi.bi-facebook{
+    color:  #A9B3B7;
+}
+.bi.bi-person,
+.bi.bi-gift,
+.bi.bi-suit-heart{
+    float: left;
+    font-size: 30px;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+}
