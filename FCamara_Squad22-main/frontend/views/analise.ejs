@@ -7,74 +7,80 @@
 
     <title>Análise solicitação</title>
     <!-- CSS do Dashboard -->
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
-        href="/stylesheet/analise.css"
-    >
+    <link rel="stylesheet" type="text/css" href="/stylesheet/analise.css">
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
 </head>
 
 <body>
-<header>
-  <!-- BARRA DE NAVEGAÇÃO -->
-  <%- include('../partials/header'); %>
-</header>
-
-
-<main class="home container">
-    <header id="bemVindoAluno">
-        <h1 class="fw-light">Sua solicitação está em análise</h1>
-        <p class="subtitle"> A Donate se empenha em ajudar aqueles que precisam.<br>
-            Nos ajude a confirmar seus dados.</p>
+    <header>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <%- include('../partials/header'); %>
     </header>
-    <div class="row">
 
 
-        <div class="col-md-6">
-            <form action="/aluno/solicitar-doacao" method="POST">
-                <div class="form-group">
-                    <label for="renda">Comprovante de renda</label>
-                    <div class="input-group">
-                      <div class="custom-file ">
-                        <input type="file" class="custom-file-input" id="renda" name="aluno[renda]" style="display: none;" required>
-                        <label class="custom-file-label" for="renda">Escolha o arquivo</label>
-                      </div>
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-secondary btn-file" type="button" id="btn-renda"><i class="bi bi-upload"></i></button>
-                      </div>
+    <main class="home container">
+        <header id="bemVindoAluno">
+            <h1 class="fw-light">Sua solicitação está em análise</h1>
+            <p class="subtitle"> A Donate se empenha em ajudar aqueles que precisam.<br>
+                Nos ajude a confirmar seus dados.</p>
+        </header>
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <form action="/aluno/solicitar/analise" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
+                    <div class="form-group">
+                        <label for="renda">Comprovante de renda</label>
+                        <div class="input-group">
+                            <div class="custom-file ">
+                                <input type="file" class="custom-file-input" id="renda" name="aluno[renda]"
+                                    style="display: none;" required>
+                                <label class="custom-file-label" for="renda">Escolha o arquivo</label>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary btn-file" type="button" id="btn-renda"><i
+                                        class="bi bi-upload"></i></button>
+                            </div>
+                            <div class="invalid-feedback">
+                                Campo obrigatório
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
-                  <div class="form-group">
-                    <label for="residencia">Comprovante de residência</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="residencia" name="aluno[residencia]" required>
-                        <label class="custom-file-label" for="residencia">Escolha o arquivo</label>
-                      </div>
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-secondary btn-file" type="button" id="btn-residencia"><i class="bi bi-upload"></i></button>
-                      </div>
+                    <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e
+                        PDF</small>
+                    <div class="form-group">
+                        <label for="residencia">Comprovante de residência</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="residencia" name="aluno[residencia]"
+                                    required>
+                                <label class="custom-file-label" for="residencia">Escolha o arquivo</label>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary btn-file" type="button" id="btn-residencia"><i
+                                        class="bi bi-upload"></i></button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
-                </div>
+                    <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e
+                        PDF</small>
             </div>
         </div>
-                    <h4 class="title">
-                       Tem alguma dúvida?
-                     </h4>
-        
-                     <a href="#" class="subtitle">
-                        Fale conosco
-                     </a>
-                     </p>
-        <button id="enviar" class="btn btn-primary btnSolicitar mx-auto my-4">ENVIAR</button>
-    </form>
+        </div>
+        <h4 class="title">
+            Tem alguma dúvida?
+        </h4>
 
-       <!-- <div class="col-md-3 div2 navbarDashboard"> --> <!-- COLUNA 2 - BOTÕES-->
-           <!-- <a class="aBotao" href="/aluno/pedido-doacao"><button class="btnEntrar" id="btnAluno">
+        <a href="#" class="subtitle">
+            Fale conosco
+        </a>
+        </p>
+        <button id="enviar" class="btn btn-primary btnSolicitar mx-auto my-4">ENVIAR</button>
+        </form>
+
+        <!-- <div class="col-md-3 div2 navbarDashboard"> -->
+        <!-- COLUNA 2 - BOTÕES-->
+        <!-- <a class="aBotao" href="/aluno/pedido-doacao"><button class="btnEntrar" id="btnAluno">
                 <i class="bi bi-suit-heart"></i>
                 Solicite uma Doação
                 <p class="pbtn">Te ajudamos com materiais escolares</p>
@@ -103,7 +109,7 @@
 
 
 
- <!--     <section class="row" id="studentDashboard optionsMenu">
+        <!--     <section class="row" id="studentDashboard optionsMenu">
         <nav class="col-lg-3 col-md-3 col-sm-12">
             <ul id="navbarDashboard" class="navbar-nav row align-items-center mr-auto justify-content-between">
                 <li class="nav-item botaoDashboard">
@@ -136,11 +142,13 @@
             
         </section>
     </section>-->
-</main>
+    </main>
 
     <footer>
         <%- include('../partials/footer'); %>
     </footer>
-    <script src="/js/meterialFormValidation.js"></script>
+    <script src="/js/formValidation.js"></script>
+    <script src="/js/analiseFilename.js"></script>
 </body>
+
 </html>

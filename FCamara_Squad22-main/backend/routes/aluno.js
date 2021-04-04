@@ -6,15 +6,21 @@ const catchAsync = require('../utils/catchAsync');
 const ExpressError = require('../utils/ExpressError');
 const {alunoSchema} = require('../utils/schemasValidation');
 const { isLoggedIn } = require('../middleware/isLoggedIn');
-const fileUpload = require('../middleware/fileUpload');
+const cadastroUpload = require('../middleware/cadastroUpload');
+const analiseUpload = require('../middleware/analiseUpload');
 const transformText = require('../utils/transformText');
 const {materialEscolar} = require('../utils/materialList');
 
 const estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO" ];
 
-const fields = [
+const fieldsCadastro = [
     {name: 'aluno[matricula]', maxCount: 1},
     {name: 'aluno[rg]', maxCount: 1}
+];
+
+const fieldsAnalise = [
+    {name: 'aluno[renda]', maxCount: 1},
+    {name: 'aluno[residencia]', maxCount: 1}
 ];
 
 const validateAluno = (req, res, next) => {
@@ -31,7 +37,7 @@ alunoRouter.get('/registrar', (req, res) => {
     res.render('registrar-aluno', {estados});
 });
 
-alunoRouter.post('/registrar', [validateAluno, fileUpload.fields(fields)], catchAsync(async (req, res) => {
+alunoRouter.post('/registrar', [validateAluno, cadastroUpload.fields(fieldsCadastro)], catchAsync(async (req, res) => {
     const aluno = (req.body.aluno);
     const criarAluno = new Aluno(aluno);
     const registrarAluno = await Aluno.register(criarAluno, aluno.password);
@@ -54,8 +60,16 @@ alunoRouter.post('/solicitar', isLoggedIn, catchAsync(async(req, res) => {
     aluno.listaMateriais.push(listaMaterial);
     await listaMaterial.save();
     await aluno.save();
-    res.redirect('/dashboard');
-}))
+    res.redirect('/aluno/solicitar/analise');
+}));
+
+alunoRouter.get('/solicitar/analise', isLoggedIn, (req, res) => {
+    res.render('analise')
+});
+
+alunoRouter.post('/solicitar/analise', [isLoggedIn, analiseUpload.fields(fieldsAnalise)], (req, res) => {
+    res.redirect('/dashboard')
+});
 
 alunoRouter.get('/doacao/obrigado', (req, res) => {
     res.render('thanks');

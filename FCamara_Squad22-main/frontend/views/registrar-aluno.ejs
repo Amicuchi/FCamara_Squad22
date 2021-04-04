@@ -18,7 +18,8 @@
 
   <section class="container my-5 home">
     <br>
-    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data" class="needs-validation form-border my-4" novalidate>
+    <form action="/aluno/registrar" method="POST" enctype="multipart/form-data"
+      class="needs-validation form-border my-4" novalidate>
       <h1 class="display-5">Cadastro de aluno</h1>
       <div class="form-group row mt-3">
         <div class="col-md-6">
@@ -49,7 +50,7 @@
           <select id="estado" class="form-control custom-select" name="aluno[estado]" required>
             <option value="" disabled selected hidden>Estado</option>
             <% for (let es of estados) {%>
-              <option value="<%= es %>"><%= es %></option>
+            <option value="<%= es %>"><%= es %></option>
             <% } %>
           </select>
           <div class="invalid-feedback">
@@ -116,11 +117,13 @@
           <label for="matricula">Declaração de matricula</label>
           <div class="input-group">
             <div class="custom-file ">
-              <input type="file" class="custom-file-input" id="matricula" name="aluno[matricula]" style="display: none;" required>
+              <input type="file" class="custom-file-input" id="matricula" name="aluno[matricula]" style="display: none;"
+                required>
               <label class="custom-file-label" for="matricula">Choose file</label>
             </div>
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary btn-file" type="button" id="btn-matricula"><i class="bi bi-upload"></i></button>
+              <button class="btn btn-outline-secondary btn-file" type="button" id="btn-matricula"><i
+                  class="bi bi-upload"></i></button>
             </div>
             <div class="invalid-feedback">
               Campo obrigatório
@@ -135,7 +138,8 @@
               <label class="custom-file-label" for="rg">Choose file</label>
             </div>
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary btn-file" type="button" id="btn-rg"><i class="bi bi-upload"></i></button>
+              <button class="btn btn-outline-secondary btn-file" type="button" id="btn-rg"><i
+                  class="bi bi-upload"></i></button>
             </div>
             <div class="invalid-feedback">
               Campo obrigatório
@@ -145,7 +149,8 @@
         <small id="uploadHelp" class="form-text text-muted ml-3">Arquivos nos formatos PNG, JPG, JPEG e PDF</small>
       </div>
       <div class="form-group mt-5 text-center">
-        <p>Ao clicar em CADASTRAR, você concorda com os nossos <a href="#">Termos, Política de Dados e Política de Cookies</a>.</p>
+        <p>Ao clicar em CADASTRAR, você concorda com os nossos <a href="#">Termos, Política de Dados e Política de
+            Cookies</a>.</p>
       </div>
       <div class="row mt-4">
         <div class="col text-center">
@@ -163,7 +168,7 @@
   </script>
   <script src="/js/passwordMatch.js"></script>
   <script src="/js/formValidation.js"></script>
-  <script src="/js/displayFilename.js"></script>
+  <script src="/js/cadastroAlunoFilename.js"></script>
 </body>
 
 </html>
