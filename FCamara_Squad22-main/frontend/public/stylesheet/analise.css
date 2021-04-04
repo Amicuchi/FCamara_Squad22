@@ -20,24 +20,21 @@ body{
 
 #bemVindoAluno{
     background-color: none;
-    height: 5rem;
+    padding: 2px;
 }
 
 header div h1,
 header div p{
     text-align: left;
 }
-
-ul li a img{
-    max-width: 3rem;
-    max-height: 3rem;
+.form-group{
+    margin-top: 5%;
+    width: 22rem;
+}
+h1{
+    font-weight: bold;
 }
 
-section #optionsResults{
-    background-color: yellowgreen;
-    min-height: 50vh;
-
-}
 /*ALTERAÇÕES CAMILA*/
  /*Estilização Botões*/
 
@@ -47,16 +44,6 @@ section #optionsResults{
     background-color: #6157C1;
     border-color: #6157C1;
     color: white;
-}
-.btnVoltar{
-    max-width: 169px;
-    background-color: #F6F6F6;
-    border: 1px solid #6157C1;
-    color: #6157C1;
-}
-
-.btnVoltar,
-.btnSolicitar {
     display: block;
     cursor: pointer;
     text-align: center;
@@ -65,15 +52,8 @@ section #optionsResults{
  /*Estilização DIVS*/
 .div1,
 .div2 {
-
     min-width: 25rem;
     text-align: left;
-}
-.div1{ /*COLUNA 1 - BOTÕES*/
-
-}
-.div2{ /*COLUNA 2 - BOTÃO*/
-    background-color:none;
 }
 /*Estilização LETRAS*/
 .pbtn{
@@ -88,16 +68,18 @@ section #optionsResults{
     font-size: 20px;
 }
 /*Estilização ICONS*/
-
-.bi.bi-facebook{
-    color:  #A9B3B7;
+.custom-file-label{
+    border-right: none;
+    border-radius: 0;
+    cursor: pointer;
 }
-.bi.bi-person,
-.bi.bi-gift,
-.bi.bi-suit-heart{
-    float: left;
-    font-size: 30px;
-    color: white;
-    padding-right: 15px;
-    padding-left: 15px;
+
+.custom-file-label::after {
+    display: none;
+}
+
+.btn-file {
+    border-color: #CED4DA;
+    border-left: none;
+    background-color: white;
 }
