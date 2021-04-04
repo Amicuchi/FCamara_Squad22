@@ -20,7 +20,7 @@ body{
 
 #bemVindoAluno{
     background-color: none;
-    height: 5rem;
+    height: 7rem;
 }
 
 header div h1,
@@ -54,36 +54,28 @@ section #optionsResults{
 }
  /*Estilização DIVS*/
 .div1,
-.div2 { 
-    padding: 30px;
-    min-width: 25rem;
+.div2 {
+    min-width: 21rem;
     text-align: left;
-}
-.div1{ /*COLUNA 1 - BOTÕES*/
-
-}
-.div2{ /*COLUNA 2 - BOTÃO*/
-    background-color:none;
 }
 /*Estilização LETRAS*/
 .pbtn{
     font-size: small;
     font-weight:lighter;
 }
-.title{ 
+.title{
     font-weight: bold;
     padding-top: 50px;
+    font-size: 25px;
 }
 .subtitle{
     font-size: 20px;
+    padding-bottom: 15px;
 }
 /*Estilização ICONS*/
 .bi.bi{
     color:  #A9B3B7;
     font-size: 65px;
-}
-.bi.bi-facebook{
-    color:  #A9B3B7;
 }
 .bi.bi-person,
 .bi.bi-gift,
