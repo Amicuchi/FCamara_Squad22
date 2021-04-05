@@ -68,11 +68,11 @@ alunoRouter.get('/solicitar/analise', isLoggedIn, (req, res) => {
 });
 
 alunoRouter.post('/solicitar/analise', [isLoggedIn, analiseUpload.fields(fieldsAnalise)], (req, res) => {
-    res.redirect('/dashboard')
+    res.redirect('/aluno/solicitar/obrigado')
 });
 
-alunoRouter.get('/doacao/obrigado', (req, res) => {
-    res.render('thanks');
+alunoRouter.get('/solicitar/obrigado', isLoggedIn, (req, res) => {
+    res.render('agradecimento');
 });
 
 module.exports = alunoRouter;
