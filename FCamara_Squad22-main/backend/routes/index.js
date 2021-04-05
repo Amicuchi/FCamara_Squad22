@@ -16,7 +16,7 @@ indexRouter.get('/login', (req, res) => {
     res.render('entrar');
 });
 
-indexRouter.post('/login', passport.authenticate('local', {failureRedirect: '/login'}), (req, res) => {
+indexRouter.post('/login', passport.authenticate('local', {failureFlash: true, failureRedirect: '/login'}), (req, res) => {
     res.redirect('/dashboard');
 });
 

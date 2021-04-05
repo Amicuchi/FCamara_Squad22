@@ -41,6 +41,7 @@ alunoRouter.post('/registrar', [validateAluno, cadastroUpload.fields(fieldsCadas
     const aluno = (req.body.aluno);
     const criarAluno = new Aluno(aluno);
     const registrarAluno = await Aluno.register(criarAluno, aluno.password);
+    req.flash('success', 'Cadastrado com sucesso');
     res.redirect('/login');
 }));
 
@@ -68,6 +69,7 @@ alunoRouter.get('/solicitar/analise', isLoggedIn, (req, res) => {
 });
 
 alunoRouter.post('/solicitar/analise', [isLoggedIn, analiseUpload.fields(fieldsAnalise)], (req, res) => {
+    req.flash('success', 'Solicitação enviada com sucesso');
     res.redirect('/aluno/solicitar/obrigado')
 });
 

@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
+const flash = require('connect-flash');
 
 const ExpressError = require('./utils/ExpressError');
 const Aluno = require('./models/aluno');
@@ -29,6 +30,9 @@ mongoose.connect(databaseUri, {
         console.log('Erro na conexão');
         console.log(err);
     });
+    
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../frontend/views'));
 
 const secret = process.env.SECRET || 'thisshouldbeabettersecret!'
 
@@ -48,6 +52,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.static(path.join(__dirname, '../frontend/public')));
 app.use(session(sessionConfig));
+app.use(flash())
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -62,8 +67,11 @@ app.use((req, res, next) => {
     next();
 })
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../frontend/views'));
+app.use((req, res, next) => {
+    res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
+    next();
+})
 
 // ROTAS PARA PAGINAS
 app.use('/', indexRoutes);
