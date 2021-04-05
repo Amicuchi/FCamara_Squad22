@@ -1,10 +1,10 @@
 # Projeto "Donate" - Squad_22
 
-Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/) que foi realizado entre 22/03/21 e 04/04/21.
-
+Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/) que foi realizado entre 22/03/21 e 05/04/21.
+Para conhecer nosso site, acesse: [Donate](https://powerful-journey-04089.herokuapp.com/).
 
 <h4 align="center"> 
-	🚧  Unidos pela Educação 👨‍🏫 Demonstração ✔️ 🚧
+	🚧  Projeto Donate 👨‍🏫 Demonstração ✔️ 🚧
 </h4>
 
 
@@ -20,11 +20,15 @@ Ao final de todas as fases iniciais, apenas 210 pessoas ficaram para serem divid
 <br>
 <br>
 
+
 ## 💻 Sobre o projeto
+<br>
+<br>
 
 
+<br>
 
-## Screenshot das telas do site 
+## 🖼 Screenshot das telas 🖼
 <br>
 
 ### 🖼 Página inicial 
