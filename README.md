@@ -1,12 +1,15 @@
 # Projeto "Donate" - Squad_22
 
-Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/) que foi realizado entre 22/03/21 e 05/04/21.
-Para conhecer nosso site, acesse: [Donate](https://powerful-journey-04089.herokuapp.com/).
+Projeto desenvolvido para o Hackathon do Programa de Formação da [FCamara](https://www.fcamara.com.br/) que foi realizado entre 22/03/21 e 05/04/21. <br>
+Para conhecer nosso site, [clique aqui](https://powerful-journey-04089.herokuapp.com/) ou acesse: https://powerful-journey-04089.herokuapp.com/.
+<br>
 
 <h4 align="center"> 
 	🚧  Projeto Donate 👨‍🏫 Demonstração ✔️ 🚧
 </h4>
 
+<br>
+<br>
 
 ## :coffee: Um pouquinho sobre o Hackathon FCamara
 
@@ -24,8 +27,14 @@ Ao final de todas as fases iniciais, apenas 210 pessoas ficaram para serem divid
 ## 💻 Sobre o projeto
 <br>
 <br>
-
-
+Com o aumento nos preços dos materiais escolares, muitos pais de alunos de escolas públicas não possuem condições de adquiri-los. <br>
+Por meio de pesquisas com pais de alunos, verificamos que apenas 40% dos pais recebem doações de materiais escolares básicos doados pelo governo e desses, 30% ainda não possuem todos os materiais. <br>
+Além disso, cerca de 13% dos alunos não possuem aparelhos eletrônicos para acompanhar aulas a distância. <br>
+Com base nestas dificuldades de alunos e pais de alunos, criamos um site que auxilia na aquisição de materiais escolares e dispositivos móveis para alunos de escolas públicas. <br>
+<br>
+A Donate visa e trabalha pela transformação social, auxiliando na aquisição de materiais escolares e dispositivos móveis para alunos de escolas municipais e estaduais, buscando uma sociedade mais humana. <br>
+Seu objetivo é criar uma ponte entre investidores, doadores e alunos de rede pública.
+<br>
 <br>
 
 ## 🖼 Screenshot das telas 🖼
