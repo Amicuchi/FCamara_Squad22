@@ -19,7 +19,7 @@
   background-color: #6157C1;
   height: 54px;
   max-width: 470px;
-  width: 100%;
+  width: 80%;
   border: none;
   }
   .btnVoltar {
@@ -36,3 +36,10 @@
     font-size: 20px;
     height: 40px;
   }
+.title,
+.subtitle{
+   margin-left: 2%;
+}
+ .form-group{
+  margin: 3%;
+ }
