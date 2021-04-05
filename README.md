@@ -180,14 +180,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 # 👷 Como rodar
 
 ```bash
+#Instale MongoDB ou use Mongo Atlas
+
 # Clonar o repositório
 git clone https://github.com/Amicuchi/FCamara_Squad22.git
 
 # Entrar numa IDE de sua preferência
 
-# Entre na pasta FCamara_Squad22-main/backend e execute o "npm install"
+# Execute o "npm install"
 
-# Execute node app.js para inicializar o servidor local
+# Execute node ./FCamara_Squad22-main/backend/app.js para inicializar o servidor local
 
 ```
 
