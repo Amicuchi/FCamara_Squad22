@@ -20,7 +20,7 @@ body{
 
 #bemVindoAluno{
     background-color: none;
-    height: 7rem;
+    height: 100px;
 }
 
 header div h1,
@@ -45,8 +45,10 @@ header div p{
 }
  /*Estilização DIVS*/
 .div1,
-.div2 {
-    min-width: 21rem;
+.div2,
+.div3 {
+    max-width: 370px;
+    width: 100%;
     text-align: left;
 }
 /*Estilização LETRAS*/
@@ -76,8 +78,4 @@ header div p{
     color: white;
     padding-right: 15px;
     padding-left: 15px;
-}
-.icon{
-    width: 80px;
-    margin-bottom: 2%;
 }

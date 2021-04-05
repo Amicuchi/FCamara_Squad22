@@ -46,7 +46,6 @@ indexRouter.get('/pesquisa', catchAsync(async(req, res) => {
 
 indexRouter.get('/logout', (req, res) => {
     req.logout();
-    req.flash('success', `Você foi deslogado!`)
     res.redirect('/');
 })
 
