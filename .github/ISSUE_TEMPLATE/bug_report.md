@@ -1,6 +1,6 @@
 ---
-Nome: Bug report
-Sobre: Crie um relatório para nos ajudar a melhorar
+Nome: 'Bug report'
+Sobre: 'Crie um relatório para nos ajudar a melhorar'
 Título: 'Nome do problema'
 Rótulos: 'rótulos'
 
