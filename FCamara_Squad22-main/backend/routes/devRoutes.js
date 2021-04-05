@@ -12,9 +12,6 @@ devRouter.get('/historia', (req, res) => {
 devRouter.get('/solicite-doacao', (req, res) => {
     res.render('solicite-doacao')
 })
-devRouter.get('/solicite', (req, res) => {
-    res.render('solicite')
-})
 devRouter.get('/analise', (req, res) => {
     res.render('analise')
 })
