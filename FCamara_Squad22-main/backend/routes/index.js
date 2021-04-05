@@ -32,9 +32,13 @@ indexRouter.get('/doar', catchAsync(async(req, res) => {
 
 indexRouter.get('/pesquisa', catchAsync(async(req, res) => {
     const {q} = req.query;
-    const material = await ListaMaterial.find({tipoMaterial: {$regex: transformText(q)}}); 
-    const alunos = await Aluno.find({listaMateriais: {$in: material}});
-    res.render('schoolResults', {alunos, materialEscolar})
+    if (q){
+        const material = await ListaMaterial.find({tipoMaterial: {$regex: transformText(q)}}); 
+        const alunos = await Aluno.find({listaMateriais: {$in: material}});
+        return res.render('schoolResults', {alunos, materialEscolar})
+    } else {
+        return res.redirect('/doar')
+    }
 
 }))
 

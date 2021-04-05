@@ -26,7 +26,7 @@
                 <div class="form-group">
                     <label for="search">Buscar</label>
                     <select class="form-control mx-5" name="q" id="search">
-                        <option disabled selected hidden>Escolha o material</option>
+                        <option value="" disabled selected hidden>Escolha o material</option>
                         <% for (material of materialEscolar) {%>
                         <option value="<%= material.db %>"><%= material.nome %></option>
                         <% } %>
