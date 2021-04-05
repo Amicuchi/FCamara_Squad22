@@ -28,8 +28,6 @@ header div p{
     text-align: left;
 }
 
-/*ALTERAÇÕES CAMILA*/
- /*Estilização Botões*/
 .btnEntrar{
     max-width: 370px;
     width: 100%;
@@ -78,4 +76,8 @@ header div p{
     color: white;
     padding-right: 15px;
     padding-left: 15px;
+}
+.icon{
+    width: 70px;
+    margin-bottom: 5%;
 }
