@@ -1,8 +1,8 @@
 ---
 Nome: Bug report
 Sobre: Crie um relatório para nos ajudar a melhorar
-Título: ''
-Rótulos: ''
+Título: 'Nome do problema'
+Rótulos: 'rótulos'
 
 ---
 
