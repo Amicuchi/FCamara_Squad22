@@ -18,13 +18,13 @@
 
     <section class="home">
 
-        <h1>Lista de Alunos</h1>
+        <h1 class="title">Materiais escolares</h1>
+        <p class="subtitle">Confira os itens mais solicitados</p>
 
         <aside id="pesquisa">
             <form action="/pesquisa" method="GET" class="form-inline my-2 my-lg-0">
 
                 <div class="form-group">
-                    <label for="search">Buscar</label>
                     <select class="form-control mx-5" name="q" id="search">
                         <option disabled selected hidden>Escolha o material</option>
                         <% for (material of materialEscolar) {%>
@@ -41,7 +41,7 @@
                         </select>  -->
 
 
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btnVerTodos btn-primary my-0 my-sm-2" type="submit">Pesquisar</button>
             </form>
         </aside>
 
@@ -59,15 +59,17 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais
-                                            informações</button>
+                                        <a href="/doar"><button class="btn btnTransp card-btn mx-auto">Saiba mais</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div> <br>
                     <% } %>
-                </div>
+                </div> <br>
+                        <button type="submit" class="btnVerTodos btn-primary mx-auto" id="cadastro">Ver todos</button>
+                        <br>
+                        <button class="btn btnTransp card-btn mx-auto">VOLTAR</button>
             </div>
         </div>
     </section>
