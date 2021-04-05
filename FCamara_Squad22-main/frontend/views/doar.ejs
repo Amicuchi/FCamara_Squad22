@@ -24,8 +24,8 @@
         <aside id="pesquisa">
             <form action="/pesquisa" method="GET" class="form-inline my-2 my-lg-0">
 
-                <div class="form-group">
-                    <select class="form-control mx-5" name="q" id="search">
+                <div class="form-group search">
+                    <select class="form-control mx-auto" name="q" id="search">
                         <option value="" disabled selected hidden>Escolha o material</option>
                         <% for (material of materialEscolar) {%>
                         <option value="<%= material.db %>"><%= material.nome %></option>
@@ -33,15 +33,7 @@
                     </select>
                 </div>
 
-
-                <!-- *PESQUISA POR CIDADE* <input type="text" class="form-control" placeholder="Cidade">
-
-                        *PESQUISA POR ESTADO* <select id="estado" class="form-control custom-select" name="aluno[estado]" required>
-                            <option value="" disabled selected hidden>Estado</option>
-                        </select>  -->
-
-
-                <button class="btnVerTodos btn-primary my-0 my-sm-2" type="submit">Pesquisar</button>
+                <button class="btnVerTodos btn-primary my-0 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </aside>
 

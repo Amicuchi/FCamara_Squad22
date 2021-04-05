@@ -1,12 +1,9 @@
 #pesquisa{
-    /* position: static; */
     padding: 1rem;
-    /* right: 30%; */
     margin: 2rem 0.5rem;
 }
 .home{
     position: static;
-    background-color: transparent;
 }
 .title{
     font-weight: bold;
@@ -71,4 +68,7 @@ font-size: 20px;
     font-weight: bold;
     height: 45px;
 }
-
+.search{
+    margin-right: 3%;
+    margin-left: 5%;
+}
