@@ -10,7 +10,7 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="stylesheet/doar.css"
+        href="/stylesheet/doar.css"
     >
 </head>
 
@@ -27,25 +27,16 @@
         <aside id="pesquisa">
             <form action="/pesquisa" method="GET" class="form-inline my-2 my-lg-0">
 
-                <div class="form-group">
-                    <label for="search">Buscar</label>
-                    <select class="form-control mx-5" name="q" id="search">
-                        <option disabled selected hidden>Escolha o material</option>
+                <div class="form-group search">
+                    <select class="form-control mx-auto" name="q" id="search">
+                        <option value="" disabled selected hidden>Escolha o material</option>
                         <% for (material of materialEscolar) {%>
                         <option value="<%= material.db %>"><%= material.nome %></option>
                         <% } %>
                     </select>
                 </div>
 
-
-                     <!-- *PESQUISA POR CIDADE* <input type="text" class="form-control" placeholder="Cidade">
-
-                        *PESQUISA POR ESTADO* <select id="estado" class="form-control custom-select" name="aluno[estado]" required>
-                            <option value="" disabled selected hidden>Estado</option>
-                        </select>  -->
-
-
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btnVerTodos btn-primary mx-3" type="submit">Pesquisar</button>
             </form>
         </aside>
 
@@ -53,21 +44,23 @@
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                   <!-- CARD DE FOTO DE ALUNO -->
-                  <% for (aluno of alunos) {%> 
-                    <div class="col">
-                      <div class="card shadow-sm">
-                          <div class="card-body">
-                              <p class="card-text">   Nome do Aluno: <strong><%= aluno.nomeAluno %>  <%= aluno.sobrenomeAluno %></strong>  . <br>
-                                                      Escola: <strong><%= aluno.escola %></strong>  </p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais informações</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <% } %>
+                  <% for (aluno of alunos) {%>
+                    <div class="col my-3">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text"> Nome do Aluno: <strong><%= aluno.nomeAluno %>
+                                        <%= aluno.sobrenomeAluno %></strong> <br>
+                                    Escola: <strong><%= aluno.escola %></strong>
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <div class="btn-group">
+                                        <a href="/doar"><button class="btn btnTransp card-btn mx-auto">Saiba mais</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <br>
+                    <% } %>
                 </div>
             </div>
         </div>
