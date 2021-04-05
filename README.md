@@ -64,12 +64,6 @@ Ao final de todas as fases iniciais, apenas 210 pessoas ficaram para serem divid
 <img src="/telas/06_Solicite.png" alt="Escolha de material a ser pedido"> 
 <br>
 
-### 🖼 Tela de Opções de Material a ser pedido
-
-<br>
-<img src="/telas/07_Solicite2.png" alt="Opções de material a ser pedido"> 
-<br>
-
 ### 🖼 Tela de Aprovação de Pedido
 
 <br>
