@@ -8,6 +8,8 @@ const catchAsync = require('../utils/catchAsync');
 const transformText = require('../utils/transformText');
 const {materialEscolar} = require('../utils/materialList');
 
+const message = 'Email e/ou senha estão incorretos'
+
 indexRouter.get('/', (req, res) => {
     res.render('historia');
 });
@@ -16,7 +18,7 @@ indexRouter.get('/login', (req, res) => {
     res.render('entrar');
 });
 
-indexRouter.post('/login', passport.authenticate('local', {failureFlash: true, failureRedirect: '/login'}), (req, res) => {
+indexRouter.post('/login', passport.authenticate('local', {failureFlash: message, failureRedirect: '/login'}), (req, res) => {
     res.redirect('/dashboard');
 });
 
@@ -44,6 +46,7 @@ indexRouter.get('/pesquisa', catchAsync(async(req, res) => {
 
 indexRouter.get('/logout', (req, res) => {
     req.logout();
+    req.flash('success', `Você foi deslogado!`)
     res.redirect('/');
 })
 
