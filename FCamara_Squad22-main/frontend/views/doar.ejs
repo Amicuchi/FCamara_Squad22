@@ -50,7 +50,7 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <!-- CARD DE ALUNO -->
                     <% for (aluno of alunos) {%>
-                    <div class="col">
+                    <div class="col my-3">
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <p class="card-text"> Nome do Aluno: <strong><%= aluno.nomeAluno %>
@@ -78,8 +78,9 @@
                     <h1 class="title">Pontos de coleta</h1>
                     <p class="subtitle">Escolha o ponto mais próximo de você</p>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-4 my-4">
+                <div class="row mt-5 cards">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 my-4">
                         <div class="card pink">
                             <img src="/img/escola.png" alt="" class="img-fluid">
                             <div class="card-body">
@@ -89,8 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                        <div class="col-lg-4 my-4">
+                        <div class="col-lg-5 my-4">
                             <div class="card pink">
                                 <img src="/img/loja.png" alt="" class="img-fluid">
                                 <div class="card-body">
@@ -101,6 +101,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <button type="submit" class="btn btnTransp card-btn mx-auto" id="cadastro">Ver todos</button>
        </section>
 
